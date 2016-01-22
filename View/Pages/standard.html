@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <link rel="stylesheet" href="../../styles/all.css">
+    <link rel="stylesheet" href="../../styles/pages/standard.css" />
+    <script src="../../js/vendor/jquery/jquery-1.9.1.min.js"></script>
+    <script src="../../js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="../../js/vendor/underscore/underscore.js"></script>
+    <script src="../../js/vendor/angularJS/angular.js"></script>
+    <script src="../../js/vendor/angularJS/angular-route.js"></script>
+    <script src="../../js/vendor/angularJS/angular-sanitize.js"></script>
+    <script src="../../js/vendor/ngLazyImage/lazy-image.min.js"></script>
+    <script src="../../js/vendor/angular.UI/select.js"></script>
+    <script src="../../js/app/app.js"></script>
+    <script src="../../js/app/services/artistService.js"></script>
+    <script src="../../js/app/services/filterService.js"></script>
+    <script src="../../js/app/controllers/artistListController.js"></script>
+    <script src="../../js/app/directives/artist.js"></script>
+    <script src="../../js/app/filters/nameModel.js"></script>
+    <script src="../../data/statistics.json"></script>
+    <link rel="stylesheet" href="../../js/vendor/blueimp-gallery/css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="../../js/vendor/ngLazyImage/lazy-image-style.min.css" />
+    <link rel="stylesheet" href="../../js/vendor/angular.UI/select.css" />
+    <script>
+        jQuery(document).ready(function(){
+            angular.bootstrap(document,["talent"]);
+        });
+    </script>
+</head>
+<body class="page-body">
+<header style="height:200px;"></header>
+<div>
+    <div class="talent-content" ng-controller="artistListController" ng-init="init()">
+        <!-- search begin -->
+        <section class="section-search">
+            <div class="search-bar">
+                <div>
+                    <span class="center-block text-center">{{artists.length}} Artists Found</span>
+                </div>
+            </div>
+
+            <div class="search-filter-head">
+                <a class="pull-right" href="javascript:void(0);" ng-click="showFilter=!showFilter">Search Filter<span class="caret"></span></a>
+                <div class="input-group pull-left">
+                    <input type="text" class="form-control" placeholder="Find Talent" ng-model="nameFilter">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                </div>
+            </div>
+
+            <div class="search-filters" ng-show="showFilter">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="filter" ng-repeat=" filter in filters">
+                            <ui-select theme="bootstrap" ng-model="filter.selectedItem">
+                                <ui-select-match placeholder="{{filter.Name}}">{{$select.selected.Text}}</ui-select-match>
+                                <ui-select-choices repeat="item in filter.Items | filter: $select.search">
+                                    <span ng-bind-html="item.Text | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                        </div>
+                        <div class="submit">
+                            <a class="btn btn-primary btn-block">Serach</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search end-->
+        <!-- list begin -->
+        <!--
+        <section class="section-list">
+            <div class="container-fluid">
+                <div class="row">
+                    <artist ng-repeat="artist in artists | filter:nameFilter" intro="artist">
+                    </artist>
+                </div>
+            </div>
+        </section>
+        -->
+        <!-- list end-->
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

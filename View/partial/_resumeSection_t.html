@@ -1,0 +1,46 @@
+<div class="credit-section section-large" >
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th colspan="{{section.Rows[0].Texts.length + 1}}">{{section.Title}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in section.Rows">
+            <td ng-repeat="text in row.Texts">
+                {{text}}
+            </td>
+            <td>
+                <span ng-repeat="media in row.Medias" class="media"
+                      ng-class="media.MediaType=='V'?'video':(media.MediaType=='A'?'audio':'photo')"
+                      ng-click="showCreditResumeMedia(media.MediaType, media.MediaUrl)"
+                ></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="credit-section section-small" >
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th colspan="2">{{section.Title}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in section.Rows">
+            <td>
+                <ul>
+                    <li ng-repeat="text in row.Texts">{{text}}</li>
+                </ul>
+            </td>
+            <td>
+                <span ng-repeat="media in row.Medias" class="media"
+                      ng-class="media.MediaType=='V'?'video':(media.MediaType=='A'?'audio':'photo')"
+                      ng-click="showCreditResumeMedia(media.MediaType, media.MediaUrl)"
+                ></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

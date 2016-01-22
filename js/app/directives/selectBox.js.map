@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "selectBox.js",
+  "sourceRoot": "../../../app/directives",
+  "sources": [
+    "selectBox.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,GAAG,CAAC,SAAJ,CAAc,WAAd,EACE,SAAA;WACE;MAAA,QAAA,EAAU,GAAV;MACA,IAAA,EAAM,SAAC,MAAD,EAAS,OAAT,EAAkB,KAAlB,GAAA,CADN;;EADF,CADF;AAAA"
+}

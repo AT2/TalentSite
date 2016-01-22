@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "artist.js",
+  "sourceRoot": "../../../app/directives",
+  "sources": [
+    "artist.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,GAAG,CAAC,SAAJ,CAAc,QAAd,EACE,SAAA;WACE;MAAA,QAAA,EAAU,GAAV;MACA,KAAA,EACE;QAAA,KAAA,EAAO,GAAP;OAFF;MAGA,WAAA,EAAa,iCAHb;MAIA,UAAA,EAAY,IAJZ;MAKA,OAAA,EAAS,IALT;;EADF,CADF;AAAA"
+}

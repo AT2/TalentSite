@@ -1,0 +1,47 @@
+@import "compass";
+@import "mixin/common";
+@import "../plugins/bootstrap/bootstrap/_variables";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid-framework";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid";
+@import "../plugins/font-awesome/font-awesome";
+
+
+.all{
+  padding: 20px 10% 0;
+display: table;
+    .leftcontent{
+      display: table-cell;
+      .image{
+        @include  make-xs-column(6);
+        @include  make-sm-column(12);
+        @include  make-md-column(6);
+        padding-bottom: 20px;
+      }
+      dl{
+        @include  make-xs-column(12);
+        @include  make-sm-column(6);
+        @include  make-md-column(3);
+        dt{
+          color: black;
+      }
+  }
+}
+.rightpage {
+  display: table-cell;
+
+.rightcontent{
+  .image{
+    @include  make-md-column(12);
+  }
+  .logo{
+    @include  make-md-column(12);
+  }
+  .address{
+    @include  make-md-column(6);
+  }
+  .phone{
+    @include  make-md-column(6);
+  }
+}
+}
+}

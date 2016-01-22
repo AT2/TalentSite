@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "nameModel.js",
+  "sourceRoot": "../../../app/filters",
+  "sources": [
+    "nameModel.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,GAAG,CAAC,MAAJ,CAAW,WAAX,EAAwB;IACtB,SAAA;AACE,aAAO,SAAC,IAAD,EAAO,KAAP;QACL,IAAG,KAAA,KAAS,MAAZ;AACE,iBAAO,IAAI,CAAC,MAAL,CAAY,CAAZ,EAAc,CAAd,EADT;;AAEA,eAAO;MAHF;IADT,CADsB;GAAxB;AAAA"
+}

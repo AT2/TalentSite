@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "trusted.js",
+  "sourceRoot": "../../../app/filters",
+  "sources": [
+    "trusted.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,GAAG,CAAC,MAAJ,CAAW,SAAX,EAAsB;IACpB,MADoB,EAEpB,SAAC,IAAD;aACE,SAAC,GAAD;AACE,eAAO,IAAI,CAAC,kBAAL,CAAwB,GAAxB;MADT;IADF,CAFoB;GAAtB;AAAA"
+}

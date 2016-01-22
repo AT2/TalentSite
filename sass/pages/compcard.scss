@@ -1,0 +1,95 @@
+@import "compass";
+@import "../pages/mixin/common";
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1280px;
+  }
+}
+
+/**left page*/
+.leftpage{
+  padding-left: 8%;
+  div {
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    .au{
+      @include a-link(#00b3ee);
+    }
+    p {
+      color: #9d9d9d;
+      padding: 0 0 18px 24px;
+      border-bottom: 1px solid gainsboro;
+      span{
+        color:black;
+      }
+    }
+  }
+  img{
+    padding-top: 18px;
+  }
+  h5{
+    padding: 18px 0  0 26px;
+    font-weight: bold;
+  }
+  .at2{
+    padding-top: 18px;
+  }
+  span{
+    font-weight: bolder;
+  }
+}
+/**right page*/
+
+.rightpage {
+  padding-left: 3%;
+  padding-right: 3%;
+  h3 {
+    padding-bottom: 10px;
+  }
+  .outside {
+    border: solid black 30px;
+    .inside {
+      padding: 4% 4%;
+    }
+    .foot {
+      padding: 4% 4%;
+      .endimg {
+        margin-top: -10px;
+      }
+      .address {
+        @include gray-color;
+      }
+      .phone {
+        @include gray-color;
+
+        .enda {
+          @include a-link(#00b3ee);
+        }
+      }
+      @include gray-color;
+    }
+  }
+
+  .content {
+    padding-left: 5%;
+    padding-top: 3%;
+    h3 {
+      font-size: 35px;
+    }
+    .ttext {
+      color: gray;
+    }
+    .hcolor {
+      color: gray;
+    }
+    .height {
+      @include three-bold;
+      padding-top: 20px;
+    }
+  }
+}
+
+
+
+
+

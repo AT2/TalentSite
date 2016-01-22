@@ -1,0 +1,10 @@
+@import "compass";
+$brand-primary: #2c2e2f;
+.btn{
+  @include border-radius(0,0);
+  outline: none;
+}
+
+.form-control{
+  @include border-radius(0,0);
+}

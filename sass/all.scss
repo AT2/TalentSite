@@ -1,0 +1,18 @@
+@import "plugins/bootstrap/bootstrap";
+@import "bootstrap_override";
+@import "fonts";
+@import "variables";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $main_font_color;
+  //font-family: $helvetica-medium, Arial, sans-serif;
+  font: 12px/24px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}

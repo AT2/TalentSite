@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Helvetica Neue LT Std Medium;
+  src: url(../fonts/helvetica-neue-65-medium.ttf);
+}
+@font-face {
+  font-family: Helvetica Neue LT Std Medium Condensed;
+  src: url(../fonts/helvetica-67-medium-condensed.ttf);
+}
+@font-face {
+  font-family: Helvetica Neue LT Std Roman;
+  src: url(../fonts/helvetica-neue-55-roman.ttf);
+}
+@font-face {
+  font-family: Helvetica Neue LT Std Bold;
+  src: url(../fonts/helvetica-neue-75-bold.otf);
+}
+
+/*# sourceMappingURL=fonts.css.map */

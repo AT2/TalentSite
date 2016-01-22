@@ -1,0 +1,58 @@
+{
+  "Description": "success",
+  "Result": {
+    "Filters":[
+      {
+        "Name": "State",
+        "Items":[
+          {
+            "Text": "NSW",
+            "Value": 161
+          },
+          {
+            "Text": "QLD",
+            "Value": 162
+          },
+          {
+            "Text": "VIC",
+            "Value": 163
+          }
+        ]
+      },
+      {
+        "Name": "Eye Colour",
+        "Items":[
+          {
+            "Text": "NSW",
+            "Value": 161
+          },
+          {
+            "Text": "QLD",
+            "Value": 162
+          },
+          {
+            "Text": "VIC",
+            "Value": 163
+          }
+        ]
+      },
+      {
+        "Name": "Height",
+        "Items":[
+          {
+            "Text": "NSW",
+            "Value": 161
+          },
+          {
+            "Text": "QLD",
+            "Value": 162
+          },
+          {
+            "Text": "VIC",
+            "Value": 163
+          }
+        ]
+      }
+    ]
+  }
+}

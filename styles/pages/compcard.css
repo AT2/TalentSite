@@ -1,0 +1,126 @@
+/**
+standard
+*/
+@media (min-width: 1200px) {
+  /* line 4, ../../sass/pages/compcard.scss */
+  .container {
+    max-width: 1280px;
+  }
+}
+/**left page*/
+/* line 10, ../../sass/pages/compcard.scss */
+.leftpage {
+  padding-left: 8%;
+}
+/* line 12, ../../sass/pages/compcard.scss */
+.leftpage div {
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+/* line 15, ../../sass/pages/compcard.scss */
+.leftpage div .au {
+  text-decoration: none;
+  color: #00b3ee;
+}
+/* line 14, ../../sass/pages/mixin/common.scss */
+.leftpage div .au :hover {
+  text-decoration: none;
+  color: #00b3ee;
+}
+/* line 18, ../../sass/pages/compcard.scss */
+.leftpage div p {
+  color: #9d9d9d;
+  padding: 0 0 18px 24px;
+  border-bottom: 1px solid gainsboro;
+}
+/* line 22, ../../sass/pages/compcard.scss */
+.leftpage div p span {
+  color: black;
+}
+/* line 27, ../../sass/pages/compcard.scss */
+.leftpage img {
+  padding-top: 18px;
+}
+/* line 30, ../../sass/pages/compcard.scss */
+.leftpage h5 {
+  padding: 18px 0  0 26px;
+  font-weight: bold;
+}
+/* line 34, ../../sass/pages/compcard.scss */
+.leftpage .at2 {
+  padding-top: 18px;
+}
+/* line 37, ../../sass/pages/compcard.scss */
+.leftpage span {
+  font-weight: bolder;
+}
+
+/**right page*/
+/* line 43, ../../sass/pages/compcard.scss */
+.rightpage {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/* line 46, ../../sass/pages/compcard.scss */
+.rightpage h3 {
+  padding-bottom: 10px;
+}
+/* line 49, ../../sass/pages/compcard.scss */
+.rightpage .outside {
+  border: solid black 30px;
+}
+/* line 51, ../../sass/pages/compcard.scss */
+.rightpage .outside .inside {
+  padding: 4% 4%;
+}
+/* line 54, ../../sass/pages/compcard.scss */
+.rightpage .outside .foot {
+  padding: 4% 4%;
+  color: gray;
+}
+/* line 56, ../../sass/pages/compcard.scss */
+.rightpage .outside .foot .endimg {
+  margin-top: -10px;
+}
+/* line 59, ../../sass/pages/compcard.scss */
+.rightpage .outside .foot .address {
+  color: gray;
+}
+/* line 62, ../../sass/pages/compcard.scss */
+.rightpage .outside .foot .phone {
+  color: gray;
+}
+/* line 65, ../../sass/pages/compcard.scss */
+.rightpage .outside .foot .phone .enda {
+  text-decoration: none;
+  color: #00b3ee;
+}
+/* line 14, ../../sass/pages/mixin/common.scss */
+.rightpage .outside .foot .phone .enda :hover {
+  text-decoration: none;
+  color: #00b3ee;
+}
+/* line 73, ../../sass/pages/compcard.scss */
+.rightpage .content {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+/* line 76, ../../sass/pages/compcard.scss */
+.rightpage .content h3 {
+  font-size: 35px;
+}
+/* line 79, ../../sass/pages/compcard.scss */
+.rightpage .content .ttext {
+  color: gray;
+}
+/* line 82, ../../sass/pages/compcard.scss */
+.rightpage .content .hcolor {
+  color: gray;
+}
+/* line 85, ../../sass/pages/compcard.scss */
+.rightpage .content .height {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=compcard.css.map */

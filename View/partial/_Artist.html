@@ -1,0 +1,11 @@
+<div class="artist">
+    <div afkl-lazy-image="http://app.at2casting.com/au/upload/photo/{{intro.PhotoFullPath}}h.jpg"
+         class="afkl-lazy-wrapper"></div>
+    <div class="info">
+        <span class="pull-left artistName">{{intro.FirstName}} {{intro.LastName | nameModel:"FULL"}}</span>
+        <span class="fa fa-newspaper-o pull-right profile-icon" ng-show="{{intro.HaveCompCard}}" title="Comp Card"></span>
+        <span class="fa fa-file-text pull-right profile-icon" ng-show="{{intro.HaveResume}}" title="Resume"></span>
+        <span class="fa fa-music pull-right profile-icon" ng-show="{{intro.HaveAudio}}" title="Audio Showreel"></span>
+        <span class="fa fa-video-camera pull-right profile-icon" ng-show="{{intro.HaveVideo}}" title="Video Showreel"></span>
+    </div>
+</div>

@@ -1,58 +1,235 @@
 {
   "Description": "success",
-  "Result": {
-    "Filters":[
-      {
-        "Name": "State",
-        "Items":[
-          {
-            "Text": "NSW",
-            "Value": 161
-          },
-          {
-            "Text": "QLD",
-            "Value": 162
-          },
-          {
-            "Text": "VIC",
-            "Value": 163
-          }
-        ]
-      },
-      {
-        "Name": "Eye Colour",
-        "Items":[
-          {
-            "Text": "NSW",
-            "Value": 161
-          },
-          {
-            "Text": "QLD",
-            "Value": 162
-          },
-          {
-            "Text": "VIC",
-            "Value": 163
-          }
-        ]
-      },
-      {
-        "Name": "Height",
-        "Items":[
-          {
-            "Text": "NSW",
-            "Value": 161
-          },
-          {
-            "Text": "QLD",
-            "Value": 162
-          },
-          {
-            "Text": "VIC",
-            "Value": 163
-          }
-        ]
-      }
-    ]
-  }
+  "Result": [
+    {
+      "Key": "Gender",
+      "Value": [
+        {
+          "Key": "Men",
+          "Value": "MALE"
+        },
+        {
+          "Key": "Women",
+          "Value": "FEMA"
+        }
+      ]
+    },
+    {
+      "Key": "Age",
+      "Value": [
+        {
+          "Key": "16-20",
+          "Value": "16-20"
+        },
+        {
+          "Key": "21-30",
+          "Value": "21-30"
+        },
+        {
+          "Key": "31-40",
+          "Value": "31-40"
+        },
+        {
+          "Key": "41-55",
+          "Value": "41-55"
+        }
+      ]
+    },
+    {
+      "Key": "Height",
+      "Value": [
+        {
+          "Key": "140CM - 150CM",
+          "Value": "140-150"
+        },
+        {
+          "Key": "151CM - 160CM",
+          "Value": "151-160"
+        },
+        {
+          "Key": "161CM - 170CM",
+          "Value": "161-170"
+        },
+        {
+          "Key": "171CM - 180CM",
+          "Value": "171-180"
+        },
+        {
+          "Key": "181CM - 190CM",
+          "Value": "181-190"
+        },
+        {
+          "Key": "191CM - 200CM",
+          "Value": "191-200"
+        },
+        {
+          "Key": "200CM+",
+          "Value": "200-300"
+        }
+      ]
+    },
+    {
+      "Key": "Available",
+      "Value": [
+        {
+          "Key": "Yes",
+          "Value": "true"
+        },
+        {
+          "Key": "No",
+          "Value": "false"
+        }
+      ]
+    },
+    {
+      "Key": "Region",
+      "Value": [
+        {
+          "Key": "NSW ",
+          "Value": "162"
+        }
+      ]
+    },
+    {
+      "Key": "Type",
+      "Value": [
+        {
+          "Key": "Actor",
+          "Value": "ACTR"
+        },
+        {
+          "Key": "Child",
+          "Value": "CHLD"
+        },
+        {
+          "Key": "Child Model",
+          "Value": "CHMD"
+        },
+        {
+          "Key": "Commercial",
+          "Value": "COMM"
+        },
+        {
+          "Key": "Family",
+          "Value": "FAML"
+        },
+        {
+          "Key": "Model",
+          "Value": "MODL"
+        },
+        {
+          "Key": "Extra",
+          "Value": "XTRA"
+        }
+      ]
+    },
+    {
+      "Key": "Department",
+      "Value": []
+    },
+    {
+      "Key": "Ethnicity",
+      "Value": []
+    },
+    {
+      "Key": "Video",
+      "Value": [
+        {
+          "Key": "Yes",
+          "Value": "true"
+        },
+        {
+          "Key": "No",
+          "Value": "false"
+        }
+      ]
+    },
+    {
+      "Key": "Audio",
+      "Value": [
+        {
+          "Key": "Yes",
+          "Value": "true"
+        },
+        {
+          "Key": "No",
+          "Value": "false"
+        }
+      ]
+    },
+    {
+      "Key": "Hair",
+      "Value": [
+        {
+          "Key": "Auburn",
+          "Value": "40"
+        },
+        {
+          "Key": "Black",
+          "Value": "42"
+        },
+        {
+          "Key": "Blonde",
+          "Value": "36"
+        },
+        {
+          "Key": "Brown",
+          "Value": "38"
+        },
+        {
+          "Key": "Dark Blonde",
+          "Value": "155"
+        },
+        {
+          "Key": "Dark Brown",
+          "Value": "39"
+        },
+        {
+          "Key": "Light Brown",
+          "Value": "37"
+        },
+        {
+          "Key": "Red/Ginger",
+          "Value": "41"
+        },
+        {
+          "Key": "White",
+          "Value": "45"
+        }
+      ]
+    },
+    {
+      "Key": "Eye",
+      "Value": [
+        {
+          "Key": "Black",
+          "Value": "47"
+        },
+        {
+          "Key": "Blue",
+          "Value": "48"
+        },
+        {
+          "Key": "Blue/Green",
+          "Value": "105"
+        },
+        {
+          "Key": "Blue/Grey",
+          "Value": "106"
+        },
+        {
+          "Key": "Brown",
+          "Value": "49"
+        },
+        {
+          "Key": "Green",
+          "Value": "51"
+        },
+        {
+          "Key": "Hazel",
+          "Value": "52"
+        }
+      ]
+    }
+  ]
 }

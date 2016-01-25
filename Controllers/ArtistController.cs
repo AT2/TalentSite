@@ -8,6 +8,17 @@ namespace Cwb.TalentSite.Controllers
 {
     public class ArtistController : Controller
     {
-
+        public Action Standard()
+        {
+            return null;
+        }
+        public Action Compact()
+        {
+            return null;
+        }
+        public Action Detail()
+        {
+            return null;
+        }
     }
 }

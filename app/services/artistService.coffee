@@ -3,7 +3,7 @@ app.service "artistService",["$http","$q",
     this.queryList = (filters)->
       deferred = $q.defer()
       $http
-        .get "../../data.json"
+        .get "../../data/data.json"
         .success(
           (data,status,headers,config)->
             deferred.resolve data
@@ -17,7 +17,7 @@ app.service "artistService",["$http","$q",
     this.queryDetail = (memberId) ->
       deferred = $q.defer()
       $http
-      .get "../../artist.json"
+      .get "../../data/artist.json"
       .success(
         (data,status,headers,config)->
           deferred.resolve data

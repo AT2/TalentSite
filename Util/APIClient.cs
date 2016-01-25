@@ -23,7 +23,6 @@ namespace Cwb.TalentSite.Util
                     if (!string.IsNullOrEmpty(queryString[key]))
                     {
                         request.AddQueryParameter(key, formBody[key]);
-                        
                     }
                 }
             }

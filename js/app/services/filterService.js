@@ -5,7 +5,7 @@
       this.queryFilters = function() {
         var deferred;
         deferred = $q.defer();
-        $http.get("../../filters.json").success(function(data, status, headers, config) {
+        $http.get("../../data/filters.json").success(function(data, status, headers, config) {
           return deferred.resolve(data);
         }).error(function(data, status, headers, config) {
           return deferred.reject(data);

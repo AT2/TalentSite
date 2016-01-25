@@ -62,10 +62,10 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="filter" ng-repeat=" filter in filters">
-                            <ui-select theme="bootstrap" ng-model="filter.selectedItem">
-                                <ui-select-match placeholder="{{filter.Name}}">{{$select.selected.Text}}</ui-select-match>
-                                <ui-select-choices repeat="item in filter.Items | filter: $select.search">
-                                    <span ng-bind-html="item.Text | highlight: $select.search"></span>
+                            <ui-select theme="bootstrap" ng-model="filter.selectedItem" ng-disabled="filter.Value.length < 2" >
+                                <ui-select-match placeholder="{{filter.Key}}">{{$select.selected.Key}}</ui-select-match>
+                                <ui-select-choices repeat="item in filter.Value | filter: $select.search">
+                                    <span ng-bind-html="item.Key | highlight: $select.search"></span>
                                 </ui-select-choices>
                             </ui-select>
                         </div>
@@ -78,7 +78,6 @@
         </section>
         <!-- search end-->
         <!-- list begin -->
-        <!--
         <section class="section-list">
             <div class="container-fluid">
                 <div class="row">
@@ -87,7 +86,6 @@
                 </div>
             </div>
         </section>
-        -->
         <!-- list end-->
     </div>
 </div>

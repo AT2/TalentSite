@@ -10,7 +10,7 @@
           $scope.artists = data.Result.ArtistList;
         });
         filterService.queryFilters().then(function(data) {
-          $scope.filters = data.Result.Filters;
+          $scope.filters = data.Result;
         });
       };
     }

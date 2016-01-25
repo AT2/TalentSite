@@ -15,7 +15,7 @@ app.controller "artistListController",["$scope","artistService","filterService"
       filterService.queryFilters()
       .then(
         (data)->
-          $scope.filters = data.Result.Filters
+          $scope.filters = data.Result
           #filter.selectedItem = {} for filter in $scope.filters
           return
       )

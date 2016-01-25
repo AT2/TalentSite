@@ -1,2 +1,2 @@
-window.app = angular.module "talent",["ngSanitize","ngRoute","afkl.lazyImage","ui.select"]
+window.app = angular.module "talent",["ngSanitize","afkl.lazyImage","ui.select"]
 #test branch--second test

@@ -1,0 +1,14 @@
+D:\Project\AT2\talent\Talent\obj\Debug\Talent.csprojResolveAssemblyReference.cache
+D:\Project\AT2\talent\Talent\bin\Talent.dll.config
+D:\Project\AT2\talent\Talent\bin\Talent.dll
+D:\Project\AT2\talent\Talent\bin\Talent.pdb
+D:\Project\AT2\talent\Talent\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\AT2\talent\Talent\bin\System.Net.Http.Formatting.dll
+D:\Project\AT2\talent\Talent\bin\System.Web.Http.dll
+D:\Project\AT2\talent\Talent\bin\System.Web.Http.WebHost.dll
+D:\Project\AT2\talent\Talent\bin\Microsoft.Web.Infrastructure.xml
+D:\Project\AT2\talent\Talent\bin\System.Net.Http.Formatting.xml
+D:\Project\AT2\talent\Talent\bin\System.Web.Http.xml
+D:\Project\AT2\talent\Talent\bin\System.Web.Http.WebHost.xml
+D:\Project\AT2\talent\Talent\obj\Debug\Talent.dll
+D:\Project\AT2\talent\Talent\obj\Debug\Talent.pdb

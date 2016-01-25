@@ -8,14 +8,6 @@ namespace Cwb.TalentSite.Controllers
 {
     public class ArtistController : Controller
     {
-        //public JsonResult QueryArtist()
-        //{
-            
-        //}
-        [Route("artist/{memberId}")]
-        public ActionResult QueryDetail(int memberId)
-        {
-            return Json(APIClient.Request("/artists/" + memberId),JsonRequestBehavior.AllowGet);
-        }
+
     }
 }

@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B811DDD-0902-4895-8B42-833B72FB1FAC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cwb.TalentSite</RootNamespace>
+    <AssemblyName>Cwb.TalentSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <WebGreaseLibPath>packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArtistController.cs" />
+    <Compile Include="Controllers\FilterController.cs" />
+    <Compile Include="Controllers\ShortlistController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\APIClient.cs" />
+    <Compile Include="Util\ConfigSettings.cs" />
+    <Compile Include="ViewModel\FilterViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="html\admin.html" />
+    <Content Include="html\compact.html" />
+    <Content Include="html\detail.html" />
+    <Content Include="html\index.html" />
+    <Content Include="html\login.html" />
+    <Content Include="html\partial\test.html" />
+    <Content Include="html\partial\_Artist.html" />
+    <Content Include="html\standard.html" />
+    <Content Include="images\at2.PNG" />
+    <Content Include="images\headshot1.jpg" />
+    <Content Include="images\headshot2.jpg" />
+    <Content Include="images\headshot3.jpg" />
+    <Content Include="images\headshot4.jpg" />
+    <Content Include="images\jing2.PNG" />
+    <Content Include="images\jing3.PNG" />
+    <Content Include="images\jing4.jpg" />
+    <Content Include="images\jing5.PNG" />
+    <Content Include="images\small.PNG" />
+    <Content Include="js\app\app.js" />
+    <Content Include="js\app\controllers\artistDetailController.js" />
+    <Content Include="js\app\controllers\artistListController.js" />
+    <Content Include="js\app\directives\artist.js" />
+    <Content Include="js\app\directives\embedSrc.js" />
+    <Content Include="js\app\directives\selectBox.js" />
+    <Content Include="js\app\filters\nameModel.js" />
+    <Content Include="js\app\filters\trusted.js" />
+    <Content Include="js\app\services\artistService.js" />
+    <Content Include="js\app\services\filterService.js" />
+    <Content Include="js\vendor\angular.UI\select.css" />
+    <Content Include="js\vendor\angular.UI\select.js" />
+    <Content Include="js\vendor\angular.UI\select.min.css" />
+    <Content Include="js\vendor\angular.UI\select.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-cookies.js" />
+    <Content Include="js\vendor\AngularJS\angular-cookies.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-route.js" />
+    <Content Include="js\vendor\AngularJS\angular-route.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-sanitize.js" />
+    <Content Include="js\vendor\AngularJS\angular-sanitize.min.js" />
+    <Content Include="js\vendor\AngularJS\angular.js" />
+    <Content Include="js\vendor\AngularJS\angular.min.js" />
+    <Content Include="js\vendor\blueimp-gallery\css\blueimp-gallery.min.css" />
+    <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.css" />
+    <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.min.css" />
+    <Content Include="js\vendor\blueimp-gallery\css\demo.css" />
+    <Content Include="js\vendor\blueimp-gallery\img\loading.gif" />
+    <Content Include="js\vendor\blueimp-gallery\js\bootstrap-image-gallery.js" />
+    <Content Include="js\vendor\blueimp-gallery\js\bootstrap-image-gallery.min.js" />
+    <Content Include="js\vendor\blueimp-gallery\js\demo.js" />
+    <Content Include="js\vendor\blueimp-gallery\js\jquery.blueimp-gallery.min.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap-sprockets.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\affix.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\alert.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\button.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\carousel.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\collapse.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\dropdown.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\modal.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\popover.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\scrollspy.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\tab.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\tooltip.js" />
+    <Content Include="js\vendor\bootstrap\bootstrap\transition.js" />
+    <Content Include="js\vendor\jquery\jquery-1.9.1.min.js" />
+    <Content Include="js\vendor\jquery\jquery-ui.min.js" />
+    <Content Include="js\vendor\ngDialog\js\ngDialog.js" />
+    <Content Include="js\vendor\ngDialog\js\ngDialog.min.js" />
+    <Content Include="js\vendor\ngDialog\style\myth\ngDialog-theme-default.css" />
+    <Content Include="js\vendor\ngDialog\style\myth\ngDialog-theme-plain.css" />
+    <Content Include="js\vendor\ngDialog\style\myth\ngDialog.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog-custom-width.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog-theme-default.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog-theme-default.min.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog-theme-plain.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog-theme-plain.min.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog.css" />
+    <Content Include="js\vendor\ngDialog\style\ngDialog.min.css" />
+    <Content Include="js\vendor\ngLazyImage\lazy-image-style.css" />
+    <Content Include="js\vendor\ngLazyImage\lazy-image-style.min.css" />
+    <Content Include="js\vendor\ngLazyImage\lazy-image.js" />
+    <Content Include="js\vendor\ngLazyImage\lazy-image.min.js" />
+    <Content Include="js\vendor\underscore\underscore-min.js" />
+    <Content Include="js\vendor\underscore\underscore.js" />
+    <Content Include="js\vendor\videoJs\video-js.css" />
+    <Content Include="js\vendor\videoJs\video-js.min.css" />
+    <Content Include="js\vendor\videoJs\video-js.swf" />
+    <Content Include="js\vendor\videoJs\video.js" />
+    <Content Include="js\vendor\videoJs\video.min.js" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\bootstrap_override.css" />
+    <Content Include="styles\font-awesome.min.css" />
+    <Content Include="styles\fonts.css" />
+    <Content Include="styles\ie.css" />
+    <Content Include="styles\pages\admin.css" />
+    <Content Include="styles\pages\compact.css" />
+    <Content Include="styles\pages\compcard.css" />
+    <Content Include="styles\pages\compcard2.css" />
+    <Content Include="styles\pages\detail.css" />
+    <Content Include="styles\pages\mixin\common.css" />
+    <Content Include="styles\pages\standard.css" />
+    <Content Include="styles\pages\test.css" />
+    <Content Include="styles\print.css" />
+    <Content Include="styles\screen.css" />
+    <Content Include="styles\variables.css" />
+    <Content Include="Views\index.html" />
+    <Content Include="Views\Pages\detail.html" />
+    <Content Include="Views\Pages\standard.html" />
+    <Content Include="Views\partial\_Artist.html" />
+    <Content Include="Views\partial\_compcard_1.html" />
+    <Content Include="Views\partial\_resumesection_p.html" />
+    <Content Include="Views\partial\_resumeSection_t.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="packages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="data\artist.json" />
+    <Content Include="data\data.json" />
+    <Content Include="data\filters.json" />
+    <Content Include="data\statistics.json" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\helvetica-67-medium-condensed.ttf" />
+    <Content Include="fonts\helvetica-neue-55-roman.ttf" />
+    <Content Include="fonts\helvetica-neue-65-medium.ttf" />
+    <Content Include="fonts\helvetica-neue-75-bold.otf" />
+    <Content Include="js\app\app.js.map" />
+    <Content Include="js\app\controllers\artistDetailController.js.map" />
+    <Content Include="js\app\controllers\artistListController.js.map" />
+    <Content Include="js\app\directives\artist.js.map" />
+    <Content Include="js\app\directives\embedSrc.js.map" />
+    <Content Include="js\app\directives\selectBox.js.map" />
+    <Content Include="js\app\filters\nameModel.js.map" />
+    <Content Include="js\app\filters\trusted.js.map" />
+    <Content Include="js\app\services\artistService.js.map" />
+    <Content Include="js\app\services\filterService.js.map" />
+    <Content Include="js\vendor\AngularJS\angular-cookies.min.js.map" />
+    <Content Include="js\vendor\AngularJS\angular-route.min.js.map" />
+    <Content Include="js\vendor\AngularJS\angular-sanitize.min.js.map" />
+    <Content Include="js\vendor\AngularJS\angular.min.js.map" />
+    <Content Include="js\vendor\underscore\underscore-min.map" />
+    <Content Include="js\vendor\videoJs\video.js.map" />
+    <Content Include="js\vendor\videoJs\video.min.js.map" />
+    <Content Include="app\app.coffee" />
+    <Content Include="app\controllers\artistDetailController.coffee" />
+    <Content Include="app\controllers\artistListController.coffee" />
+    <Content Include="app\directives\artist.coffee" />
+    <Content Include="app\directives\embedSrc.coffee" />
+    <Content Include="app\filters\nameModel.coffee" />
+    <Content Include="app\filters\trusted.coffee" />
+    <Content Include="app\services\artistService.coffee" />
+    <Content Include="app\services\filterService.coffee" />
+    <Content Include="sass\all.scss" />
+    <Content Include="sass\bootstrap_override.scss" />
+    <Content Include="sass\fonts.scss" />
+    <Content Include="sass\ie.scss" />
+    <Content Include="sass\pages\admin.scss" />
+    <Content Include="sass\pages\compact.scss" />
+    <Content Include="sass\pages\compcard.scss" />
+    <Content Include="sass\pages\compcard2.scss" />
+    <Content Include="sass\pages\detail.scss" />
+    <Content Include="sass\pages\mixin\common.scss" />
+    <Content Include="sass\pages\standard.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_alerts.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_buttons.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_center-block.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_forms.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_gradients.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_grid.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_image.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_labels.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_list-group.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_opacity.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_pagination.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_panels.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_resize.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_size.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_table-row.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_alerts.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_badges.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_breadcrumbs.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_button-groups.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_buttons.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_carousel.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_close.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_code.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_component-animations.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_dropdowns.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_forms.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_glyphicons.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_grid.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_input-groups.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_jumbotron.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_labels.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_list-group.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_media.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_mixins.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_modals.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_navbar.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_navs.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_normalize.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_pager.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_pagination.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_panels.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_popovers.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_print.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_progress-bars.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_responsive-embed.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_responsive-utilities.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_scaffolding.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_tables.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_theme.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_thumbnails.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_tooltip.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_type.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_utilities.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_variables.scss" />
+    <Content Include="sass\plugins\bootstrap\bootstrap\_wells.scss" />
+    <Content Include="sass\plugins\bootstrap\_bootstrap-compass.scss" />
+    <Content Include="sass\plugins\bootstrap\_bootstrap-mincer.scss" />
+    <Content Include="sass\plugins\bootstrap\_bootstrap-sprockets.scss" />
+    <Content Include="sass\plugins\bootstrap\_bootstrap.scss" />
+    <Content Include="sass\plugins\font-awesome\font-awesome.scss" />
+    <Content Include="sass\plugins\font-awesome\_animated.scss" />
+    <Content Include="sass\plugins\font-awesome\_bordered-pulled.scss" />
+    <Content Include="sass\plugins\font-awesome\_core.scss" />
+    <Content Include="sass\plugins\font-awesome\_fixed-width.scss" />
+    <Content Include="sass\plugins\font-awesome\_icons.scss" />
+    <Content Include="sass\plugins\font-awesome\_larger.scss" />
+    <Content Include="sass\plugins\font-awesome\_list.scss" />
+    <Content Include="sass\plugins\font-awesome\_mixins.scss" />
+    <Content Include="sass\plugins\font-awesome\_path.scss" />
+    <Content Include="sass\plugins\font-awesome\_rotated-flipped.scss" />
+    <Content Include="sass\plugins\font-awesome\_stacked.scss" />
+    <Content Include="sass\plugins\font-awesome\_variables.scss" />
+    <Content Include="sass\print.scss" />
+    <Content Include="sass\screen.scss" />
+    <Content Include="sass\variables.scss" />
+    <Content Include="styles\bootstrap_override.css.map" />
+    <Content Include="styles\fonts.css.map" />
+    <Content Include="styles\pages\admin.css.map" />
+    <Content Include="styles\pages\compact.css.map" />
+    <Content Include="styles\pages\compcard.css.map" />
+    <Content Include="styles\pages\compcard2.css.map" />
+    <Content Include="styles\pages\detail.css.map" />
+    <Content Include="styles\pages\mixin\common.css.map" />
+    <Content Include="styles\pages\standard.css.map" />
+    <Content Include="styles\pages\test.css.map" />
+    <Content Include="styles\variables.css.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40473</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40473/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

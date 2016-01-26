@@ -136,7 +136,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ArtistController.cs" />
+    <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Controllers\ShortlistController.cs" />
     <Compile Include="Global.asax.cs">
@@ -171,15 +171,41 @@
     <Content Include="images\jing5.PNG" />
     <Content Include="images\small.PNG" />
     <Content Include="js\app\app.js" />
-    <Content Include="js\app\controllers\artistDetailController.js" />
-    <Content Include="js\app\controllers\artistListController.js" />
-    <Content Include="js\app\directives\artist.js" />
-    <Content Include="js\app\directives\embedSrc.js" />
-    <Content Include="js\app\directives\selectBox.js" />
-    <Content Include="js\app\filters\nameModel.js" />
-    <Content Include="js\app\filters\trusted.js" />
-    <Content Include="js\app\services\artistService.js" />
-    <Content Include="js\app\services\filterService.js" />
+    <Content Include="js\app\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\artist.js" />
+    <Content Include="js\app\artist.min.js">
+      <DependentUpon>artist.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\artistDetailController.js" />
+    <Content Include="js\app\artistDetailController.min.js">
+      <DependentUpon>artistDetailController.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\artistListController.js" />
+    <Content Include="js\app\artistListController.min.js">
+      <DependentUpon>artistListController.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\artistService.js" />
+    <Content Include="js\app\artistService.min.js">
+      <DependentUpon>artistService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\embedSrc.js" />
+    <Content Include="js\app\embedSrc.min.js">
+      <DependentUpon>embedSrc.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\filterService.js" />
+    <Content Include="js\app\filterService.min.js">
+      <DependentUpon>filterService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\nameModel.js" />
+    <Content Include="js\app\nameModel.min.js">
+      <DependentUpon>nameModel.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\trusted.js" />
+    <Content Include="js\app\trusted.min.js">
+      <DependentUpon>trusted.js</DependentUpon>
+    </Content>
     <Content Include="js\vendor\angular.UI\select.css" />
     <Content Include="js\vendor\angular.UI\select.js" />
     <Content Include="js\vendor\angular.UI\select.min.css" />
@@ -243,9 +269,18 @@
     <Content Include="js\vendor\videoJs\video.min.js" />
     <Content Include="styles\bootstrap.min.css" />
     <Content Include="styles\bootstrap_override.css" />
+    <Content Include="styles\bootstrap_override.min.css">
+      <DependentUpon>bootstrap_override.css</DependentUpon>
+    </Content>
     <Content Include="styles\font-awesome.min.css" />
     <Content Include="styles\fonts.css" />
+    <Content Include="styles\fonts.min.css">
+      <DependentUpon>fonts.css</DependentUpon>
+    </Content>
     <Content Include="styles\ie.css" />
+    <Content Include="styles\ie.min.css">
+      <DependentUpon>ie.css</DependentUpon>
+    </Content>
     <Content Include="styles\pages\admin.css" />
     <Content Include="styles\pages\compact.css" />
     <Content Include="styles\pages\compcard.css" />
@@ -255,15 +290,24 @@
     <Content Include="styles\pages\standard.css" />
     <Content Include="styles\pages\test.css" />
     <Content Include="styles\print.css" />
+    <Content Include="styles\print.min.css">
+      <DependentUpon>print.css</DependentUpon>
+    </Content>
     <Content Include="styles\screen.css" />
+    <Content Include="styles\screen.min.css">
+      <DependentUpon>screen.css</DependentUpon>
+    </Content>
     <Content Include="styles\variables.css" />
+    <Content Include="styles\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <Content Include="Views\index.html" />
     <Content Include="Views\Pages\detail.html" />
     <Content Include="Views\Pages\standard.html" />
-    <Content Include="Views\partial\_Artist.html" />
-    <Content Include="Views\partial\_compcard_1.html" />
-    <Content Include="Views\partial\_resumesection_p.html" />
-    <Content Include="Views\partial\_resumeSection_t.html" />
+    <Content Include="static\partial\_artist.html" />
+    <Content Include="static\partial\_compcard_1.html" />
+    <Content Include="static\partial\_resumesection_p.html" />
+    <Content Include="static\partial\_resumeSection_t.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -297,16 +341,6 @@
     <Content Include="fonts\helvetica-neue-55-roman.ttf" />
     <Content Include="fonts\helvetica-neue-65-medium.ttf" />
     <Content Include="fonts\helvetica-neue-75-bold.otf" />
-    <Content Include="js\app\app.js.map" />
-    <Content Include="js\app\controllers\artistDetailController.js.map" />
-    <Content Include="js\app\controllers\artistListController.js.map" />
-    <Content Include="js\app\directives\artist.js.map" />
-    <Content Include="js\app\directives\embedSrc.js.map" />
-    <Content Include="js\app\directives\selectBox.js.map" />
-    <Content Include="js\app\filters\nameModel.js.map" />
-    <Content Include="js\app\filters\trusted.js.map" />
-    <Content Include="js\app\services\artistService.js.map" />
-    <Content Include="js\app\services\filterService.js.map" />
     <Content Include="js\vendor\AngularJS\angular-cookies.min.js.map" />
     <Content Include="js\vendor\AngularJS\angular-route.min.js.map" />
     <Content Include="js\vendor\AngularJS\angular-sanitize.min.js.map" />
@@ -435,6 +469,118 @@
     <Content Include="styles\pages\standard.css.map" />
     <Content Include="styles\pages\test.css.map" />
     <Content Include="styles\variables.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artist.js.map">
+      <DependentUpon>artist.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artist.min.js.map">
+      <DependentUpon>artist.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\embedSrc.js.map">
+      <DependentUpon>embedSrc.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\embedSrc.min.js.map">
+      <DependentUpon>embedSrc.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistDetailController.js.map">
+      <DependentUpon>artistDetailController.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistDetailController.min.js.map">
+      <DependentUpon>artistDetailController.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistListController.js.map">
+      <DependentUpon>artistListController.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistListController.min.js.map">
+      <DependentUpon>artistListController.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistService.js.map">
+      <DependentUpon>artistService.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\artistService.min.js.map">
+      <DependentUpon>artistService.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\filterService.js.map">
+      <DependentUpon>filterService.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\filterService.min.js.map">
+      <DependentUpon>filterService.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\app.js.map">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\print.css.map">
+      <DependentUpon>print.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\ie.css.map">
+      <DependentUpon>ie.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Artists\Standard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\nameModel.js.map">
+      <DependentUpon>nameModel.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\nameModel.min.js.map">
+      <DependentUpon>nameModel.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\trusted.js.map">
+      <DependentUpon>trusted.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\app\trusted.min.js.map">
+      <DependentUpon>trusted.min.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

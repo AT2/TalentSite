@@ -11,7 +11,7 @@ app.controller "artistDetailController",["$scope","artistService",
 
     $scope.init = ->
       artistService
-        .queryDetail("153208")
+        .queryDetail()
         .then(
           (data)->
             $scope.profile = data.Result

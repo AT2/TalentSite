@@ -1,9 +1,9 @@
-app.service "artistService",["$http","$q",
-  ($http,$q)->
+app.service "artistService",["$http","$q","API"
+  ($http,$q, API)->
     this.queryList = (filters)->
       deferred = $q.defer()
       $http
-        .get "../../data/data.json"
+        .get API.address+"/artists?apikey="+API.key
         .success(
           (data,status,headers,config)->
             deferred.resolve data

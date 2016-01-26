@@ -6,7 +6,7 @@ app.controller "artistListController",["$scope","artistService","filterService"
 
     $scope.init = ->
       artistService
-      .queryList("153208")
+      .queryList()
       .then(
         (data)->
           $scope.artists = data.Result.ArtistList

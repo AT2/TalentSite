@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html lang="en-au">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title></title>
-    <link rel="stylesheet" href="../../styles/all.css">
-    <link rel="stylesheet" href="../../styles/pages/standard.css" />
-    <script src="../../js/vendor/jquery/jquery-1.9.1.min.js"></script>
-    <script src="../../js/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="../../js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="../../js/vendor/underscore/underscore.js"></script>
-    <script src="../../js/vendor/angularJS/angular.js"></script>
-    <script src="../../js/vendor/angularJS/angular-route.js"></script>
-    <script src="../../js/vendor/angularJS/angular-sanitize.js"></script>
-    <script src="../../js/vendor/ngLazyImage/lazy-image.min.js"></script>
-    <script src="../../js/vendor/angular.UI/select.js"></script>
-    <script src="../../js/app/app.js"></script>
-    <script src="../../js/app/services/artistService.js"></script>
-    <script src="../../js/app/services/filterService.js"></script>
-    <script src="../../js/app/controllers/artistListController.js"></script>
-    <script src="../../js/app/directives/artist.js"></script>
-    <script src="../../js/app/filters/nameModel.js"></script>
-    <script src="../../data/statistics.json"></script>
-    <link rel="stylesheet" href="../../js/vendor/blueimp-gallery/css/blueimp-gallery.min.css" />
-    <link rel="stylesheet" href="../../js/vendor/ngLazyImage/lazy-image-style.min.css" />
-    <link rel="stylesheet" href="../../js/vendor/angular.UI/select.css" />
-    <script>
-        jQuery(document).ready(function(){
-            angular.bootstrap(document,["talent"]);
-        });
-    </script>
-</head>
-<body class="page-body">
-<header style="height:200px;"></header>
 <div>
     <div class="talent-content" ng-controller="artistListController" ng-init="init()">
         <!-- search begin -->
@@ -89,6 +51,3 @@
         <!-- list end-->
     </div>
 </div>
-<footer></footer>
-</body>
-</html>

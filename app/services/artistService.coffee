@@ -3,7 +3,7 @@ app.service "artistService",["$http","$q","API"
     this.queryList = (filters)->
       deferred = $q.defer()
       $http
-        .get API.address+"/artists?apikey="+API.key
+        .get API.address+"/artists?pageNum=10000&apikey="+API.key+"&"+filters
         .success(
           (data,status,headers,config)->
             deferred.resolve data
@@ -17,7 +17,7 @@ app.service "artistService",["$http","$q","API"
     this.queryDetail = (memberId) ->
       deferred = $q.defer()
       $http
-      .get "../../data/artist.json"
+      .get API.address+"/artists/"+memberId+"?apikey="+API.key
       .success(
         (data,status,headers,config)->
           deferred.resolve data

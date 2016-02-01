@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\AT2\talent</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.coffee">
+      <publishTime>01/27/2016 01:05:28</publishTime>
+    </File>
+    <File Include="app/controllers/artistDetailController.coffee">
+      <publishTime>01/27/2016 01:11:41</publishTime>
+    </File>
+    <File Include="app/controllers/artistListController.coffee">
+      <publishTime>01/28/2016 01:47:21</publishTime>
+    </File>
+    <File Include="app/directives/artist.coffee">
+      <publishTime>01/26/2016 15:11:19</publishTime>
+    </File>
+    <File Include="app/directives/embedSrc.coffee">
+      <publishTime>01/26/2016 14:27:48</publishTime>
+    </File>
+    <File Include="app/filters/nameModel.coffee">
+      <publishTime>01/26/2016 15:12:41</publishTime>
+    </File>
+    <File Include="app/filters/trusted.coffee">
+      <publishTime>01/26/2016 15:12:44</publishTime>
+    </File>
+    <File Include="app/services/artistService.coffee">
+      <publishTime>01/28/2016 00:17:52</publishTime>
+    </File>
+    <File Include="app/services/filterService.coffee">
+      <publishTime>01/26/2016 17:22:14</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>01/25/2016 17:28:45</publishTime>
+    </File>
+    <File Include="bin/Cwb.TalentSite.dll">
+      <publishTime>01/28/2016 02:37:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/25/2016 17:30:07</publishTime>
+    </File>
+    <File Include="bin/nunit.framework.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/25/2016 17:30:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/25/2016 17:30:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/25/2016 17:30:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/25/2016 17:28:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>01/25/2016 17:28:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/25/2016 17:28:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/25/2016 17:28:46</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/25/2016 17:08:19</publishTime>
+    </File>
+    <File Include="fonts/bootstrap/glyphicons-halflings-regular.eot">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/bootstrap/glyphicons-halflings-regular.svg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/bootstrap/glyphicons-halflings-regular.ttf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/bootstrap/glyphicons-halflings-regular.woff">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/bootstrap/glyphicons-halflings-regular.woff2">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/helvetica-67-medium-condensed.ttf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/helvetica-neue-55-roman.ttf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/helvetica-neue-65-medium.ttf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/helvetica-neue-75-bold.otf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/25/2016 17:15:19</publishTime>
+    </File>
+    <File Include="html/admin.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/compact.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/detail.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/index.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/login.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/partial/test.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/partial/_Artist.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="html/standard.html">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/at2.PNG">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/headshot1.jpg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/headshot2.jpg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/headshot3.jpg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/headshot4.jpg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/jing2.PNG">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/jing3.PNG">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/jing4.jpg">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/jing5.PNG">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="images/small.PNG">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/app/app.js">
+      <publishTime>01/26/2016 16:08:56</publishTime>
+    </File>
+    <File Include="js/app/app.js.map">
+      <publishTime>01/26/2016 16:08:56</publishTime>
+    </File>
+    <File Include="js/app/app.min.js">
+      <publishTime>01/26/2016 16:08:56</publishTime>
+    </File>
+    <File Include="js/app/app.min.js.map">
+      <publishTime>01/27/2016 01:05:29</publishTime>
+    </File>
+    <File Include="js/app/artist.js">
+      <publishTime>01/26/2016 15:11:19</publishTime>
+    </File>
+    <File Include="js/app/artist.js.map">
+      <publishTime>01/26/2016 15:11:19</publishTime>
+    </File>
+    <File Include="js/app/artist.min.js">
+      <publishTime>01/26/2016 15:11:19</publishTime>
+    </File>
+    <File Include="js/app/artist.min.js.map">
+      <publishTime>01/26/2016 15:11:20</publishTime>
+    </File>
+    <File Include="js/app/artistDetailController.js">
+      <publishTime>01/27/2016 01:11:41</publishTime>
+    </File>
+    <File Include="js/app/artistDetailController.js.map">
+      <publishTime>01/27/2016 01:11:41</publishTime>
+    </File>
+    <File Include="js/app/artistDetailController.min.js">
+      <publishTime>01/27/2016 01:11:36</publishTime>
+    </File>
+    <File Include="js/app/artistDetailController.min.js.map">
+      <publishTime>01/27/2016 01:11:41</publishTime>
+    </File>
+    <File Include="js/app/artistListController.js">
+      <publishTime>01/28/2016 01:47:16</publishTime>
+    </File>
+    <File Include="js/app/artistListController.js.map">
+      <publishTime>01/28/2016 01:47:16</publishTime>
+    </File>
+    <File Include="js/app/artistListController.min.js">
+      <publishTime>01/28/2016 01:47:16</publishTime>
+    </File>
+    <File Include="js/app/artistListController.min.js.map">
+      <publishTime>01/28/2016 01:47:21</publishTime>
+    </File>
+    <File Include="js/app/artistService.js">
+      <publishTime>01/28/2016 00:17:47</publishTime>
+    </File>
+    <File Include="js/app/artistService.js.map">
+      <publishTime>01/28/2016 00:17:47</publishTime>
+    </File>
+    <File Include="js/app/artistService.min.js">
+      <publishTime>01/28/2016 00:17:47</publishTime>
+    </File>
+    <File Include="js/app/artistService.min.js.map">
+      <publishTime>01/28/2016 00:17:52</publishTime>
+    </File>
+    <File Include="js/app/embedSrc.js">
+      <publishTime>01/26/2016 14:27:48</publishTime>
+    </File>
+    <File Include="js/app/embedSrc.js.map">
+      <publishTime>01/26/2016 14:27:48</publishTime>
+    </File>
+    <File Include="js/app/embedSrc.min.js">
+      <publishTime>01/26/2016 14:27:48</publishTime>
+    </File>
+    <File Include="js/app/embedSrc.min.js.map">
+      <publishTime>01/26/2016 14:27:48</publishTime>
+    </File>
+    <File Include="js/app/filterService.js">
+      <publishTime>01/26/2016 17:22:13</publishTime>
+    </File>
+    <File Include="js/app/filterService.js.map">
+      <publishTime>01/26/2016 17:22:13</publishTime>
+    </File>
+    <File Include="js/app/filterService.min.js">
+      <publishTime>01/26/2016 17:22:13</publishTime>
+    </File>
+    <File Include="js/app/filterService.min.js.map">
+      <publishTime>01/26/2016 17:22:14</publishTime>
+    </File>
+    <File Include="js/app/nameModel.js">
+      <publishTime>01/26/2016 15:12:41</publishTime>
+    </File>
+    <File Include="js/app/nameModel.js.map">
+      <publishTime>01/26/2016 15:12:41</publishTime>
+    </File>
+    <File Include="js/app/nameModel.min.js">
+      <publishTime>01/26/2016 15:12:42</publishTime>
+    </File>
+    <File Include="js/app/nameModel.min.js.map">
+      <publishTime>01/26/2016 15:12:42</publishTime>
+    </File>
+    <File Include="js/app/trusted.js">
+      <publishTime>01/26/2016 15:12:43</publishTime>
+    </File>
+    <File Include="js/app/trusted.js.map">
+      <publishTime>01/26/2016 15:12:43</publishTime>
+    </File>
+    <File Include="js/app/trusted.min.js">
+      <publishTime>01/26/2016 15:12:44</publishTime>
+    </File>
+    <File Include="js/app/trusted.min.js.map">
+      <publishTime>01/26/2016 15:12:44</publishTime>
+    </File>
+    <File Include="js/vendor/angular.UI/select.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/angular.UI/select.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/angular.UI/select.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/angular.UI/select.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-animate.js">
+      <publishTime>01/26/2016 16:10:14</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-animate.min.js">
+      <publishTime>01/26/2016 16:10:14</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-animate.min.js.map">
+      <publishTime>01/26/2016 16:10:14</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-cookies.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-cookies.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-cookies.min.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-route.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-route.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-route.min.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-sanitize.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-sanitize.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-sanitize.min.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular.min.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/loading-bar.min.js">
+      <publishTime>01/26/2016 15:53:46</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/css/blueimp-gallery.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/css/bootstrap-image-gallery.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/css/bootstrap-image-gallery.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/css/demo.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/img/loading.gif">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/js/bootstrap-image-gallery.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/js/bootstrap-image-gallery.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/js/demo.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap-sprockets.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/affix.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/alert.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/button.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/carousel.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/collapse.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/dropdown.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/modal.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/popover.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/scrollspy.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/tab.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/tooltip.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap/transition.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/jquery/jquery-1.9.1.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/jquery/jquery-ui.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/js/ngDialog.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/js/ngDialog.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/myth/ngDialog-theme-default.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/myth/ngDialog-theme-plain.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/myth/ngDialog.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog-custom-width.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog-theme-default.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog-theme-default.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog-theme-plain.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog-theme-plain.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngDialog/style/ngDialog.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngLazyImage/lazy-image-style.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngLazyImage/lazy-image-style.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngLazyImage/lazy-image.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/ngLazyImage/lazy-image.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/underscore/underscore-min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/underscore/underscore-min.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/underscore/underscore.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video-js.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video-js.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video-js.swf">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video.min.js">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="js/vendor/videoJs/video.min.js.map">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/25/2016 17:30:11</publishTime>
+    </File>
+    <File Include="sass/all.scss">
+      <publishTime>01/27/2016 19:26:03</publishTime>
+    </File>
+    <File Include="sass/bootstrap_override.scss">
+      <publishTime>01/26/2016 15:44:44</publishTime>
+    </File>
+    <File Include="sass/compact.scss">
+      <publishTime>01/28/2016 02:05:19</publishTime>
+    </File>
+    <File Include="sass/detail.scss">
+      <publishTime>01/28/2016 02:21:41</publishTime>
+    </File>
+    <File Include="sass/fonts.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/ie.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/pages/admin.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/pages/compact.scss">
+      <publishTime>01/26/2016 15:43:09</publishTime>
+    </File>
+    <File Include="sass/pages/compcard.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/pages/compcard2.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/pages/detail.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_alerts.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_background-variant.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_border-radius.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_center-block.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_clearfix.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_forms.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_gradients.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_grid-framework.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_grid.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_hide-text.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_image.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_labels.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_list-group.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_nav-divider.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_nav-vertical-align.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_opacity.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_pagination.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_panels.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_progress-bar.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_reset-filter.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_reset-text.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_resize.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_responsive-visibility.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_size.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_tab-focus.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_table-row.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_text-emphasis.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_text-overflow.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/mixins/_vendor-prefixes.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_alerts.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_badges.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_breadcrumbs.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_button-groups.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_buttons.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_carousel.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_close.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_code.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_component-animations.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_dropdowns.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_forms.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_glyphicons.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_grid.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_input-groups.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_jumbotron.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_labels.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_list-group.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_media.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_mixins.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_modals.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_navbar.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_navs.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_normalize.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_pager.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_pagination.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_panels.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_popovers.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_print.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_progress-bars.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_responsive-embed.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_responsive-utilities.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_scaffolding.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_tables.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_theme.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_thumbnails.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_tooltip.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_type.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_utilities.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_variables.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/bootstrap/_wells.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/_bootstrap-compass.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/_bootstrap-mincer.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/_bootstrap-sprockets.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/bootstrap/_bootstrap.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass.css">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass.css.map">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass.min.css">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass.scss">
+      <publishTime>01/26/2016 15:42:43</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_appearance.scss">
+      <publishTime>01/26/2016 15:42:43</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_background-clip.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_background-origin.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_background-size.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_border-radius.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_box-shadow.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_box-sizing.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_box.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_columns.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_filter.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_font-face.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_hyphenation.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_images.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_inline-block.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_opacity.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_pie.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_regions.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_shared.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_text-shadow.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_transform-legacy.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_transform.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_transition.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/css3/_user-interface.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/layout/_grid-background.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/layout/_sticky-footer.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/layout/_stretching.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/reset/_utilities-legacy.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/reset/_utilities.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/links/_hover-link.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/links/_link-colors.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/links/_unstyled-link.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/lists/_bullets.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/lists/_horizontal-list.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/lists/_inline-block-list.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/lists/_inline-list.scss">
+      <publishTime>01/26/2016 15:42:44</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/text/_ellipsis.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/text/_force-wrap.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/text/_nowrap.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/text/_replacement.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/_links.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/_lists.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/_text.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/typography/_vertical_rhythm.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/color/_contrast.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_clearfix.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_float.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_hacks.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_min.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_reset.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_tabs.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/general/_tag-cloud.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/links/_hover-link.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/links/_link-colors.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/links/_unstyled-link.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/lists/_bullets.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/lists/_horizontal-list.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/lists/_inline-block-list.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/lists/_inline-list.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/sprites/_base.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/sprites/_sprite-img.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/tables/_alternating-rows-and-columns.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/tables/_borders.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/tables/_scaffolding.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/text/_ellipsis.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/text/_nowrap.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/text/_replacement.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_color.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_general.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_links.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_lists.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_print.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_sprites.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_tables.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/utilities/_text.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_css3.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_layout.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_reset-legacy.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_reset.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_support.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_typography.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/compass/compass/_utilities.scss">
+      <publishTime>01/26/2016 15:42:45</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/font-awesome.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_animated.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_bordered-pulled.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_core.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_fixed-width.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_icons.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_larger.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_list.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_mixins.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_path.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_rotated-flipped.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_stacked.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/plugins/font-awesome/_variables.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/print.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/screen.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="sass/standard.scss">
+      <publishTime>01/28/2016 01:31:43</publishTime>
+    </File>
+    <File Include="sass/variables.scss">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="static/partial/_artist.html">
+      <publishTime>01/27/2016 16:47:36</publishTime>
+    </File>
+    <File Include="static/partial/_compcard_1.html">
+      <publishTime>01/22/2016 15:41:41</publishTime>
+    </File>
+    <File Include="static/partial/_resumesection_p.html">
+      <publishTime>01/22/2016 15:41:41</publishTime>
+    </File>
+    <File Include="static/partial/_resumeSection_t.html">
+      <publishTime>01/22/2016 15:41:41</publishTime>
+    </File>
+    <File Include="styles/all.css">
+      <publishTime>01/28/2016 02:37:19</publishTime>
+    </File>
+    <File Include="styles/all.css.map">
+      <publishTime>01/28/2016 02:37:19</publishTime>
+    </File>
+    <File Include="styles/all.min.css">
+      <publishTime>01/27/2016 19:26:10</publishTime>
+    </File>
+    <File Include="styles/bootstrap.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="styles/bootstrap_override.css">
+      <publishTime>01/28/2016 02:37:09</publishTime>
+    </File>
+    <File Include="styles/bootstrap_override.css.map">
+      <publishTime>01/28/2016 02:37:09</publishTime>
+    </File>
+    <File Include="styles/bootstrap_override.min.css">
+      <publishTime>01/26/2016 15:44:43</publishTime>
+    </File>
+    <File Include="styles/compact.css">
+      <publishTime>01/28/2016 02:37:13</publishTime>
+    </File>
+    <File Include="styles/compact.css.map">
+      <publishTime>01/28/2016 02:37:13</publishTime>
+    </File>
+    <File Include="styles/compact.min.css">
+      <publishTime>01/28/2016 01:57:42</publishTime>
+    </File>
+    <File Include="styles/detail.css">
+      <publishTime>01/28/2016 02:37:12</publishTime>
+    </File>
+    <File Include="styles/detail.css.map">
+      <publishTime>01/28/2016 02:37:12</publishTime>
+    </File>
+    <File Include="styles/detail.min.css">
+      <publishTime>01/28/2016 02:21:42</publishTime>
+    </File>
+    <File Include="styles/font-awesome.min.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="styles/fonts.css">
+      <publishTime>01/28/2016 02:37:06</publishTime>
+    </File>
+    <File Include="styles/fonts.css.map">
+      <publishTime>01/28/2016 02:37:06</publishTime>
+    </File>
+    <File Include="styles/fonts.min.css">
+      <publishTime>01/26/2016 14:37:59</publishTime>
+    </File>
+    <File Include="styles/ie.css">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="styles/ie.css.map">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="styles/ie.min.css">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="styles/loading-bar.min.css">
+      <publishTime>01/26/2016 16:02:13</publishTime>
+    </File>
+    <File Include="styles/print.css">
+      <publishTime>01/26/2016 14:37:59</publishTime>
+    </File>
+    <File Include="styles/print.css.map">
+      <publishTime>01/26/2016 14:37:59</publishTime>
+    </File>
+    <File Include="styles/print.min.css">
+      <publishTime>01/26/2016 14:37:59</publishTime>
+    </File>
+    <File Include="styles/screen.css">
+      <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="styles/screen.min.css">
+      <publishTime>01/26/2016 14:41:19</publishTime>
+    </File>
+    <File Include="styles/standard.css">
+      <publishTime>01/28/2016 02:37:10</publishTime>
+    </File>
+    <File Include="styles/standard.css.map">
+      <publishTime>01/28/2016 02:37:10</publishTime>
+    </File>
+    <File Include="styles/standard.min.css">
+      <publishTime>01/28/2016 01:31:41</publishTime>
+    </File>
+    <File Include="styles/variables.css">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="styles/variables.css.map">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="styles/variables.min.css">
+      <publishTime>01/26/2016 14:38:00</publishTime>
+    </File>
+    <File Include="Views/Artists/Compact.cshtml">
+      <publishTime>01/28/2016 02:05:39</publishTime>
+    </File>
+    <File Include="Views/Artists/Detail.cshtml">
+      <publishTime>01/28/2016 02:13:19</publishTime>
+    </File>
+    <File Include="Views/Artists/Standard.cshtml">
+      <publishTime>01/28/2016 01:38:39</publishTime>
+    </File>
+    <File Include="Views/index.html">
+      <publishTime>01/26/2016 14:59:34</publishTime>
+    </File>
+    <File Include="Views/Pages/detail.html">
+      <publishTime>01/26/2016 15:07:25</publishTime>
+    </File>
+    <File Include="Views/Pages/standard.html">
+      <publishTime>01/26/2016 14:17:39</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/27/2016 00:56:52</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>01/26/2016 14:55:20</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/26/2016 14:43:49</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/28/2016 02:27:48</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

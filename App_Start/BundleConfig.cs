@@ -18,15 +18,20 @@ namespace Cwb.TalentSite
                "~/js/vendor/angularJS/angular.min.js",
                "~/js/vendor/angularJS/angular-route.min.js",
                "~/js/vendor/angularJS/angular-sanitize.min.js",
+               "~/js/vendor/angularJS/angular-animate.min.js",
                "~/js/vendor/ngLazyImage/lazy-image.min.js",
-               "~/js/vendor/angular.UI/select.min.js"
+               "~/js/vendor/angular.UI/select.min.js",
+               "~/js/vendor/angularJS/loading-bar.min.js"
                ));
             bundles.Add(new ScriptBundle("~/bundles/angular-talent").Include(
               "~/js/app/*.js"
               ));
             bundles.Add(new StyleBundle("~/styles").Include(
-                "~/styles/all.css"
+                "~/styles/all.css",
+                "~/styles/loading-bar.min.css"
             ));
+            BundleTable.EnableOptimizations = false;
+ 
         }
     }
 }

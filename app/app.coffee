@@ -1,4 +1,4 @@
-window.app = angular.module "talent",["ngSanitize","ngRoute","afkl.lazyImage","ui.select"]
+window.app = angular.module "talent",["chieffancypants.loadingBar","ngAnimate", "ngSanitize","ngRoute","afkl.lazyImage","ui.select"]
 #config
 app.constant("API", {
     address: "http://api.at2casting.com/api"

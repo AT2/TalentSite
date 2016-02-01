@@ -23,6 +23,7 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <WebGreaseLibPath>packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,6 +42,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
@@ -65,6 +68,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -74,8 +78,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -112,9 +115,7 @@
       <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -125,6 +126,7 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
@@ -137,7 +139,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ArtistsController.cs" />
-    <Compile Include="Controllers\FilterController.cs" />
+    <Compile Include="Controllers\FiltersController.cs" />
     <Compile Include="Controllers\ShortlistController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,6 +212,8 @@
     <Content Include="js\vendor\angular.UI\select.js" />
     <Content Include="js\vendor\angular.UI\select.min.css" />
     <Content Include="js\vendor\angular.UI\select.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-animate.js" />
+    <Content Include="js\vendor\AngularJS\angular-animate.min.js" />
     <Content Include="js\vendor\AngularJS\angular-cookies.js" />
     <Content Include="js\vendor\AngularJS\angular-cookies.min.js" />
     <Content Include="js\vendor\AngularJS\angular-route.js" />
@@ -218,6 +222,7 @@
     <Content Include="js\vendor\AngularJS\angular-sanitize.min.js" />
     <Content Include="js\vendor\AngularJS\angular.js" />
     <Content Include="js\vendor\AngularJS\angular.min.js" />
+    <Content Include="js\vendor\AngularJS\loading-bar.min.js" />
     <Content Include="js\vendor\blueimp-gallery\css\blueimp-gallery.min.css" />
     <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.css" />
     <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.min.css" />
@@ -267,10 +272,24 @@
     <Content Include="js\vendor\videoJs\video-js.swf" />
     <Content Include="js\vendor\videoJs\video.js" />
     <Content Include="js\vendor\videoJs\video.min.js" />
+    <Content Include="sass\plugins\compass\compass.css" />
+    <Content Include="sass\plugins\compass\compass.min.css" />
+    <Content Include="styles\all.css" />
+    <Content Include="styles\all.min.css">
+      <DependentUpon>all.css</DependentUpon>
+    </Content>
     <Content Include="styles\bootstrap.min.css" />
     <Content Include="styles\bootstrap_override.css" />
     <Content Include="styles\bootstrap_override.min.css">
       <DependentUpon>bootstrap_override.css</DependentUpon>
+    </Content>
+    <Content Include="styles\compact.css" />
+    <Content Include="styles\compact.min.css">
+      <DependentUpon>compact.css</DependentUpon>
+    </Content>
+    <Content Include="styles\detail.css" />
+    <Content Include="styles\detail.min.css">
+      <DependentUpon>detail.css</DependentUpon>
     </Content>
     <Content Include="styles\font-awesome.min.css" />
     <Content Include="styles\fonts.css" />
@@ -281,14 +300,7 @@
     <Content Include="styles\ie.min.css">
       <DependentUpon>ie.css</DependentUpon>
     </Content>
-    <Content Include="styles\pages\admin.css" />
-    <Content Include="styles\pages\compact.css" />
-    <Content Include="styles\pages\compcard.css" />
-    <Content Include="styles\pages\compcard2.css" />
-    <Content Include="styles\pages\detail.css" />
-    <Content Include="styles\pages\mixin\common.css" />
-    <Content Include="styles\pages\standard.css" />
-    <Content Include="styles\pages\test.css" />
+    <Content Include="styles\loading-bar.min.css" />
     <Content Include="styles\print.css" />
     <Content Include="styles\print.min.css">
       <DependentUpon>print.css</DependentUpon>
@@ -296,6 +308,10 @@
     <Content Include="styles\screen.css" />
     <Content Include="styles\screen.min.css">
       <DependentUpon>screen.css</DependentUpon>
+    </Content>
+    <Content Include="styles\standard.css" />
+    <Content Include="styles\standard.min.css">
+      <DependentUpon>standard.css</DependentUpon>
     </Content>
     <Content Include="styles\variables.css" />
     <Content Include="styles\variables.min.css">
@@ -319,15 +335,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\Api\" />
+    <Folder Include="data\" />
     <Folder Include="Models\" />
     <Folder Include="packages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="data\artist.json" />
-    <Content Include="data\data.json" />
-    <Content Include="data\filters.json" />
-    <Content Include="data\statistics.json" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
@@ -366,8 +379,7 @@
     <Content Include="sass\pages\compcard.scss" />
     <Content Include="sass\pages\compcard2.scss" />
     <Content Include="sass\pages\detail.scss" />
-    <Content Include="sass\pages\mixin\common.scss" />
-    <Content Include="sass\pages\standard.scss" />
+    <Content Include="sass\standard.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_alerts.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_background-variant.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_border-radius.scss" />
@@ -460,14 +472,6 @@
     <Content Include="sass\variables.scss" />
     <Content Include="styles\bootstrap_override.css.map" />
     <Content Include="styles\fonts.css.map" />
-    <Content Include="styles\pages\admin.css.map" />
-    <Content Include="styles\pages\compact.css.map" />
-    <Content Include="styles\pages\compcard.css.map" />
-    <Content Include="styles\pages\compcard2.css.map" />
-    <Content Include="styles\pages\detail.css.map" />
-    <Content Include="styles\pages\mixin\common.css.map" />
-    <Content Include="styles\pages\standard.css.map" />
-    <Content Include="styles\pages\test.css.map" />
     <Content Include="styles\variables.css.map" />
   </ItemGroup>
   <ItemGroup>
@@ -581,6 +585,129 @@
     <Content Include="js\app\trusted.min.js.map">
       <DependentUpon>trusted.min.js</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\plugins\compass\compass.css.map" />
+    <Content Include="sass\plugins\compass\compass.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_appearance.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_background-clip.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_background-origin.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_background-size.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_border-radius.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_box-shadow.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_box-sizing.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_box.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_columns.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_filter.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_font-face.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_hyphenation.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_images.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_inline-block.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_opacity.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_pie.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_regions.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_shared.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_text-shadow.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_transform-legacy.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_transform.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_transition.scss" />
+    <Content Include="sass\plugins\compass\compass\css3\_user-interface.scss" />
+    <Content Include="sass\plugins\compass\compass\layout\_grid-background.scss" />
+    <Content Include="sass\plugins\compass\compass\layout\_sticky-footer.scss" />
+    <Content Include="sass\plugins\compass\compass\layout\_stretching.scss" />
+    <Content Include="sass\plugins\compass\compass\reset\_utilities-legacy.scss" />
+    <Content Include="sass\plugins\compass\compass\reset\_utilities.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\links\_hover-link.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\links\_link-colors.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\links\_unstyled-link.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\lists\_bullets.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\lists\_horizontal-list.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\lists\_inline-block-list.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\lists\_inline-list.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\text\_ellipsis.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\text\_force-wrap.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\text\_nowrap.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\text\_replacement.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\_links.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\_lists.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\_text.scss" />
+    <Content Include="sass\plugins\compass\compass\typography\_vertical_rhythm.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\color\_contrast.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_clearfix.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_float.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_hacks.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_min.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_reset.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_tabs.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\general\_tag-cloud.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\links\_hover-link.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\links\_link-colors.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\links\_unstyled-link.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\lists\_bullets.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\lists\_horizontal-list.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\lists\_inline-block-list.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\lists\_inline-list.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\sprites\_base.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\sprites\_sprite-img.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\tables\_alternating-rows-and-columns.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\tables\_borders.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\tables\_scaffolding.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\text\_ellipsis.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\text\_nowrap.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\text\_replacement.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_color.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_general.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_links.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_lists.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_print.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_sprites.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_tables.scss" />
+    <Content Include="sass\plugins\compass\compass\utilities\_text.scss" />
+    <Content Include="sass\plugins\compass\compass\_css3.scss" />
+    <Content Include="sass\plugins\compass\compass\_layout.scss" />
+    <Content Include="sass\plugins\compass\compass\_reset-legacy.scss" />
+    <Content Include="sass\plugins\compass\compass\_reset.scss" />
+    <Content Include="sass\plugins\compass\compass\_support.scss" />
+    <Content Include="sass\plugins\compass\compass\_typography.scss" />
+    <Content Include="sass\plugins\compass\compass\_utilities.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\compact.css.map">
+      <DependentUpon>compact.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\all.css.map">
+      <DependentUpon>all.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\vendor\AngularJS\angular-animate.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\standard.css.map">
+      <DependentUpon>standard.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Artists\Detail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\detail.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\detail.css.map">
+      <DependentUpon>detail.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Artists\Compact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\compact.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\talent site.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

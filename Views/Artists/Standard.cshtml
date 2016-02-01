@@ -5,16 +5,16 @@
             });
     </script>
 }
-<link rel="stylesheet" href="/styles/pages/standard.css" />
+<link rel="stylesheet" href="/styles/standard.css" />
 <link rel="stylesheet" href="/js/vendor/ngLazyImage/lazy-image-style.min.css" />
 <link rel="stylesheet" href="/js/vendor/angular.UI/select.css" />
 <div>
-    <div class="talent-content" ng-controller="artistListController" ng-init="init()">
+    <div class="talent-content" ng-controller="artistListController" ng-init="init('Standard')">
         <!-- search begin -->
         <section class="section-search">
             <div class="search-bar">
                 <div>
-                    <span class="center-block text-center">{{artists.length}} Artists Found</span>
+                    <span class="center-block text-center">{{filteredArtists.length}} Artists Found</span>
                 </div>
             </div>
 
@@ -34,7 +34,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="filter" ng-repeat=" filter in filters">
-                            <ui-select theme="bootstrap" ng-model="filter.selectedItem" ng-disabled="filter.Value.length < 2">
+                            <ui-select theme="bootstrap" ng-model="filter.selectedItem" ng-disabled="filter.Value.length < 2" >
                                 <ui-select-match placeholder="{{filter.Key}}">{{$select.selected.Key}}</ui-select-match>
                                 <ui-select-choices repeat="item in filter.Value | filter: $select.search">
                                     <span ng-bind-html="item.Key | highlight: $select.search"></span>
@@ -42,7 +42,7 @@
                             </ui-select>
                         </div>
                         <div class="submit">
-                            <a class="btn btn-primary btn-block">Serach</a>
+                            <a class="btn btn-primary btn-block" ng-click="search()">Serach</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
         <section class="section-list">
             <div class="container-fluid">
                 <div class="row">
-                    <artist ng-repeat="artist in artists | filter:nameFilter" intro="artist">
+                    <artist ng-repeat="artist in filteredArtists = (artists | filter:nameFilter | filter: selectedFilters | filter: ageRangeFilter)" intro="artist">
                     </artist>
                 </div>
             </div>

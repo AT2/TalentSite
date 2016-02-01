@@ -1,0 +1,141 @@
+@import "plugins/compass/compass";
+@import "plugins/bootstrap/bootstrap/_variables.scss";
+@import "plugins/bootstrap/bootstrap/mixins/_grid-framework.scss";
+@import "plugins/bootstrap/bootstrap/mixins/_grid.scss";
+@import "plugins/font-awesome/font-awesome.scss";
+
+.talent-content {
+    margin-top: 150px;
+}
+/**section-search begin*/
+.section-search {
+    .search-bar {
+        padding: 0 10%;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        background-color: #f6f6f6;
+    }
+}
+/**section-search end*/
+.section-content {
+    padding: 20px 10% 0;
+    display: table;
+    text-align: right;
+
+    .section-filter {
+        display: table-cell;
+        width: 200px;
+        padding-right: 40px;
+        vertical-align: top;
+
+        @media(max-width: 320px) {
+            width: 120px;
+            padding-right: 10px;
+        }
+
+        .btn-search {
+            margin-top: 10px;
+        }
+
+        h6 {
+            font-weight: bold;
+            line-height: 14px;
+        }
+        button {
+            height: 34px;
+        }
+        dl.filter-selected{
+             dt {
+                font-weight: normal;
+
+                a span {
+                    @extend .fa;
+                    @extend .fa-minus-circle;
+                    position: absolute;
+                    right: -15px;
+                    top: 1px;
+                }
+            }
+
+            a {
+                @include unstyled-link();
+                cursor: pointer;
+                position: relative;
+            }
+        }
+
+        dl.filter-container {
+            dt {
+                font-weight: normal;
+
+                a span {
+                    @extend .fa;
+                    @extend .fa-minus-square;
+                    position: absolute;
+                    right: -15px;
+                    top: 1px;
+                }
+            }
+
+            a {
+                @include unstyled-link();
+                @include link-colors(#999,#000);
+                cursor: pointer;
+                position: relative;
+                &.selected{
+                    color:#000;
+                }
+            }
+
+            &.filter-collapse {
+                dt a span {
+                    @extend .fa-plus-square;
+                }
+
+                dd a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .section-thumbs {
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+
+        .artist {
+            @include make-xs-column(12);
+            @include make-sm-column(3);
+            @include make-md-column(2,15px);
+            a{
+                @include unstyled-link();
+            }
+
+            .title {
+                padding-top: 5px;
+
+                .artistName {
+                    display:block;
+                    text-transform: uppercase;
+                    font-size:12px;
+                    overflow:hidden;
+                    white-space: nowrap;
+                }
+                .info{
+                    float:right;
+                    .profile-icon {
+                        margin: 5px 0 0 5px;
+                        color: #000;
+                        cursor: pointer;
+                        font-size:12px;
+                        &:hover {
+                            @include opacity(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

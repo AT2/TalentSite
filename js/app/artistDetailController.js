@@ -11,7 +11,7 @@
       resumeVideoPlayer = null;
       resumeAudioPlayer = null;
       $scope.init = function() {
-        artistService.queryDetail().then(function(data) {
+        artistService.queryDetail(window.memberId).then(function(data) {
           $scope.profile = data.Result;
         });
       };

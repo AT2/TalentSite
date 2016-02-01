@@ -1,4 +1,4 @@
-@import "compass";
+@import "plugins/compass/compass";
 $brand-primary: #2c2e2f;
 .btn{
   @include border-radius(0,0);

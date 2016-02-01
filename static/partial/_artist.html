@@ -1,11 +1,29 @@
 <div class="artist">
-    <div afkl-lazy-image="http://app.at2casting.com/au/upload/photo/{{intro.PhotoFullPath}}h.jpg"
-         class="afkl-lazy-wrapper"></div>
-    <div class="info">
-        <span class="pull-left artistName" title='{{intro.FirstName}} {{intro.LastName | nameModel:"FULL"}}'>{{intro.FirstName}} {{intro.LastName | nameModel:"FULL"}}</span>
-        <span class="fa fa-newspaper-o pull-right profile-icon" ng-show="{{intro.HaveCompCard}}" title="Comp Card"></span>
-        <span class="fa fa-file-text pull-right profile-icon" ng-show="{{intro.HaveResume}}" title="Resume"></span>
-        <span class="fa fa-music pull-right profile-icon" ng-show="{{intro.HaveAudio}}" title="Audio Showreel"></span>
-        <span class="fa fa-video-camera pull-right profile-icon" ng-show="{{intro.HaveVideo}}" title="Video Showreel"></span>
+    <a href="/Artists/{{intro.MemberID}}">
+        <div afkl-lazy-image="http://app.at2casting.com/au/upload/photo/{{intro.PhotoFullPath}}h.jpg"
+             class="afkl-lazy-wrapper"></div>
+    </a>
+    <div class="title">
+        <div class="info">
+            <!--
+            <a href="/Artists/{{intro.MemberID}}#compcard">
+                <span class="fa fa-newspaper-o pull-right profile-icon" ng-show="{{intro.HaveCompCard}}" title="Comp Card"></span>
+            </a>
+            <a href="/Artists/{{intro.MemberID}}#resume">
+                <span class="fa fa-file-text pull-right profile-icon" ng-show="{{intro.HaveResume}}" title="Resume"></span>
+            </a>
+            -->
+            <a href="/Artists/{{intro.MemberID}}">
+                <span class="fa fa-plane profile-icon" ng-show="!{{intro.IsAvailable}}" title="Avaiable"></span>
+            </a>
+            <a href="/Artists/{{intro.MemberID}}#video">
+                <span class="fa fa-video-camera profile-icon" ng-show="{{intro.HaveVideo}}" title="Video Showreel"></span>
+            </a>
+            <a href="/Artists/{{intro.MemberID}}#audio">
+                <span class="fa fa-music profile-icon" ng-show="{{intro.HaveAudio}}" title="Audio Showreel"></span>
+            </a>
+            
+        </div>
+        <span class="artistName" title='{{intro.FirstName}} {{intro.LastName | nameModel:"FULL"}}'>{{intro.FirstName}} {{intro.LastName | nameModel:"FULL"}}</span>
     </div>
 </div>

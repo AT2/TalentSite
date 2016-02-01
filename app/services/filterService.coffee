@@ -3,7 +3,7 @@ app.service "filterService",["$http","$q",
     this.queryFilters = ()->
       deferred = $q.defer()
       $http
-      .get "/data/filters.json"
+      .get "/api/filters"
       .success(
         (data,status,headers,config)->
           deferred.resolve data

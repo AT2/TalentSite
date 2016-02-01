@@ -1,0 +1,180 @@
+/*search section begin */
+.section-search {
+  /*search section end*/
+}
+.section-search .search-bar {
+  padding: 0 10%;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+.section-search .search-filter-head {
+  padding: 10px 10%;
+  overflow: hidden;
+  border-bottom: solid 1px #efefef;
+}
+.section-search .search-filter-head a:first-child {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.section-search .search-filter-head a:first-child:hover {
+  text-decoration: underline;
+}
+.section-search .search-filter-head .input-group {
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .section-search .search-filter-head .input-group {
+    width: 50%;
+  }
+}
+.section-search .search-filter-head button {
+  height: 34px;
+}
+.section-search .search-filters {
+  padding: 10px 10%;
+}
+.section-search .search-filters .filter {
+  margin-bottom: 5px;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .section-search .search-filters .filter {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 992px) {
+  .section-search .search-filters .filter {
+    float: left;
+    width: 25%;
+  }
+}
+.section-search .search-filters .submit {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .section-search .search-filters .submit {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 768px) {
+  .section-search .search-filters .submit {
+    margin-left: 66.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .section-search .search-filters .submit {
+    margin-left: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .section-search .search-filters .submit {
+    float: left;
+    width: 25%;
+  }
+}
+
+/* gallery begin */
+.section-list {
+  padding: 20px 5%;
+}
+.section-list .artist {
+  margin-bottom: 15px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .section-list .artist {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 992px) {
+  .section-list .artist {
+    float: left;
+    width: 25%;
+  }
+}
+.section-list .artist a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+.section-list .artist a:active, .section-list .artist a:focus {
+  outline: none;
+}
+.section-list .artist .title {
+  padding-top: 5px;
+}
+.section-list .artist .title .artistName {
+  display: block;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section-list .artist .title .info {
+  float: right;
+}
+.section-list .artist .title .info .profile-icon {
+  margin: 5px 0 0 5px;
+  color: #000;
+  cursor: pointer;
+}
+.section-list .artist .title .info .profile-icon:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+/* gallery end */
+
+/*# sourceMappingURL=standard.css.map */

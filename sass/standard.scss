@@ -1,0 +1,103 @@
+@import "plugins/compass/compass";
+@import "plugins/bootstrap/bootstrap/_variables.scss";
+@import "plugins/bootstrap/bootstrap/mixins/_grid-framework.scss";
+@import "plugins/bootstrap/bootstrap/mixins/_grid.scss";
+
+/*search section begin */
+.section-search {
+    .search-bar {
+        padding: 0 10%;
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        background-color: #f6f6f6;
+    }
+
+    .search-filter-head {
+        padding: 10px 10%;
+        overflow: hidden;
+        border-bottom: solid 1px #efefef;
+
+        a:first-child {
+            font-size: 14px;
+            line-height: 30px;
+            text-transform: uppercase;
+            @include hover-link;
+        }
+
+        .input-group {
+            width: 300px;
+
+            @media(max-width:768px) {
+                width: 50%;
+            }
+        }
+
+        button {
+            height: 34px;
+        }
+    }
+
+    .search-filters {
+        padding: 10px 10%;
+
+        .filter {
+            margin-bottom: 5px;
+            @include make-xs-column(6);
+            @include make-sm-column(4);
+            @include make-md-column(3);
+        }
+
+        .submit {
+            @include make-xs-column(6);
+            @include make-xs-column-offset(6);
+            @include make-sm-column(4);
+            @include make-sm-column-offset(8);
+            @include make-md-column-offset(9);
+            @include make-md-column(3);
+        }
+    }
+    /*search section end*/
+}
+/* gallery begin */
+.section-list {
+    padding: 20px 5%;
+
+    .artist {
+        margin-bottom: 15px;
+        @include inline-block();
+        @include make-xs-column(6);
+        @include make-sm-column(4);
+        @include make-md-column(3);
+
+        a {
+            @include unstyled-link();
+        }
+
+        .title {
+            padding-top: 5px;
+
+            .artistName {
+                display: block;
+                text-transform: uppercase;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .info {
+                float: right;
+
+                .profile-icon {
+                    margin: 5px 0 0 5px;
+                    color: #000;
+                    cursor: pointer;
+
+                    &:hover {
+                        @include opacity(0.9);
+                    }
+                }
+            }
+        }
+    }
+}
+/* gallery end */

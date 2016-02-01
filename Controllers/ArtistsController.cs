@@ -8,17 +8,21 @@ namespace Cwb.TalentSite.Controllers
 {
     public class ArtistsController : Controller
     {
+        [Route("Artists/Standard")]
         public ActionResult Standard()
         {
             return View("Standard");
         }
+        [Route("Artists/Compact")]
         public ActionResult Compact()
         {
-            return null;
+            return View("Compact");
         }
-        public ActionResult Detail()
+        [Route("Artists/{memberId}")]
+        public ActionResult Detail(int memberId)
         {
-            return null;
+            ViewBag.MemberId = memberId;
+            return View("Detail");
         }
     }
 }

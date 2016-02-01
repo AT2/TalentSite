@@ -1,3 +1,14 @@
+.btn {
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 / 0;
+  border-radius: 0 / 0;
+  outline: none;
+}
 
+.form-control {
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 / 0;
+  border-radius: 0 / 0;
+}
 
 /*# sourceMappingURL=bootstrap_override.css.map */

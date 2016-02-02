@@ -1,0 +1,1257 @@
+﻿{
+  "Description": "success",
+  "Result": {
+    "PhotoPath": "http://app.at2casting.com/au/upload/photo/",
+    "VideoPath": "http://app.at2casting.com/au/upload/video/",
+    "ResumePath": "http://app.at2casting.com/au/upload/resume/",
+    "AudioPath": "http://app.at2casting.com/au/upload/audio/",
+    "DigiImageList": [],
+    "AudioList": [
+      {
+        "ProfileAudioId": 82,
+        "MemberProfileId": 2958,
+        "AudioPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/audio/fe5b83c1-da88-486b-87c1-3bc7e4339d36.mp3?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=j1g3gLvHl8%2FUbCQzmj2yuxwbjww%3D",
+        "Duration": 60.0,
+        "Description": "Sound Advice- Foxtel",
+        "IsDefaultYN": true,
+        "Sequence": 1
+      },
+      {
+        "ProfileAudioId": 82,
+        "MemberProfileId": 2958,
+        "AudioPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/audio/fe5b83c1-da88-486b-87c1-3bc7e4339d36.mp3?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=j1g3gLvHl8%2FUbCQzmj2yuxwbjww%3D",
+        "Duration": 60.0,
+        "Description": "Sound Advice- Foxtel",
+        "IsDefaultYN": true,
+        "Sequence": 1
+      }
+    ],
+    "VideoList": [
+      {
+        "ProfileVideoId": 8653,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://demo.at2casting.com/data/test2.mp4",
+        "Duration": 91.0,
+        "Description": "EAST WEST 101",
+        "IsDefaultYN": true,
+        "Sequence": 1
+      },
+      {
+        "ProfileVideoId": 8657,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://demo.at2casting.com/data/test.mp4",
+        "Duration": 60.0,
+        "Description": "TOMB RAIDER VFX",
+        "IsDefaultYN": false,
+        "Sequence": 2
+      },
+      {
+        "ProfileVideoId": 8645,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/b186bc32-bb96-48b1-9d7a-8cca4c0a2dff.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092221&Signature=Vvxnn%2FM1Nlev9GydJ2GlSuHqh%2Fw%3D",
+        "Duration": 39.0,
+        "Description": "SEA PATROL",
+        "IsDefaultYN": false,
+        "Sequence": 3
+      },
+      {
+        "ProfileVideoId": 9970,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/4f4fdb16-56ec-4e6c-9da3-99d50736ba38.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=LCCtqkt3xHlKl2Tows90mXG5qzs%3D",
+        "Duration": 140.0,
+        "Description": "JEMMA- DEADLY WOMEN -CLIP 1",
+        "IsDefaultYN": false,
+        "Sequence": 4
+      },
+      {
+        "ProfileVideoId": 9967,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/aeb5b3a2-4c29-4f05-b47f-c0c8a9623b22.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=PCl6r%2FYJK8YmhXyXMxSxvJBRmCk%3D",
+        "Duration": 175.0,
+        "Description": "JEMMA- DEADLY WOMEN -CLIP 2",
+        "IsDefaultYN": false,
+        "Sequence": 5
+      },
+      {
+        "ProfileVideoId": 9964,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/6e3ffac6-cd80-4e81-8ef2-a0fbe11002b0.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=a3I51zXW5LBkIh7waJtBSxoKa7E%3D",
+        "Duration": 110.0,
+        "Description": "JEMMA- DEADLY WOMEN -CLIP 3",
+        "IsDefaultYN": false,
+        "Sequence": 6
+      },
+      {
+        "ProfileVideoId": 2629,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/ce12d79b-7499-4ad9-b7dc-c90b385f271d.flv?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=o4ydYa8HngKMt9rPtp8%2BznwsiIM%3D",
+        "Duration": 300.0,
+        "Description": "FULL ACTING SHOWREEL",
+        "IsDefaultYN": false,
+        "Sequence": 7
+      },
+      {
+        "ProfileVideoId": 8659,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/a0687c94-cb84-4b99-9f80-539de9c77cb3.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=R6F9t3PRF%2Fji%2F%2F2MWE3QxEThzGs%3D",
+        "Duration": 47.0,
+        "Description": "ACTING WORK MONTAGE",
+        "IsDefaultYN": false,
+        "Sequence": 8
+      },
+      {
+        "ProfileVideoId": 8646,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/5d7ddb8a-b9f7-4836-94e7-bd38e02b9ae1.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092222&Signature=%2FbHrEK2eBEJIDTWXqIgcy33o7To%3D",
+        "Duration": 76.0,
+        "Description": "The Wanabees",
+        "IsDefaultYN": false,
+        "Sequence": 9
+      },
+      {
+        "ProfileVideoId": 8647,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/07a14a66-edc2-465f-a08f-6ddb5f353ae1.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=p8FeSF0yFKjLkeimLGxFoik9HC8%3D",
+        "Duration": 53.0,
+        "Description": "Singapore Sling",
+        "IsDefaultYN": false,
+        "Sequence": 10
+      },
+      {
+        "ProfileVideoId": 8650,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/ed25f36b-b110-4192-8798-fbd26625caf9.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=0sayC33qOH%2Frl0pZiAiz5d01x%2FE%3D",
+        "Duration": 24.0,
+        "Description": "Code 1114",
+        "IsDefaultYN": false,
+        "Sequence": 11
+      },
+      {
+        "ProfileVideoId": 8651,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/e013f094-43fe-4f9f-92de-167153b73cd6.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=ZYHTnaecyGuqk9jmq0k1iMdAvtk%3D",
+        "Duration": 38.0,
+        "Description": "Sell-ebrity Selection",
+        "IsDefaultYN": false,
+        "Sequence": 12
+      },
+      {
+        "ProfileVideoId": 8687,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/23159bb4-7360-4be1-b77f-837ac73735d6.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=oH2WmInySjm6peNhR02%2F7NJ5uFE%3D",
+        "Duration": 288.0,
+        "Description": "Jemma Presenting Showreel",
+        "IsDefaultYN": false,
+        "Sequence": 13
+      },
+      {
+        "ProfileVideoId": 8658,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/5f568d56-0c95-425b-a4fa-166d9973c41f.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=mLXU0yxH%2BAhTcmiDPTBxd8kTVDo%3D",
+        "Duration": 36.0,
+        "Description": "Presenting Montage",
+        "IsDefaultYN": false,
+        "Sequence": 14
+      },
+      {
+        "ProfileVideoId": 8652,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/50925ef9-477f-4b81-a0f5-7a5b9c173e15.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092223&Signature=m0aJeX3%2BWpwgiacuhmEWWqbi4MM%3D",
+        "Duration": 122.0,
+        "Description": "OLAY TV Spot",
+        "IsDefaultYN": false,
+        "Sequence": 15
+      },
+      {
+        "ProfileVideoId": 8655,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/cd5cdb8a-db2c-4854-9b09-b98e83909565.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092224&Signature=GMlUBAqhLYUb6x3s1GIZhyiK3Lg%3D",
+        "Duration": 39.0,
+        "Description": "Presenting-House Solutions",
+        "IsDefaultYN": false,
+        "Sequence": 16
+      },
+      {
+        "ProfileVideoId": 8654,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/78be6963-62ab-4a49-80c0-e09ad7717b33.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092224&Signature=Ii9sqfd4nRiNfJa8gxDtp9%2F4u%2FQ%3D",
+        "Duration": 87.0,
+        "Description": "Sell-ebrity Selection 2",
+        "IsDefaultYN": false,
+        "Sequence": 17
+      },
+      {
+        "ProfileVideoId": 8656,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/8b81b930-e10e-40f3-ad1b-3536cb7147eb.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092224&Signature=DpLIK%2FiicRgQY%2BZETO6tmYuB3NM%3D",
+        "Duration": 110.0,
+        "Description": "Presenting-Cathay Pacific",
+        "IsDefaultYN": false,
+        "Sequence": 18
+      },
+      {
+        "ProfileVideoId": 8696,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/209de369-bce6-4afa-8e29-82469beea3cc.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092224&Signature=%2FhKLk2IFeHtwMBMJCAk%2F4KQ9sBc%3D",
+        "Duration": 38.0,
+        "Description": "Presenting-PTS Home Screen",
+        "IsDefaultYN": false,
+        "Sequence": 19
+      },
+      {
+        "ProfileVideoId": 8692,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/59c4f034-8013-4a4c-9151-110ed768b30a.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092224&Signature=ocoVQCW4inlDsn8MW9IXMXrreKA%3D",
+        "Duration": 63.0,
+        "Description": "Presenting- ProTalent 2",
+        "IsDefaultYN": false,
+        "Sequence": 20
+      },
+      {
+        "ProfileVideoId": 8695,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c0658bd3-07bc-4e27-b9bf-6174e7dc807b.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092225&Signature=RsLiXPRMrXmIw%2FNJDCHXvE42Dgo%3D",
+        "Duration": 60.0,
+        "Description": "Presenting-PTS Editor",
+        "IsDefaultYN": false,
+        "Sequence": 21
+      },
+      {
+        "ProfileVideoId": 8694,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/b272cb66-6612-4edc-aef1-7d1f58ce0016.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092225&Signature=FIcaHwLA0YadG3VFoJ3Pon%2BXm8E%3D",
+        "Duration": 40.0,
+        "Description": "Presenting-PTS- Video Galleries",
+        "IsDefaultYN": false,
+        "Sequence": 22
+      },
+      {
+        "ProfileVideoId": 8662,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c4ca87eb-5883-4086-9186-91b5e31f3933.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092225&Signature=nE202dsTG7JYV%2Fpl%2F0zNDC72srg%3D",
+        "Duration": 28.0,
+        "Description": "The Wannabees 1",
+        "IsDefaultYN": false,
+        "Sequence": 23
+      },
+      {
+        "ProfileVideoId": 8661,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/46b92ac0-edba-4fcf-9bb8-41a2efaa9a33.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092225&Signature=IpjlSZCu7l3%2FYGUK74FLmKwqqos%3D",
+        "Duration": 48.0,
+        "Description": "The Wannabees 2",
+        "IsDefaultYN": false,
+        "Sequence": 24
+      },
+      {
+        "ProfileVideoId": 8663,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c0d43290-38ec-4fc8-ba4b-9ed5f28e8d2a.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092225&Signature=5jKr1PEakphJkeI6mtrD8CAR0W4%3D",
+        "Duration": 30.0,
+        "Description": "Singapore Sling 2",
+        "IsDefaultYN": false,
+        "Sequence": 25
+      },
+      {
+        "ProfileVideoId": 8664,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c8beb77d-c086-471e-ab74-71facacd06e2.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=zQ5wD9yhB8GmdD1EgAATuotJDEw%3D",
+        "Duration": 23.0,
+        "Description": "Singapore Sling 1",
+        "IsDefaultYN": false,
+        "Sequence": 26
+      },
+      {
+        "ProfileVideoId": 8665,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/79566ce2-0b8e-4969-83f8-985d006d6172.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=9jtJrsHSvL138Qau%2Bp2ubV4FZOo%3D",
+        "Duration": 32.0,
+        "Description": "Rogain TVC",
+        "IsDefaultYN": false,
+        "Sequence": 27
+      },
+      {
+        "ProfileVideoId": 8666,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/776880f9-c280-4df7-84e9-46e2887538d4.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=qYJL3mw7Ql0slU0SsgfB%2FuHOihM%3D",
+        "Duration": 31.0,
+        "Description": "Togo's TVC",
+        "IsDefaultYN": false,
+        "Sequence": 28
+      },
+      {
+        "ProfileVideoId": 8667,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/9c14b977-5ffc-4fd3-9438-b4229b1cc0cc.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=FVbPuboIfi7c0i5WfVGaygtUuhE%3D",
+        "Duration": 30.0,
+        "Description": "St George TVC",
+        "IsDefaultYN": false,
+        "Sequence": 29
+      },
+      {
+        "ProfileVideoId": 8668,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/8a1067ab-8ed2-4498-8ac1-7cc312bb0167.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=jtglD%2FMDQUwhZiFfnVTdaT7MCWM%3D",
+        "Duration": 30.0,
+        "Description": "Silk Air TVC",
+        "IsDefaultYN": false,
+        "Sequence": 30
+      },
+      {
+        "ProfileVideoId": 8669,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/3d02899b-0144-4c04-a157-b54c4555857f.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092226&Signature=Wlqdqkj73N84%2BG06b3igotASXPE%3D",
+        "Duration": 18.0,
+        "Description": "Ministry Of Sound TVC",
+        "IsDefaultYN": false,
+        "Sequence": 31
+      },
+      {
+        "ProfileVideoId": 8670,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/6b0df056-1f6f-48e9-9c1f-dae9e0788ce9.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=RpMOa12CL4iwGe3vWeGsUvAKOWw%3D",
+        "Duration": 30.0,
+        "Description": "Samsung TVC",
+        "IsDefaultYN": false,
+        "Sequence": 32
+      },
+      {
+        "ProfileVideoId": 8671,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/d9fae7b7-b564-43b0-a425-dbd7a21a6d2e.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=HbOL%2By6BkQXaGOv1FHucQ4nUZYI%3D",
+        "Duration": 32.0,
+        "Description": "Citibank TVC",
+        "IsDefaultYN": false,
+        "Sequence": 33
+      },
+      {
+        "ProfileVideoId": 8672,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/6e4f92ac-42f7-43b0-b190-c16943d5a87d.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=PkQtu1m8y50wMAFbR2Sz6IvuFRs%3D",
+        "Duration": 32.0,
+        "Description": "Lavalife TVC",
+        "IsDefaultYN": false,
+        "Sequence": 34
+      },
+      {
+        "ProfileVideoId": 8673,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/99765e18-6907-45dd-86ff-956b5cce2a8e.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=4eHw3Ni0KbUZI8kHwBXtmWVW%2Bjk%3D",
+        "Duration": 16.0,
+        "Description": "Northwest Mutal TVC",
+        "IsDefaultYN": false,
+        "Sequence": 35
+      },
+      {
+        "ProfileVideoId": 8674,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/a6330d82-ff92-4c53-9cb2-574ed4c18c9f.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=lK0QjpnYDlh8fjganMW8f0ks6FA%3D",
+        "Duration": 45.0,
+        "Description": "Chivas Regal TVC",
+        "IsDefaultYN": false,
+        "Sequence": 36
+      },
+      {
+        "ProfileVideoId": 8675,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/8b843cb8-d013-4db3-b95f-21031c7fb2aa.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092227&Signature=zRgDqVfIFtMWBmtWllNjXqDc4lU%3D",
+        "Duration": 61.0,
+        "Description": "Nokia TVC",
+        "IsDefaultYN": false,
+        "Sequence": 37
+      },
+      {
+        "ProfileVideoId": 9099,
+        "MemberProfileId": 2958,
+        "VideoPath": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/84937bd9-b16a-4df5-956c-a2f5ef33ac2b.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092228&Signature=rEu%2FzCuyoi1kdPSp%2Fd2Q%2BFk%2BHrQ%3D",
+        "Duration": 45.0,
+        "Description": "supa iga tvc",
+        "IsDefaultYN": false,
+        "Sequence": 38
+      }
+    ],
+    "Addresses": [
+      {
+        "AddressName": ".",
+        "City": "",
+        "PostCode": "null",
+        "StateId": 162,
+        "StateName": "New South Wales",
+        "CountryCode": "AU",
+        "CountryName": "AUSTRALIA",
+        "AddressTypeCode": "POST",
+        "AddressType": "Postal Address"
+      },
+      {
+        "AddressName": "PO BOX 7333",
+        "City": "Sydney",
+        "PostCode": "2026",
+        "StateId": 162,
+        "StateName": "New South Wales",
+        "CountryCode": "AU",
+        "CountryName": "AUSTRALIA",
+        "AddressTypeCode": "POST",
+        "AddressType": "Postal Address"
+      },
+      {
+        "AddressName": "Lvl  5,  No 62",
+        "City": "Sydney",
+        "PostCode": "2000",
+        "StateId": 162,
+        "StateName": "New South Wales",
+        "CountryCode": "AU",
+        "CountryName": "AUSTRALIA",
+        "AddressTypeCode": "POST",
+        "AddressType": "Postal Address"
+      }
+    ],
+    "CreditResume": [
+      {
+        "Sequence": 0,
+        "IsParagraph": false,
+        "Title": "FILM",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "Acting Showreel",
+              "Selected Works",
+              ""
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://demo.at2casting.com/data/test.mp4",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://app.at2casting.com/au/upload/photo/9e/a0/56/4b/9ea0564b-694a-496a-982b-81cbaa654dc4j.jpg",
+                "MediaType": "I"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Tomb Raider- Revelation",
+              "Lead",
+              "VFX Special"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/55443b63-5381-480a-830d-3990e22dabe1.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092217&Signature=lbwKjjNiNZPPcES5%2BpGpsaOfxFk%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "The Brother (Short Film)",
+              "Anita Cruz Blake",
+              "AFTRS"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "The Wannabes",
+              "Lita",
+              "Crooks R Us Productions"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/5d7ddb8a-b9f7-4836-94e7-bd38e02b9ae1.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092217&Signature=e8ho16F5GBPMOkQ%2FRBMIMb6Dik8%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Code 111-4",
+              "Monique",
+              "Village Roadshow Productions"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/ed25f36b-b110-4192-8798-fbd26625caf9.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092217&Signature=Ev5ZtSEW0xCqbW9CRQnvAMYA23U%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Sell-ebrity Sell-ection",
+              "Asian Ruby (Lead)",
+              "Fogo Films- SBS"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/78be6963-62ab-4a49-80c0-e09ad7717b33.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092218&Signature=RK3VfgF1eiQgaA7EPU0e6Yw1Lmw%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "No Takeaways",
+              "Kissing Girl",
+              "UTS 3rd Year Film"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Resonance",
+              "Dancer",
+              "Sydney Film Festival"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 1,
+        "IsParagraph": false,
+        "Title": "Television",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "Deadly Women - Season 6",
+              "Man Ling Williams",
+              "Beyond Productions"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/4f4fdb16-56ec-4e6c-9da3-99d50736ba38.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092218&Signature=pJJNV%2BJLCMJm2nh9jIKtvMZPd6c%3D",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/aeb5b3a2-4c29-4f05-b47f-c0c8a9623b22.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092218&Signature=Y03TZ3kRcxWlw9YNoeskLNQT8sM%3D",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/6e3ffac6-cd80-4e81-8ef2-a0fbe11002b0.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092218&Signature=I%2FAOsoeY%2FcYHMKHc240NDgWIyVg%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "East West 101",
+              "Celia Ma (3 Episodes)",
+              "SBS TV Series, Dir: Peter Andrikidis"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/ce31efd6-ebd0-45f4-b287-df80a55ec0cf.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092218&Signature=rjz9nYTEsasJmYQYWt8wlbhJo6Y%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Sea Patrol (Season 2)",
+              "Samaruan Woman",
+              "Sea Patrol Productions"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/b186bc32-bb96-48b1-9d7a-8cca4c0a2dff.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=AzromQ9%2FIov8ctMNNW5%2Fwng6qFw%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Olay TV Spot- Sunrise",
+              "Jen- Make-up Artist",
+              "Cha"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/50925ef9-477f-4b81-a0f5-7a5b9c173e15.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=ZZbck9WSz0W1g9vDDozuharF58A%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "All Saints",
+              "Nurse Lily",
+              "Ch. 7 Australia"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Dreamfactory",
+              "Herself",
+              "Ch. 9- Documentary (Filmed in LA)"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Australia's Most Wanted",
+              "Nilda",
+              "Grundy Television"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Big Sky",
+              "Lucy",
+              "Southern Star Productions"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Heartbreak High",
+              "Kerry",
+              "ABC Television"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Vidz",
+              "Presenter",
+              "Singapore TV"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Singapore Sling",
+              "Lily - Lead",
+              "Barron Films, 3 x Tele-Series"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c0d43290-38ec-4fc8-ba4b-9ed5f28e8d2a.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=dNExmSHhACPbpNVAMBSHEubaaTQ%3D",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c8beb77d-c086-471e-ab74-71facacd06e2.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=r1V%2FSoYHbuZb6Avwe3EW8rBfIs8%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Police Rescue",
+              "Jane",
+              "Southern Star Xanadu"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Frankie's House",
+              "Bar Girl",
+              "ABC Mini- Series"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 2,
+        "IsParagraph": false,
+        "Title": "Theatre/stage",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "The Information",
+              "Sadha Hussan",
+              "Belvoir St Theatre (Syd)- Dir: Regina Heilmann"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "South Pacific",
+              "Liat (Principal)",
+              "Thailand- Dir: Chris Renshaw"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Sydney Stories (pt.2)",
+              "Various Roles",
+              "Sydney Theatre Co- Dir: David Berthold"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "South Pacific",
+              "Liat (Principal)",
+              "National Aus Tour & Hong Kong- Dir: Chris Renshaw"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Cockroach Opera",
+              "Tuminah",
+              "Belvoir St Theatre, Sydney- Dir: Mark Gaal"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Chess The Musical",
+              "Ensemble",
+              "Theatre Royal, Sydney- Dir: Jim Sharman"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Guys & Dolls",
+              "Ensemble",
+              "Kelvin Grove- Dir: Jim Sharman"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 3,
+        "IsParagraph": false,
+        "Title": "PRESENTER",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "Presenting Showreel & Work Montage",
+              "Selected Works",
+              ""
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/23159bb4-7360-4be1-b77f-837ac73735d6.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=V9UZhHMlqh5Vf%2FGyAQSr6yJNQMM%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "ProTalent Sites",
+              "Presenter",
+              "Online Walk-on-Presenter"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/209de369-bce6-4afa-8e29-82469beea3cc.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092219&Signature=%2FbbQOteBYf85UhtdIqXthdPU%2BWk%3D",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/59c4f034-8013-4a4c-9151-110ed768b30a.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=x%2BJJM%2BQHiS9U4%2FW%2FGmQalqkLHaw%3D",
+                "MediaType": "V"
+              },
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/c0658bd3-07bc-4e27-b9bf-6174e7dc807b.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=lr%2BCqhJ9Q1n3tw%2Fh2YmPXgwbBaM%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Olay TV Spot",
+              "Presenter",
+              "Sunrise Morning Show, Channel 7"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/50925ef9-477f-4b81-a0f5-7a5b9c173e15.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=nXeGVIRXtOSfU1dPQR%2BVnYoblnU%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Inaugural Oz Asia Festival",
+              "Presenter/Mc",
+              "Adelaide Festival (14,000 people)"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Kimberley Clark Na Sales Conference",
+              "Presenter / MC",
+              "Corporate Events"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Wellspring",
+              "Voice/ Presenter/ Teacher",
+              "Foxtel Radio"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/audio/fe5b83c1-da88-486b-87c1-3bc7e4339d36.mp3?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=j1g3gLvHl8%2FUbCQzmj2yuxwbjww%3D",
+                "MediaType": "A"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "\"World Magic\" Championships",
+              "Presenter",
+              "Corporate Events"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "House Solutions",
+              "Presenter",
+              "Launch Event"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/cd5cdb8a-db2c-4854-9b09-b98e83909565.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=34PmQTx6g6ZM670ZxpwCqmgvwsQ%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Sony DHTC International Conference",
+              "Presenter / MC",
+              "Corporate Events"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Sony CES",
+              "Presenter",
+              "In Flight Promotional Videos"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Cathay Pacific Airlines",
+              "Presenter",
+              "In Flight (World Of Travel)"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/8b81b930-e10e-40f3-ad1b-3536cb7147eb.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092220&Signature=EoFq3CeBTiMKGy4Fwzh205XG%2Br4%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Sell-ebrity Sell-ection",
+              "Presenter/ Lead",
+              "SBS TV Feature"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/78be6963-62ab-4a49-80c0-e09ad7717b33.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092221&Signature=6HtsBXiJZWhL%2Bbz5HJfcZhXizJc%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Vidz Music Show",
+              "Presenter",
+              "TV Corp. Of Singapore (Singapore, Malaysia & India)"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 4,
+        "IsParagraph": false,
+        "Title": "CORPORATE VIDEO",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "CTTT EDU Vdeo",
+              "Agent",
+              "Training Video"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "AIG Corp Training",
+              "Janice- Manager",
+              "Training Video"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Commonwealth Bank",
+              "Felicity (Bank Officer)",
+              "Training Video"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Live Corp Training",
+              "Li, P & O Officer",
+              "P & O Ports (Harassment)"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Key Corp - Remote ATM",
+              "Customer",
+              "Training Video"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Westpac Banking",
+              "Ting Shing",
+              "Corporate Video"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "St George Bank",
+              "Bank Officer",
+              "Corporate Video"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 5,
+        "IsParagraph": true,
+        "Title": "performance art",
+        "Content": "<div class=\"page\" title=\"Page 2\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-size: 10.000000pt; font-family: 'ArialMT'\">Dancer &amp; Co-Founder of Dance Theatre Group<br />(“Dance camp” Dance Camp 1,2,3 Belvoir Street Theatre, Sydney)World Aid’s Day Pitt Street Mall, Sydney<br />Amnesty International Enmore Theatre, Sydney<br />1992 Dancer for “Audio Ballerinas” From Germany w/ Benoit Maubrey(Third International Symposium Electronic Art)<br />Performance at Sydney Opera House<br />Performance at Powerhouse Museum, Sydney<br />Performance at ABC TV&nbsp;</span></p></div></div></div>",
+        "Rows": null
+      },
+      {
+        "Sequence": 6,
+        "IsParagraph": false,
+        "Title": "Commercial",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "Work montage"
+            ],
+            "Medias": [
+              {
+                "MediaUrl": "http://s3-ap-southeast-2.amazonaws.com/files.au.at2casting.com/uploads/video/a0687c94-cb84-4b99-9f80-539de9c77cb3.mp4?AWSAccessKeyId=AKIAIUGNQ3QWOR2Z234A&Expires=1455092221&Signature=6nqD3MIVFI0b%2FEeIqYr43SDX1FM%3D",
+                "MediaType": "V"
+              }
+            ]
+          },
+          {
+            "Texts": [
+              "Note: A Full Commercial Reel is available on request"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 7,
+        "IsParagraph": false,
+        "Title": "TRAINING",
+        "Content": null,
+        "Rows": [
+          {
+            "Texts": [
+              "Tom McSweeney CSA",
+              "Screen Audition Workshop",
+              "Sydney"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Ivana Chubbuck",
+              "The Power Of The Actor- Intensive",
+              "16th Street Studios"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Lily Dior",
+              "Singing",
+              "Aust. Institute Of Music"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Peter Andrikidis",
+              "Screen Workshop",
+              "Toni Higginbotham Casting"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Ivana Chubbuck Intensive",
+              "Ivana Chubbuck Workshop",
+              "The Actors Centre"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Martin Murphy",
+              "Camera Workshop",
+              "The Actors Centre"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Judith Conrow-Shipley, Jennifer Kent",
+              "Voice & Screen-testing",
+              "The Actors Centre"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Karen Kohlhaas",
+              "Monologues",
+              "Practical Aesthetics Australia"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Nina & Julian De Silva",
+              "New York Style Salsa",
+              "Latin Explosion"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Melissa Bruder & Andrea Moor",
+              "Intermediate Script Analysis Action, Repetition",
+              "Practical Aesthetics Australia"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Steve Matthews & David Bollinger",
+              "The Act of Transformation",
+              "Drama Vision"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Catherine Chalker",
+              "Voice",
+              "Private Tuition"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Various Teachers",
+              "Drama Workshop",
+              "HB Studio New York"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Catherine Chalker & Various",
+              "Voice Classes, On camera technique, & Improvisation",
+              "The Actors Centre"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Kerry Walker",
+              "Drama Technique",
+              "Private Tuition"
+            ],
+            "Medias": []
+          },
+          {
+            "Texts": [
+              "Sue Street & Graham Watson",
+              "Associate Diploma of Dance",
+              "QLD University of Technology"
+            ],
+            "Medias": []
+          }
+        ]
+      },
+      {
+        "Sequence": 8,
+        "IsParagraph": true,
+        "Title": "SPECIAL SKILLS",
+        "Content": "<div class=\"page\" title=\"Page 2\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-family: ArialMT; font-size: 10pt; \"><span style=\"font-family: ArialMT; font-size: 13px; \"><strong>Languages:</strong> Englis</span>h, Filipino, Spanish ( Beginner Level)</span></p><p><span style=\"font-family: ArialMT; font-size: 10pt; \"></span></p><div class=\"page\" title=\"Page 2\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-size: 10.000000pt; font-family: 'ArialMT'\"><strong>Accents:</strong>&nbsp;&nbsp;</span><span style=\"font-size: 10pt; \">American, Filipino, Spanish and British</span></p><p><span style=\"font-size: 10pt; \"></span></p><div class=\"page\" title=\"Page 2\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-size: 10pt; \"><strong>Dance: </strong>New York Style Salsa, Contemporary, Jazz, Funk, Modern and Freestyle&nbsp;</span></p><p><span style=\"font-size: 10pt; \"><strong>Sport:</strong> Athletics, Tennis, Squash, Swimming, Indoor Rock Climbing, Volleyball, Skiing and many other sports&nbsp;</span></p><p><span style=\"font-size: 10pt; \"></span></p><div class=\"page\" title=\"Page 3\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-size: 10pt; \"><strong>Special Skills:</strong> Wing Chun Kung Fu, Qi-gong, Yoga (all styles), Meditation, Stage Combat, Aerial Combat, Fencing,</span><span style=\"font-size: 10pt; \"></span></p><div class=\"page\" title=\"Page 3\"><div class=\"layoutArea\"><div class=\"column\"><p><span style=\"font-size: 10.000000pt; font-family: 'ArialMT'\">Abseiling, Scuba Diving, Rock Climbing and Sailing.&nbsp;</span></p></div></div></div><p></p></div></div></div><br /><p></p></div></div></div><p></p></div></div></div><p></p></div></div></div>",
+        "Rows": null
+      }
+    ],
+    "MemberID": 3067,
+    "MemberProfileID": 2958,
+    "AgencyID": 375,
+    "AgencyName": "Sophie Jermyn Management",
+    "ArtistType": " Actor, Dancer, Presenter, Stunt Performer",
+    "Gender": "FEMA",
+    "AgeFrom": 40,
+    "AgeTo": 50,
+    "Birthday": "'",
+    "FirstName": "Jemma",
+    "LastName": "Rivera",
+    "IsAvailable": "false",
+    "IsShortlisted": "false",
+    "ImageList": [
+      "a0/9f/fb/46/a09ffb46-bf23-4010-adff-2defb97a5437",
+      "a8/96/e6/fc/a896e6fc-6144-45e2-9f63-596db524081e",
+      "9e/a0/56/4b/9ea0564b-694a-496a-982b-81cbaa654dc4",
+      "76/ab/9f/5b/76ab9f5b-a8ff-42a0-a9c6-1dba63ec3a2b",
+      "d6/04/4d/e8/d6044de8-19a7-4999-8b36-d16f581c7868",
+      "2b/a1/77/8d/2ba1778d-15b5-495d-9ff9-5ba70327b5ac",
+      "7f/58/18/74/7f581874-1dc7-4e04-9a41-5a90ba8712d9",
+      "b4/63/01/9a/b463019a-f9b1-413b-89e1-e3a7ede5b7a0",
+      "3b/eb/86/9b/3beb869b-ebef-4902-a116-1e4b836c8ee6",
+      "b6/d2/bb/a9/b6d2bba9-dbf2-4d2d-a25a-4d9c2aaea22c",
+      "70/53/c5/48/7053c548-42ba-4ba6-a565-05f9ad310e8c",
+      "c9/92/9a/26/c9929a26-054b-4f0d-a685-8b39c94bfc3d",
+      "55/1a/8d/5a/551a8d5a-9118-481e-b6d4-6b122fbf7909",
+      "44/9f/08/b4/449f08b4-e0be-4e1e-adf7-d1b893be2704",
+      "f4/20/d6/bc/f420d6bc-4d65-45d0-9302-f118957bda24"
+    ],
+    "State": "New South Wales",
+    "ResumeFullPath": "http://app.at2casting.com/au/upload/resume/ee/66/ce/0f/ee66ce0f-e1c8-4b13-a63c-ad18e0b32399.pdf",
+    "HaveCompCard": "true",
+    "CompCard": {
+      "CompCardTemplateID": 1,
+      "PhotoList": [
+        "a0/9f/fb/46/a09ffb46-bf23-4010-adff-2defb97a5437",
+        "2b/a1/77/8d/2ba1778d-15b5-495d-9ff9-5ba70327b5ac",
+        "a8/96/e6/fc/a896e6fc-6144-45e2-9f63-596db524081e",
+        "d6/04/4d/e8/d6044de8-19a7-4999-8b36-d16f581c7868",
+        "b4/63/01/9a/b463019a-f9b1-413b-89e1-e3a7ede5b7a0",
+        "76/ab/9f/5b/76ab9f5b-a8ff-42a0-a9c6-1dba63ec3a2b",
+        "9e/a0/56/4b/9ea0564b-694a-496a-982b-81cbaa654dc4",
+        "c9/92/9a/26/c9929a26-054b-4f0d-a685-8b39c94bfc3d",
+        "b6/d2/bb/a9/b6d2bba9-dbf2-4d2d-a25a-4d9c2aaea22c",
+        "3b/eb/86/9b/3beb869b-ebef-4902-a116-1e4b836c8ee6"
+      ],
+      "ProfileItems": [
+        "HGHT",
+        "HAIR",
+        "EYES",
+        "BUST",
+        "WAIS",
+        "HIPS",
+        "DRES",
+        "SHOW"
+      ]
+    },
+    "Statistics": [
+      {
+        "Name": "Ethnicity",
+        "Code": "ETHN",
+        "Value": "Asian, Filipino, Eurasian, European, Indian, Latin American"
+      },
+      {
+        "Name": "Hair Colour",
+        "Code": "HAIR",
+        "Value": "Black"
+      },
+      {
+        "Name": "Eye Colour",
+        "Code": "EYES",
+        "Value": "Brown"
+      },
+      {
+        "Name": "Height",
+        "Code": "HGHT",
+        "Value": "172 cm / 5'8\""
+      },
+      {
+        "Name": "Bust Size",
+        "Code": "BUST",
+        "Value": "83 cm / 33\""
+      },
+      {
+        "Name": "Waist Size",
+        "Code": "WAIS",
+        "Value": "65 cm / 26\""
+      },
+      {
+        "Name": "Hip Size",
+        "Code": "HIPS",
+        "Value": "20 cm / 8\""
+      },
+      {
+        "Name": "Shoe Size",
+        "Code": "SHOW",
+        "Value": "9(AU)"
+      },
+      {
+        "Name": "Female Dress Size",
+        "Code": "DRES",
+        "Value": "8(AU)"
+      },
+      {
+        "Name": "Bra Size",
+        "Code": "BRAS",
+        "Value": "12B(AU)"
+      },
+      {
+        "Name": "Body Type",
+        "Code": "BODW",
+        "Value": "Athletic Build"
+      },
+      {
+        "Name": "Union Members",
+        "Code": "UNIO",
+        "Value": "MEAA"
+      },
+      {
+        "Name": "Licences Held",
+        "Code": "LICN",
+        "Value": "Manual Car,Scuba"
+      }
+    ],
+    "ETHN": "Asian,Filipino,Eurasian,European,Indian,Latin American",
+    "HAIR": "Black",
+    "EYES": "Brown",
+    "HGHT": "172 cm / 5'8\"",
+    "BUST": "83 cm / 33\"",
+    "WAIS": "65 cm / 26\"",
+    "HIPS": "20 cm / 8\"",
+    "SHOW": "9(AU)",
+    "DRES": "8(AU)",
+    "BRAS": "12B(AU)",
+    "BODW": "Athletic Build",
+    "UNIO": "MEAA",
+    "LICN": "Manual Car,Scuba"
+  }
+}

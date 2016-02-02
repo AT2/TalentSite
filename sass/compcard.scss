@@ -1,0 +1,165 @@
+﻿@import "plugins/bootstrap/bootstrap/_variables";
+@import "plugins/bootstrap/bootstrap/_mixins.scss";
+@import "plugins/bootstrap/bootstrap/mixins/_grid-framework";
+@import "plugins/bootstrap/bootstrap/mixins/_grid";
+.compcard-layout{
+    padding: 20px 0;
+    margin:auto;
+    max-width: 1024px;
+}
+.compcard-layout-1{
+    .compcard-images{
+        @include make-sm-column(6,15px);
+        img{
+            @include make-xs-column(6,20px);
+            @include make-sm-column(4,15px);
+            margin-bottom:15px;
+            max-width:150px;
+            max-height:187px;
+            @include center-block();
+        }
+        dl{
+            @include make-xs-column(6,15px);
+            @include make-sm-column(3,15px);
+        }
+    }
+    .compcard-info{
+        @include make-sm-column(6,20px);
+        h3{
+            margin-top:0;
+        }
+        #agencyLogo{
+            margin:20px 0;
+        }
+        .headshot{
+            max-width:380px;
+            max-height:507px;
+        }
+        
+    }
+}
+.compcard-layout-2{
+    .compcard-images{
+        @include make-sm-column(6,15px);
+        img{
+            @include make-md-column(6,20px);
+            margin-bottom:15px;
+            max-width:213px;
+            max-height:266px;
+            @include center-block();
+        }
+        dl{
+            @include make-xs-column(6,15px);
+            @include make-sm-column(3,15px);
+        }
+    }
+    .compcard-info{
+        @include make-sm-column(6,20px);
+        h3{
+            margin-top:0;
+        }
+        #agencyLogo{
+            margin:20px 0;
+        }
+        .headshot{
+            max-width:213px;
+            max-height:266px;
+            @include make-sm-column(6);
+        }
+        
+    }
+}
+
+.compcard-layout-3{
+    .compcard-images{
+        @include make-sm-column(6,15px);
+        img{
+            @include make-md-column(6,20px);
+            margin-bottom:15px;
+            max-width:213px;
+            max-height:266px;
+            @include center-block();
+        }
+        dl{
+            @include make-xs-column(6,15px);
+            @include make-sm-column(3,15px);
+        }
+    }
+    .compcard-info{
+        @include make-sm-column(6,20px);
+        h3{
+            margin-top:0;
+        }
+        #agencyLogo{
+            margin:20px 0;
+        }
+        .headshot{
+            max-width:380px;
+            max-height:507px;
+        }
+        
+    }
+}
+
+
+.compcard-layout-4{
+    .compcard-images{
+        @include make-sm-column(6,15px);
+        img{
+            @include make-md-column(6,20px);
+            margin-bottom:15px;
+            max-width:213px;
+            max-height:266px;
+            @include center-block();
+        }
+        dl{
+            @include make-xs-column(6,15px);
+            @include make-sm-column(3,15px);
+        }
+    }
+    .compcard-info{
+        @include make-sm-column(6,20px);
+        h3{
+            margin-top:0;
+        }
+        #agencyLogo{
+            margin:20px 0;
+        }
+        .headshot{
+            max-width:380px;
+            max-height:507px;
+        }
+        
+    }
+}
+
+
+.compcard-layout-5{
+    .compcard-images{
+        img{
+            @include make-md-column(6,20px);
+            margin-bottom:15px;
+            max-width:213px;
+            max-height:266px;
+            @include center-block();
+        }
+        dl{
+            @include make-xs-column(6,15px);
+            @include make-sm-column(3,15px);
+        }
+    }
+    .compcard-info{
+        margin-bottom:10px;
+        h3{
+            margin-top:0;
+        }
+        #agencyLogo{
+            margin:20px 0;
+        }
+        .headshot{
+            max-width:380px;
+            max-height:507px;
+        }
+        
+    }
+}

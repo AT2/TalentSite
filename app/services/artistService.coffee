@@ -17,7 +17,8 @@ app.service "artistService",["$http","$q","API"
     this.queryDetail = (memberId) ->
       deferred = $q.defer()
       $http
-      .get API.address+"/artists/"+memberId+"?apikey="+API.key
+      #.get API.address+"/artists/"+memberId+"?apikey="+API.key
+      .get "/data/profile.json"
       .success(
         (data,status,headers,config)->
           deferred.resolve data

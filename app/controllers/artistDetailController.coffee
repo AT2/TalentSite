@@ -1,6 +1,7 @@
-app.controller "artistDetailController",["$scope","artistService",
-  ($scope, artistService)->
+app.controller "artistDetailController",["$scope","artistService", "agencyService",
+  ($scope, artistService, agencyService)->
     $scope.profile = {}
+    $scope.agency = {}
     $scope.videoIndex = 0
     $scope.audioIndex = 0
     $scope.videoSrc = ""
@@ -8,8 +9,8 @@ app.controller "artistDetailController",["$scope","artistService",
     audioPlayer = null
     resumeVideoPlayer = null
     resumeAudioPlayer = null
-
     $scope.init = ->
+      #get data
       artistService
         .queryDetail(window.memberId)
         .then(
@@ -17,18 +18,30 @@ app.controller "artistDetailController",["$scope","artistService",
             $scope.profile = data.Result
             return
         )
+      agencyService
+        .get()
+        .then(
+            (data) ->
+                $scope.agency = data.Result
+                return
+        )
       return
-
+    
+    $scope.findStats = 
+        (stats) ->
+            _.findWhere($scope.profile.Statistics, { "Code":stats })
+       
     $scope.playVideo =
-      (index)->
-        if($scope.videoIndex == index)
-          if videoPlayer.paused()
-            videoPlayer.play()
-          else
-            videoPlayer.pause()
-        else
-          playVideoInternal(index)
-        return
+        (index)->
+            if($scope.videoIndex == index)
+                if videoPlayer.paused()
+                    videoPlayer.play()
+                else
+                    videoPlayer.pause()
+            else
+                playVideoInternal(index)
+            return
+    
     $scope.playAudio =
       (index)->
         if($scope.audioIndex == index)
@@ -48,7 +61,8 @@ app.controller "artistDetailController",["$scope","artistService",
           ->
             videoPlayer.pause()
             return
-        return
+        return  
+    #show audios      
     $scope.showAudios=
       ->
         $("#modalAudioShowreel ").modal()
@@ -121,6 +135,11 @@ app.controller "artistDetailController",["$scope","artistService",
           "src": $scope.profile.AudioList[index].AudioPath
         audioPlayer.play()
         return
+    
+    $scope.compCardUrl = 
+        ()->
+            return "/static/partial/_compcard_"+$scope.profile.CompCard.CompCardTemplateID+".html"
+            
     return
 
 ]

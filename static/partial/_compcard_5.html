@@ -1,0 +1,32 @@
+<div class="compcard-layout-5">
+    <div class="compcard-info row">
+        <div class="col-md-6">
+            <img src="http://app.at2casting.com/au/upload/photo/{{image}}j.jpg" ng-repeat="image in profile.CompCard.PhotoList | take:1" class="headshot img-responsive center-block" />
+        </div>
+        <div class="col-md-6">
+            <h3>
+                {{profile.FirstName + " " + profile.LastName}}
+            </h3>
+            <img src="{{agency.Logo}}" id="agencyLogo" />
+            <address>
+                <strong>{{agency.AgencyName}}</strong><br>
+                {{agency.Addresses[0].AddressName}}, {{agency.Addresses[0].City}}<br>
+                {{agency.Addresses[0].StateName}}, {{agency.Addresses[0].CountryName}} {{agency.Addresses[0].PostCode}}<br>
+                <abbr title="Phone">P:</abbr> {{agency.Phone}}<br>
+                <abbr title="Mail">M:</abbr> <a href="mailto:#">{{agency.EmailDesc}}</a>
+            </address>
+        </div>
+    </div>
+    <div class="compcard-images">
+        <div class="row">
+            <img src="http://app.at2casting.com/au/upload/photo/{{image}}h.jpg" ng-repeat="image in profile.CompCard.PhotoList | skip:1 | take:3" />
+        </div>
+        <div class="row">
+            <dl ng-repeat="stats in profile.CompCard.ProfileItems">
+                <dt>{{ findStats(stats).Name}}</dt>
+                <dd>{{ findStats(stats).Value}}</dd>
+            </dl>
+        </div>
+    </div>
+
+</div>

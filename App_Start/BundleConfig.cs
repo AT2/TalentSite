@@ -24,6 +24,7 @@ namespace Cwb.TalentSite
                "~/js/vendor/angularJS/loading-bar.min.js"
                ));
             bundles.Add(new ScriptBundle("~/bundles/angular-talent").Include(
+              "~/js/app.js",
               "~/js/app/*.js"
               ));
             bundles.Add(new StyleBundle("~/styles").Include(

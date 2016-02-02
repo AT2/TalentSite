@@ -172,8 +172,12 @@
     <Content Include="images\jing4.jpg" />
     <Content Include="images\jing5.PNG" />
     <Content Include="images\small.PNG" />
-    <Content Include="js\app\app.js" />
-    <Content Include="js\app\app.min.js">
+    <Content Include="js\app\agencyService.js" />
+    <Content Include="js\app\agencyService.min.js">
+      <DependentUpon>agencyService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app.js" />
+    <Content Include="js\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
     <Content Include="js\app\artist.js" />
@@ -203,6 +207,14 @@
     <Content Include="js\app\nameModel.js" />
     <Content Include="js\app\nameModel.min.js">
       <DependentUpon>nameModel.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\skip.js" />
+    <Content Include="js\app\skip.min.js">
+      <DependentUpon>skip.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\take.js" />
+    <Content Include="js\app\take.min.js">
+      <DependentUpon>take.js</DependentUpon>
     </Content>
     <Content Include="js\app\trusted.js" />
     <Content Include="js\app\trusted.min.js">
@@ -274,6 +286,10 @@
     <Content Include="js\vendor\videoJs\video.min.js" />
     <Content Include="sass\plugins\compass\compass.css" />
     <Content Include="sass\plugins\compass\compass.min.css" />
+    <Content Include="static\partial\_compcard_5.html" />
+    <Content Include="static\partial\_compcard_4.html" />
+    <Content Include="static\partial\_compcard_3.html" />
+    <Content Include="static\partial\_compcard_2.html" />
     <Content Include="styles\all.css" />
     <Content Include="styles\all.min.css">
       <DependentUpon>all.css</DependentUpon>
@@ -286,6 +302,10 @@
     <Content Include="styles\compact.css" />
     <Content Include="styles\compact.min.css">
       <DependentUpon>compact.css</DependentUpon>
+    </Content>
+    <Content Include="styles\compcard.css" />
+    <Content Include="styles\compcard.min.css">
+      <DependentUpon>compcard.css</DependentUpon>
     </Content>
     <Content Include="styles\detail.css" />
     <Content Include="styles\detail.min.css">
@@ -335,7 +355,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\Api\" />
-    <Folder Include="data\" />
     <Folder Include="Models\" />
     <Folder Include="packages\" />
   </ItemGroup>
@@ -361,7 +380,6 @@
     <Content Include="js\vendor\underscore\underscore-min.map" />
     <Content Include="js\vendor\videoJs\video.js.map" />
     <Content Include="js\vendor\videoJs\video.min.js.map" />
-    <Content Include="app\app.coffee" />
     <Content Include="app\controllers\artistDetailController.coffee" />
     <Content Include="app\controllers\artistListController.coffee" />
     <Content Include="app\directives\artist.coffee" />
@@ -535,12 +553,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\app\app.js.map">
+    <Content Include="js\app.js.map">
       <DependentUpon>app.js</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\app\app.min.js.map">
+    <Content Include="js\app.min.js.map">
       <DependentUpon>app.min.js</DependentUpon>
     </Content>
   </ItemGroup>
@@ -707,7 +725,34 @@
     <Content Include="sass\compact.scss" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\profile.json" />
+    <Content Include="app\filters\skip.coffee" />
+    <Content Include="js\app\skip.js.map">
+      <DependentUpon>skip.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\skip.min.js.map">
+      <DependentUpon>skip.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\services\agencyService.coffee" />
+    <Content Include="js\app\agencyService.js.map">
+      <DependentUpon>agencyService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\agencyService.min.js.map">
+      <DependentUpon>agencyService.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\filters\take.coffee" />
+    <Content Include="js\app\take.js.map">
+      <DependentUpon>take.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\take.min.js.map">
+      <DependentUpon>take.min.js</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\talent site.pubxml" />
+    <Content Include="sass\compcard.scss" />
+    <Content Include="styles\compcard.css.map">
+      <DependentUpon>compcard.css</DependentUpon>
+    </Content>
+    <Content Include="Views\Artists\Compcard.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

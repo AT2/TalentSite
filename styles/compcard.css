@@ -1,0 +1,357 @@
+.compcard-layout {
+  padding: 20px 0;
+  margin: auto;
+  max-width: 1024px;
+}
+
+.compcard-layout-1 .compcard-images {
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-1 .compcard-images {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-1 .compcard-images img {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+  max-width: 150px;
+  max-height: 187px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .compcard-layout-1 .compcard-images img {
+    float: left;
+    width: 33.33333%;
+  }
+}
+.compcard-layout-1 .compcard-images dl {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-1 .compcard-images dl {
+    float: left;
+    width: 25%;
+  }
+}
+.compcard-layout-1 .compcard-info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-1 .compcard-info {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-1 .compcard-info h3 {
+  margin-top: 0;
+}
+.compcard-layout-1 .compcard-info #agencyLogo {
+  margin: 20px 0;
+}
+.compcard-layout-1 .compcard-info .headshot {
+  max-width: 380px;
+  max-height: 507px;
+}
+
+.compcard-layout-2 .compcard-images {
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-2 .compcard-images {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-2 .compcard-images img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-width: 213px;
+  max-height: 266px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .compcard-layout-2 .compcard-images img {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-2 .compcard-images dl {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-2 .compcard-images dl {
+    float: left;
+    width: 25%;
+  }
+}
+.compcard-layout-2 .compcard-info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-2 .compcard-info {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-2 .compcard-info h3 {
+  margin-top: 0;
+}
+.compcard-layout-2 .compcard-info #agencyLogo {
+  margin: 20px 0;
+}
+.compcard-layout-2 .compcard-info .headshot {
+  max-width: 213px;
+  max-height: 266px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-2 .compcard-info .headshot {
+    float: left;
+    width: 50%;
+  }
+}
+
+.compcard-layout-3 .compcard-images {
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-3 .compcard-images {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-3 .compcard-images img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-width: 213px;
+  max-height: 266px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .compcard-layout-3 .compcard-images img {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-3 .compcard-images dl {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-3 .compcard-images dl {
+    float: left;
+    width: 25%;
+  }
+}
+.compcard-layout-3 .compcard-info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-3 .compcard-info {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-3 .compcard-info h3 {
+  margin-top: 0;
+}
+.compcard-layout-3 .compcard-info #agencyLogo {
+  margin: 20px 0;
+}
+.compcard-layout-3 .compcard-info .headshot {
+  max-width: 380px;
+  max-height: 507px;
+}
+
+.compcard-layout-4 .compcard-images {
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-4 .compcard-images {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-4 .compcard-images img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-width: 213px;
+  max-height: 266px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .compcard-layout-4 .compcard-images img {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-4 .compcard-images dl {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-4 .compcard-images dl {
+    float: left;
+    width: 25%;
+  }
+}
+.compcard-layout-4 .compcard-info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-4 .compcard-info {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-4 .compcard-info h3 {
+  margin-top: 0;
+}
+.compcard-layout-4 .compcard-info #agencyLogo {
+  margin: 20px 0;
+}
+.compcard-layout-4 .compcard-info .headshot {
+  max-width: 380px;
+  max-height: 507px;
+}
+
+.compcard-layout-5 .compcard-images img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  max-width: 213px;
+  max-height: 266px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .compcard-layout-5 .compcard-images img {
+    float: left;
+    width: 50%;
+  }
+}
+.compcard-layout-5 .compcard-images dl {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+@media (min-width: 768px) {
+  .compcard-layout-5 .compcard-images dl {
+    float: left;
+    width: 25%;
+  }
+}
+.compcard-layout-5 .compcard-info {
+  margin-bottom: 10px;
+}
+.compcard-layout-5 .compcard-info h3 {
+  margin-top: 0;
+}
+.compcard-layout-5 .compcard-info #agencyLogo {
+  margin: 20px 0;
+}
+.compcard-layout-5 .compcard-info .headshot {
+  max-width: 380px;
+  max-height: 507px;
+}
+
+/*# sourceMappingURL=compcard.css.map */

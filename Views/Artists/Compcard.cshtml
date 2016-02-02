@@ -1,0 +1,12 @@
+﻿@section scripts{
+    <script>
+        jQuery(document).ready(function () {
+            angular.bootstrap(document, ["talent"]);
+        });
+    </script>
+}
+<link rel="stylesheet" href="/styles/compcard.css" />
+
+<div class="container-fluid compcard-layout" ng-controller="artistDetailController" ng-init="init()">
+    <div ng-include="compCardUrl()"></div>
+</div>

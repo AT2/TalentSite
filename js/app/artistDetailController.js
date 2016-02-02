@@ -1,8 +1,9 @@
 ﻿(function() {
   app.controller("artistDetailController", [
-    "$scope", "artistService", function($scope, artistService) {
+    "$scope", "artistService", "agencyService", function($scope, artistService, agencyService) {
       var audioPlayer, playAudioInternal, playVideoInternal, resumeAudioPlayer, resumeVideoPlayer, videoPlayer;
       $scope.profile = {};
+      $scope.agency = {};
       $scope.videoIndex = 0;
       $scope.audioIndex = 0;
       $scope.videoSrc = "";
@@ -13,6 +14,14 @@
       $scope.init = function() {
         artistService.queryDetail(window.memberId).then(function(data) {
           $scope.profile = data.Result;
+        });
+        agencyService.get().then(function(data) {
+          $scope.agency = data.Result;
+        });
+      };
+      $scope.findStats = function(stats) {
+        return _.findWhere($scope.profile.Statistics, {
+          "Code": stats
         });
       };
       $scope.playVideo = function(index) {
@@ -128,6 +137,9 @@
           "src": $scope.profile.AudioList[index].AudioPath
         });
         audioPlayer.play();
+      };
+      $scope.compCardUrl = function() {
+        return "/static/partial/_compcard_" + $scope.profile.CompCard.CompCardTemplateID + ".html";
       };
     }
   ]);

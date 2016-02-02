@@ -12,7 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.fa, .section-content .section-filter dl.filter-selected dt a span, .section-content .section-filter dl.filter-container dt a span {
+.fa, .section-content .section-filter dl dt a span {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -83,10 +83,10 @@
   float: right;
 }
 
-.fa.fa-pull-left, .section-content .section-filter dl.filter-selected dt a span.fa-pull-left, .section-content .section-filter dl.filter-container dt a span.fa-pull-left {
+.fa.fa-pull-left, .section-content .section-filter dl dt a span.fa-pull-left {
   margin-right: .3em;
 }
-.fa.fa-pull-right, .section-content .section-filter dl.filter-selected dt a span.fa-pull-right, .section-content .section-filter dl.filter-container dt a span.fa-pull-right {
+.fa.fa-pull-right, .section-content .section-filter dl dt a span.fa-pull-right {
   margin-left: .3em;
 }
 
@@ -99,10 +99,10 @@
   float: left;
 }
 
-.fa.pull-left, .section-content .section-filter dl.filter-selected dt a span.pull-left, .section-content .section-filter dl.filter-container dt a span.pull-left {
+.fa.pull-left, .section-content .section-filter dl dt a span.pull-left {
   margin-right: .3em;
 }
-.fa.pull-right, .section-content .section-filter dl.filter-selected dt a span.pull-right, .section-content .section-filter dl.filter-container dt a span.pull-right {
+.fa.pull-right, .section-content .section-filter dl dt a span.pull-right {
   margin-left: .3em;
 }
 
@@ -541,7 +541,7 @@
   content: "";
 }
 
-.fa-minus-circle:before, .section-content .section-filter dl.filter-selected dt a span:before {
+.fa-minus-circle:before {
   content: "";
 }
 
@@ -1146,7 +1146,7 @@
   content: "";
 }
 
-.fa-plus-square:before, .section-content .section-filter dl.filter-container.filter-collapse dt a span:before {
+.fa-plus-square:before, .section-content .section-filter dl.filter-collapse dt a span:before {
   content: "";
 }
 
@@ -1412,7 +1412,7 @@
   content: "";
 }
 
-.fa-minus-square:before, .section-content .section-filter dl.filter-container dt a span:before {
+.fa-minus-square:before, .section-content .section-filter dl dt a span:before {
   content: "";
 }
 
@@ -2679,33 +2679,15 @@
 .section-content .section-filter button {
   height: 34px;
 }
-.section-content .section-filter dl.filter-selected dt {
+.section-content .section-filter dl dt {
   font-weight: normal;
 }
-.section-content .section-filter dl.filter-selected dt a span {
+.section-content .section-filter dl dt a span {
   position: absolute;
   right: -15px;
   top: 1px;
 }
-.section-content .section-filter dl.filter-selected a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  cursor: pointer;
-  position: relative;
-}
-.section-content .section-filter dl.filter-selected a:active, .section-content .section-filter dl.filter-selected a:focus {
-  outline: none;
-}
-.section-content .section-filter dl.filter-container dt {
-  font-weight: normal;
-}
-.section-content .section-filter dl.filter-container dt a span {
-  position: absolute;
-  right: -15px;
-  top: 1px;
-}
-.section-content .section-filter dl.filter-container a {
+.section-content .section-filter dl a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -2713,16 +2695,16 @@
   cursor: pointer;
   position: relative;
 }
-.section-content .section-filter dl.filter-container a:active, .section-content .section-filter dl.filter-container a:focus {
+.section-content .section-filter dl a:active, .section-content .section-filter dl a:focus {
   outline: none;
 }
-.section-content .section-filter dl.filter-container a:hover {
+.section-content .section-filter dl a:hover {
   color: #000;
 }
-.section-content .section-filter dl.filter-container a.selected {
+.section-content .section-filter dl a.selected {
   color: #000;
 }
-.section-content .section-filter dl.filter-container.filter-collapse dd a {
+.section-content .section-filter dl.filter-collapse dd a {
   display: none;
 }
 .section-content .section-thumbs {

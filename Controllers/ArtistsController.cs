@@ -24,5 +24,10 @@ namespace Cwb.TalentSite.Controllers
             ViewBag.MemberId = memberId;
             return View("Detail");
         }
+        [Route("Artists/Compcard")]
+        public ActionResult Compcard()
+        {
+            return View("Compcard");
+        }
     }
 }

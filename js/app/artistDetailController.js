@@ -1,9 +1,10 @@
 ﻿(function() {
   app.controller("artistDetailController", [
-    "$scope", "artistService", "agencyService", function($scope, artistService, agencyService) {
+    "$scope", "$location", "$routeParams", "ngDialog", "artistService", "agencyService", function($scope, $location, $routeParams, ngDialog, artistService, agencyService) {
       var audioPlayer, playAudioInternal, playVideoInternal, resumeAudioPlayer, resumeVideoPlayer, videoPlayer;
       $scope.profile = {};
       $scope.agency = {};
+      $scope.isLoaded = false;
       $scope.videoIndex = 0;
       $scope.audioIndex = 0;
       $scope.videoSrc = "";
@@ -12,8 +13,15 @@
       resumeVideoPlayer = null;
       resumeAudioPlayer = null;
       $scope.init = function() {
-        artistService.queryDetail(window.memberId).then(function(data) {
+        artistService.queryDetail($routeParams.artistId).then(function(data) {
           $scope.profile = data.Result;
+          $scope.isLoaded = true;
+          $scope.initCarousel();
+          if ($location.url().lastIndexOf("#audio") > 0) {
+            $scope.showAudios();
+          } else if ($location.url().lastIndexOf("#video") > 0) {
+            $scope.showVideos();
+          }
         });
         agencyService.get().then(function(data) {
           $scope.agency = data.Result;
@@ -138,8 +146,56 @@
         });
         audioPlayer.play();
       };
-      $scope.compCardUrl = function() {
-        return "/static/partial/_compcard_" + $scope.profile.CompCard.CompCardTemplateID + ".html";
+      $scope.showCompCard = function() {
+        return ngDialog.open({
+          template: '/static/partial/_compcard_1.html',
+          className: 'ngdialog-theme-default dialog-compcard',
+          scope: $scope
+        });
+      };
+      $scope.initCarousel = function() {
+        $(".carousel").carousel();
+        $(".carousel .carousel-large").click(function() {
+          var options;
+          options = $('#blueimp-gallery').data();
+          options.index = $(".carousel .carousel-indicators li.active").data("slide-to");
+          return blueimp.Gallery($(".carousel-indicators a"), options);
+        });
+        $('.carousel').on('slide.bs.carousel', function(arg) {
+          var count, index, indicators, left, width;
+          indicators = $(".carousel-indicators");
+          width = parseInt($(".carousel").width());
+          left = parseInt(indicators.css("left"));
+          index = $(".carousel .carousel-indicators li.active").data("slide-to");
+          count = $(".carousel .carousel-indicators li:last").data("slide-to");
+          if (arg.direction === "left") {
+            if (index === count && left < 0) {
+              indicators.animate({
+                left: 0
+              });
+            } else if ((index + 2) * 52 > width) {
+              indicators.animate({
+                left: left - 50
+              });
+            }
+          } else {
+            if (index === 0 && left >= 0) {
+              indicators.animate({
+                left: (count - Math.floor(width / 52)) * -70
+              });
+            } else if (left < 0) {
+              left = left + 50;
+              if (left > 0) {
+                left = 0;
+              }
+              indicators.animate({
+                left: left
+              });
+            }
+          }
+          return "";
+        });
+        return "";
       };
     }
   ]);

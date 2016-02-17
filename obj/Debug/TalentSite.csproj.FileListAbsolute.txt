@@ -34,3 +34,5 @@ D:\Project\AT2\talent\TalentSite\develop\bin\System.Web.Http.xml
 D:\Project\AT2\talent\TalentSite\develop\bin\System.Web.Http.WebHost.xml
 D:\Project\AT2\talent\TalentSite\develop\obj\Debug\Cwb.TalentSite.dll
 D:\Project\AT2\talent\TalentSite\develop\obj\Debug\Cwb.TalentSite.pdb
+D:\Project\AT2\talent\TalentSite\develop\bin\wnvhtmlconvert.dll
+D:\Project\AT2\talent\TalentSite\develop\bin\wnvhtmlconvert.xml

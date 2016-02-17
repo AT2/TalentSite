@@ -1,7 +1,8 @@
-app.controller "artistDetailController",["$scope","artistService", "agencyService",
-  ($scope, artistService, agencyService)->
+app.controller "artistDetailController",["$scope", "$location", "$routeParams", "ngDialog" ,"artistService", "agencyService",
+  ($scope, $location, $routeParams, ngDialog, artistService, agencyService)->
     $scope.profile = {}
     $scope.agency = {}
+    $scope.isLoaded = false
     $scope.videoIndex = 0
     $scope.audioIndex = 0
     $scope.videoSrc = ""
@@ -9,15 +10,24 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
     audioPlayer = null
     resumeVideoPlayer = null
     resumeAudioPlayer = null
+    
+    #init
     $scope.init = ->
-      #get data
+      #get artist data
       artistService
-        .queryDetail(window.memberId)
+        .queryDetail($routeParams.artistId)
         .then(
           (data)->
             $scope.profile = data.Result
+            $scope.isLoaded = true
+            $scope.initCarousel();
+            if $location.url().lastIndexOf("#audio") > 0
+                $scope.showAudios()
+            else if $location.url().lastIndexOf("#video") > 0
+                $scope.showVideos()
             return
         )
+      #get agency data
       agencyService
         .get()
         .then(
@@ -26,11 +36,11 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
                 return
         )
       return
-    
+    #search statictis
     $scope.findStats = 
         (stats) ->
             _.findWhere($scope.profile.Statistics, { "Code":stats })
-       
+    #playVideo   
     $scope.playVideo =
         (index)->
             if($scope.videoIndex == index)
@@ -41,7 +51,7 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
             else
                 playVideoInternal(index)
             return
-    
+    #playAudio
     $scope.playAudio =
       (index)->
         if($scope.audioIndex == index)
@@ -103,7 +113,7 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
             mediaUrl
           ]);
         return
-    #play video
+    #play video internal
     playVideoInternal =
       (index)->
         $scope.videoIndex = index
@@ -119,7 +129,7 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
           "src": $scope.profile.VideoList[index].VideoPath
         videoPlayer.play()
         return
-    #play audio
+    #play audio internal
     playAudioInternal =
       (index) ->
         $scope.audioIndex = index
@@ -135,11 +145,47 @@ app.controller "artistDetailController",["$scope","artistService", "agencyServic
           "src": $scope.profile.AudioList[index].AudioPath
         audioPlayer.play()
         return
-    
-    $scope.compCardUrl = 
+    #show Comp Card
+    $scope.showCompCard = 
         ()->
-            return "/static/partial/_compcard_"+$scope.profile.CompCard.CompCardTemplateID+".html"
-            
+            ngDialog.open({
+                template: '/static/partial/_compcard_1.html',
+                className: 'ngdialog-theme-default dialog-compcard',
+                scope: $scope
+            })
+    #init carousel
+    $scope.initCarousel = 
+        ()->
+            $(".carousel").carousel()
+            $(".carousel .carousel-large").click(
+                ()->
+                    options = $('#blueimp-gallery').data()
+                    options.index = $(".carousel .carousel-indicators li.active").data("slide-to")
+                    return blueimp.Gallery($(".carousel-indicators a"), options)
+            );
+            $('.carousel').on('slide.bs.carousel',
+                    (arg)->
+                        indicators = $(".carousel-indicators")
+                        width = parseInt($(".carousel").width())
+                        left = parseInt(indicators.css("left"))
+                        index = $(".carousel .carousel-indicators li.active").data("slide-to")
+                        count = $(".carousel .carousel-indicators li:last").data("slide-to")
+                        if arg.direction is "left"
+                            if index == count and left < 0
+                                indicators.animate({left: 0})
+                            else if (index + 2 ) * 52 > width
+                                indicators.animate({left: left - 50})
+                        else
+                            if  index == 0 and left >= 0 
+                                indicators.animate({left: (count-Math.floor(width/52)) * -70})
+                            else if left < 0
+                                left = left + 50;
+                                if left > 0 
+                                    left = 0
+                                indicators.animate({left: left});
+                        return ""
+            )
+            return ""      
     return
 
 ]

@@ -14,7 +14,7 @@
       this.queryDetail = function(memberId) {
         var deferred;
         deferred = $q.defer();
-        $http.get("/data/profile.json").success(function(data, status, headers, config) {
+        $http.get(API.address + "/artists/" + memberId + "?apikey=" + API.key).success(function(data, status, headers, config) {
           return deferred.resolve(data);
         }).error(function(data, status, headers, config) {
           return deferred.reject(data);

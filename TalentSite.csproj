@@ -131,6 +131,9 @@
       <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="wnvhtmlconvert">
+      <HintPath>..\..\..\YUM\develop\casting\AT2WebApp\bin\wnvhtmlconvert.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -140,6 +143,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\FiltersController.cs" />
+    <Compile Include="Controllers\PrintController.cs" />
     <Compile Include="Controllers\ShortlistController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,21 +151,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\APIClient.cs" />
     <Compile Include="Util\ConfigSettings.cs" />
+    <Compile Include="Util\PrintUtil.cs" />
+    <Compile Include="ViewModel\CompCardViewModel.cs" />
     <Compile Include="ViewModel\FilterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app\services\accountService.coffee" />
+    <None Include="app\directives\authorize.coffee" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="html\admin.html" />
-    <Content Include="html\compact.html" />
-    <Content Include="html\detail.html" />
-    <Content Include="html\index.html" />
-    <Content Include="html\login.html" />
-    <Content Include="html\partial\test.html" />
-    <Content Include="html\partial\_Artist.html" />
-    <Content Include="html\standard.html" />
     <Content Include="images\at2.PNG" />
     <Content Include="images\headshot1.jpg" />
     <Content Include="images\headshot2.jpg" />
@@ -172,6 +176,14 @@
     <Content Include="images\jing4.jpg" />
     <Content Include="images\jing5.PNG" />
     <Content Include="images\small.PNG" />
+    <Content Include="js\app\accountController.js" />
+    <Content Include="js\app\accountController.min.js">
+      <DependentUpon>accountController.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\accountService.js" />
+    <Content Include="js\app\accountService.min.js">
+      <DependentUpon>accountService.js</DependentUpon>
+    </Content>
     <Content Include="js\app\agencyService.js" />
     <Content Include="js\app\agencyService.min.js">
       <DependentUpon>agencyService.js</DependentUpon>
@@ -208,6 +220,10 @@
     <Content Include="js\app\nameModel.min.js">
       <DependentUpon>nameModel.js</DependentUpon>
     </Content>
+    <Content Include="js\app\registerController.js" />
+    <Content Include="js\app\registerController.min.js">
+      <DependentUpon>registerController.js</DependentUpon>
+    </Content>
     <Content Include="js\app\skip.js" />
     <Content Include="js\app\skip.min.js">
       <DependentUpon>skip.js</DependentUpon>
@@ -235,6 +251,7 @@
     <Content Include="js\vendor\AngularJS\angular.js" />
     <Content Include="js\vendor\AngularJS\angular.min.js" />
     <Content Include="js\vendor\AngularJS\loading-bar.min.js" />
+    <Content Include="js\vendor\AngularJS\messages.js" />
     <Content Include="js\vendor\blueimp-gallery\css\blueimp-gallery.min.css" />
     <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.css" />
     <Content Include="js\vendor\blueimp-gallery\css\bootstrap-image-gallery.min.css" />
@@ -286,10 +303,21 @@
     <Content Include="js\vendor\videoJs\video.min.js" />
     <Content Include="sass\plugins\compass\compass.css" />
     <Content Include="sass\plugins\compass\compass.min.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="static\partial\_compact.html" />
+    <Content Include="static\partial\_detail.html" />
+    <Content Include="static\partial\_login.html" />
     <Content Include="static\partial\_compcard_5.html" />
     <Content Include="static\partial\_compcard_4.html" />
     <Content Include="static\partial\_compcard_3.html" />
     <Content Include="static\partial\_compcard_2.html" />
+    <Content Include="static\partial\_register.html" />
+    <Content Include="static\partial\_standard.html" />
     <Content Include="styles\all.css" />
     <Content Include="styles\all.min.css">
       <DependentUpon>all.css</DependentUpon>
@@ -321,6 +349,10 @@
       <DependentUpon>ie.css</DependentUpon>
     </Content>
     <Content Include="styles\loading-bar.min.css" />
+    <Content Include="styles\login.css" />
+    <Content Include="styles\login.min.css">
+      <DependentUpon>login.css</DependentUpon>
+    </Content>
     <Content Include="styles\print.css" />
     <Content Include="styles\print.min.css">
       <DependentUpon>print.css</DependentUpon>
@@ -328,6 +360,10 @@
     <Content Include="styles\screen.css" />
     <Content Include="styles\screen.min.css">
       <DependentUpon>screen.css</DependentUpon>
+    </Content>
+    <Content Include="styles\site.css" />
+    <Content Include="styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
     </Content>
     <Content Include="styles\standard.css" />
     <Content Include="styles\standard.min.css">
@@ -337,13 +373,11 @@
     <Content Include="styles\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
     </Content>
-    <Content Include="Views\index.html" />
-    <Content Include="Views\Pages\detail.html" />
-    <Content Include="Views\Pages\standard.html" />
     <Content Include="static\partial\_artist.html" />
     <Content Include="static\partial\_compcard_1.html" />
     <Content Include="static\partial\_resumesection_p.html" />
     <Content Include="static\partial\_resumeSection_t.html" />
+    <Content Include="static\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -351,10 +385,17 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="sass\site.scss" />
+    <Content Include="styles\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Print\Compcard.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\Api\" />
     <Folder Include="Models\" />
     <Folder Include="packages\" />
   </ItemGroup>
@@ -397,7 +438,6 @@
     <Content Include="sass\pages\compcard.scss" />
     <Content Include="sass\pages\compcard2.scss" />
     <Content Include="sass\pages\detail.scss" />
-    <Content Include="sass\standard.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_alerts.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_background-variant.scss" />
     <Content Include="sass\plugins\bootstrap\bootstrap\mixins\_border-radius.scss" />
@@ -573,15 +613,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_Layout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\_ViewStart.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Artists\Standard.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -708,21 +739,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Artists\Detail.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="sass\detail.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="styles\detail.css.map">
       <DependentUpon>detail.css</DependentUpon>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Artists\Compact.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sass\compact.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\profile.json" />
@@ -747,12 +769,36 @@
     <Content Include="js\app\take.min.js.map">
       <DependentUpon>take.min.js</DependentUpon>
     </Content>
+    <Content Include="app\controllers\accountController.coffee" />
+    <Content Include="js\app\accountService.js.map">
+      <DependentUpon>accountService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\accountService.min.js.map">
+      <DependentUpon>accountService.min.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\registerController.js.map">
+      <DependentUpon>registerController.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\registerController.min.js.map">
+      <DependentUpon>registerController.min.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\accountController.js.map">
+      <DependentUpon>accountController.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\accountController.min.js.map">
+      <DependentUpon>accountController.min.js</DependentUpon>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\talent site.pubxml" />
     <Content Include="sass\compcard.scss" />
     <Content Include="styles\compcard.css.map">
       <DependentUpon>compcard.css</DependentUpon>
     </Content>
-    <Content Include="Views\Artists\Compcard.cshtml" />
+    <Content Include="styles\login.css.map">
+      <DependentUpon>login.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -27,5 +27,13 @@ namespace Cwb.TalentSite.Util
                 return GetSetting("API.URL");
             }
         }
+
+        public static string PDFKey
+        {
+            get
+            {
+                return GetSetting("Winnovative.LicenseKeyString");
+            }
+        }
     }
 }

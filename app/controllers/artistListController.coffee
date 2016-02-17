@@ -1,5 +1,5 @@
-app.controller "artistListController",["$scope","artistService","filterService"
-  ($scope, artistService, filterService)->
+app.controller "artistListController",["$scope", "ngDialog" ,"artistService","filterService"
+  ($scope, ngDialog , artistService, filterService)->
     $scope.showFilter = true
     $scope.artists = []
     $scope.filters = []
@@ -11,13 +11,13 @@ app.controller "artistListController",["$scope","artistService","filterService"
             value.selectedItem and value.selectedItem.Value.length > 0
     #init
     $scope.init = (mode)->
-#      artistService
-#      .queryList()
-#      .then(
-#        (data)->
-#          $scope.artists = data.Result.ArtistList
-#          return
-#      )
+      artistService
+      .queryList()
+      .then(
+        (data)->
+          $scope.artists = data.Result.ArtistList
+          return
+      )
 
       filterService.queryFilters()
       .then(
@@ -47,13 +47,13 @@ app.controller "artistListController",["$scope","artistService","filterService"
                 return
         if queryString.length > 3 and queryString isnt $scope.queryString
             $scope.queryString = queryString
-#            artistService.queryList($scope.queryString).then(
-#                (data)->
-#                    $scope.artists = data.Result.ArtistList
-#                    return
-#            )
-
+            artistService.queryList($scope.queryString).then(
+                (data)->
+                    $scope.artists = data.Result.ArtistList
+                    return
+            )
         return
+    #change select condition 
     $scope.onSelectFilter = (filter, item)->
         filter.selectedItem = item 
         $scope.search() 

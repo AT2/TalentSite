@@ -1,0 +1,44 @@
+﻿<div class="login-view">
+    <div class="login-container">
+        <div class="login-header">
+            <h4 class="title text-center">
+                Please login
+            </h4>
+            <p>You must login before you are able to view our talent or <a href="javascript:void(0)" ng-click="register()">register for access</a></p>
+        </div>
+        <form name="loginForm" ng-submit="onSubmit(loginForm.$valid)" novalidate>
+            <div class="form-group" ng-class="{ 'has-error': loginForm.userName.$touched && loginForm.userName.$invalid }">
+                <label class="control-label" for="username">Username</label>
+                <input type="text" class="form-control"
+                       ng-model="login.userName" name="userName"
+                       autocomplete="off"
+                       ng-maxlength="50"
+                       ng-minlength="2"
+                       required>
+                <div class="help-block" ng-messages="loginForm.userName.$error" ng-if="loginForm.userName.$touched" role="alert">
+                    <div ng-message="required">Your username is required</div>
+                </div>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': loginForm.password.$touched && loginForm.password.$invalid }">
+                <label class="control-label" for="passwd">Password</label>
+                <input type="password" class="form-control" ng-model="login.password" name="password"
+                       autocomplete="off"
+                       required>
+                <div class="help-block" ng-messages="loginForm.password.$error" ng-if="loginForm.password.$touched" role="alert">
+                    <div ng-message="required">Your password is required</div>
+                </div>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': invalidAccount }">
+                <button type="submit" class="btn btn-primary  btn-block text-left" ng-disabled="!loginForm.$valid">
+                    LOGIN
+                </button>
+                <div class="help-block" ng-if="invalidAccount" role="alert">
+                    Login failed, please confirm your account info or <a href="javascript:void(0)" ng-click="register()">register for access</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

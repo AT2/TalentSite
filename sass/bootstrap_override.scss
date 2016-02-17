@@ -3,6 +3,7 @@ $brand-primary: #2c2e2f;
 .btn{
   @include border-radius(0,0);
   outline: none;
+  height: 34px;
 }
 
 .form-control{

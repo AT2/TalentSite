@@ -1,6 +1,6 @@
 ﻿(function() {
   app.controller("artistListController", [
-    "$scope", "artistService", "filterService", function($scope, artistService, filterService) {
+    "$scope", "ngDialog", "artistService", "filterService", function($scope, ngDialog, artistService, filterService) {
       $scope.showFilter = true;
       $scope.artists = [];
       $scope.filters = [];
@@ -11,6 +11,9 @@
         return value.selectedItem && value.selectedItem.Value.length > 0;
       };
       $scope.init = function(mode) {
+        artistService.queryList().then(function(data) {
+          $scope.artists = data.Result.ArtistList;
+        });
         filterService.queryFilters().then(function(data) {
           var filter, i, j, len, len1, ref, ref1;
           $scope.filters = data.Result;
@@ -83,6 +86,9 @@
         }
         if (queryString.length > 3 && queryString !== $scope.queryString) {
           $scope.queryString = queryString;
+          artistService.queryList($scope.queryString).then(function(data) {
+            $scope.artists = data.Result.ArtistList;
+          });
         }
       };
       $scope.onSelectFilter = function(filter, item) {

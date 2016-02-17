@@ -30,8 +30,16 @@
           "Value": "31-40"
         },
         {
-          "Key": "41-55",
-          "Value": "41-55"
+          "Key": "41-50",
+          "Value": "41-50"
+        },
+        {
+          "Key": "51-60",
+          "Value": "51-60"
+        },
+        {
+          "Key": "Over 60",
+          "Value": "61-100"
         }
       ]
     },
@@ -233,6 +241,10 @@
         {
           "Key": "African",
           "Value": "8"
+        },
+        {
+          "Key": "American Indian",
+          "Value": "16"
         },
         {
           "Key": "Asian",

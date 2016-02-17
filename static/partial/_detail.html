@@ -1,0 +1,154 @@
+﻿
+<div class="detail-view">
+    <div class="talent-content" ng-init="init()">
+        <div class="container-fluid" ng-show="isLoaded">
+            <div class="profile">
+                <div class="panel-photos">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item" ng-repeat="image in profile.ImageList" ng-class="{active:$first}">
+                                <img src="http://app.at2casting.com/au/upload/photo/{{image}}h.jpg" alt="artist">
+                            </div>
+                        </div>
+                        <!-- Indicators -->
+
+                        <div class="carousel-indicators-help">
+                            <ul class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="{{$index}}"
+                                    ng-repeat="image in profile.ImageList" ng-class="{active:$first}">
+                                    <img src="http://app.at2casting.com/au/upload/photo/{{image}}m.jpg" class="img-responsive">
+                                    <a href='http://app.at2casting.com/au/upload/photo/{{image}}j.jpg' title='' data-gallery></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Controls -->
+                        <!--
+                        <a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous">
+                            <span class="glyphicon glyphicon-chevron-left fa fa-chevron-circle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next">
+                            <span class="glyphicon glyphicon-chevron-right fa fa-chevron-circle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        -->
+                        <a class="carousel-large" href="javascript:void(0)" role="button" title="View Large Image">
+                            <span class="fa fa-search-plus" aria-hidden="true"></span>
+                            <span class="sr-only">Large</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-info">
+                    <h3 class="name">{{ profile.FirstName}} {{profile.LastName}}</h3>
+                    <span class="comm">{{profile.ArtistType}}</span>
+                    <div class="statistics">
+                        <dl ng-repeat="item in profile.Statistics">
+                            <dt>{{item.Name}}</dt>
+                            <dd>{{item.Value}}</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="panel-buttons">
+                    <button class="btn btn-default" role="button">PRINT PROFILE</button>
+                    <button class="btn btn-default" role="button" ng-click="showCompCard()">SHOW COMPCARD</button>
+                    <button class="btn btn-default" role="button" ng-click="showVideos()" ng-show="profile.VideoList.length > 0">Videos</button>
+                    <button class="btn btn-default" role="button" ng-click="showAudios()" ng-show="profile.AudioList.length > 0">Audios</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-resume" ng-show="isLoaded">
+            <div class="clearfix resume-header">
+                <h2 class="pull-left">Resume</h2>
+                <a class="pull-right btn btn-info" href="{{profile.ResumeFullPath | trusted}}" download>Download Resume</a>
+            </div>
+            <div ng-show="profile.CreditResume.length > 0">
+                <div ng-repeat="section in profile.CreditResume">
+                    <ng-include src="'/static/partial/_resumesection_'+ (section.IsParagraph?'p':'t') + '.html'"></ng-include>
+                </div>
+            </div>
+            <div ng-show="profile.CreditResume.length == 0 && profile.ResumeFullPath.length > 0">
+                <embed width="100%" height="700" embed-src="{{profile.ResumeFullPath | trusted}}" />
+            </div>
+        </div>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close" title="Close The Gallery">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+
+        <div class="modal fade no-header" id="modalResumeVideo" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <video id="creditVideo" class="video-js video-js-video"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade no-header" id="modalResumeAudio" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <audio id="creditAudio" class="video-js video-js-audio"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade custom-dialog" id="modalVideoShowreel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <div class="modal-video-content container-fluid">
+                    <div class="row">
+                        <div class="video-player">
+                            <video id="videoShowreel" class="video-js video-js-video"></video>
+                        </div>
+                        <div class="video-list">
+                            <h3>Playlist</h3>
+                            <span>{{profile.VideoList.length}} items</span>
+                            <div class="play-list">
+                                <ul>
+                                    <li ng-repeat="video in profile.VideoList" data-src="{{video.VideoPath | trusted}}" ng-click="playVideo($index)" ng-class="{active: $index==videoIndex}">
+                                        <span class="play"></span><span class="index">{{$index + 1}}</span><h5>{{video.Description}}</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade custom-dialog" id="modalAudioShowreel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <div class="modal-audio-content">
+                    <div>
+                        <audio id="audioShowreel" class="video-js video-js-audio"></audio>
+                    </div>
+                    <h3>Playlist</h3>
+                    <span>{{profile.AudioList.length}} items</span>
+                    <div class="play-list">
+                        <ul>
+                            <li ng-repeat="audio in profile.AudioList" data-src="{{audio.AudioPath | trusted}}" ng-click="playAudio($index)" ng-class="{active: $index==audioIndex}">
+                                <span class="play"></span><span class="index">{{$index + 1}}</span><h5>{{audio.Description}}</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

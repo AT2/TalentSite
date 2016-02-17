@@ -1,0 +1,51 @@
+﻿<div class="standard-view" ng-init="init('Standard')">
+    <!-- search begin -->
+    <section class="section-search">
+        <div class="artist-result">
+            <div>
+                <span class="center-block text-center">{{filteredArtists.length}} Artists Found</span>
+            </div>
+        </div>
+
+        <div class="filter-head">
+            <a class="pull-right filter-switch" href="javascript:void(0);" ng-click="showFilter=!showFilter">Search Filter<span class="caret"></span></a>
+            <div class="input-group pull-left">
+                <input type="text" class="form-control" placeholder="Find Talent" ng-model="nameFilter">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="filters" ng-show="showFilter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="filter" ng-repeat=" filter in filters">
+                        <ui-select theme="bootstrap" ng-model="filter.selectedItem" ng-disabled="filter.Value.length < 2">
+                            <ui-select-match placeholder="{{filter.Key}}">{{$select.selected.Key}}</ui-select-match>
+                            <ui-select-choices repeat="item in filter.Value | filter: $select.search">
+                                <span ng-bind-html="item.Key | highlight: $select.search"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                    <div class="submit">
+                        <a class="btn btn-primary btn-block" ng-click="search()">Serach</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- search end-->
+    <!-- list begin -->
+    <section class="section-list">
+        <div class="container-fluid">
+            <div class="row">
+                <artist ng-repeat="artist in filteredArtists = (artists | filter:nameFilter | filter: selectedFilters | filter: ageRangeFilter | take:2)" intro="artist">
+                </artist>
+            </div>
+        </div>
+    </section>
+    <!-- list end-->
+</div>

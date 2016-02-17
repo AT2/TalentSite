@@ -1,0 +1,50 @@
+﻿@model Cwb.TalentSite.ViewModel.CompCardViewModel
+<table border="0" cellspacing="0" cellpadding="0"  style="margin:auto;max-width:1024px">
+    <tr>
+        <td valign="top">
+            <table border="0" cellspacing="0" cellpadding="0">
+                @for (var i = 1; i <= 3; i++)
+                {
+                    <tr>
+                        @for (var j = 1; j <= 3; j++)
+                        {
+                            <td style="padding:10px">
+                                <img src='http://app.at2casting.com/au/upload/photo/@Model.Profile["Result"]["CompCard"]["PhotoList"][@i * @j]h.jpg' width="150" />
+                            </td>
+                        }
+                    </tr>
+                }
+            </table>
+            <div style="text-align:center">
+                @foreach (var code in Model.Profile["Result"]["CompCard"]["ProfileItems"])
+                {
+                    foreach (var stats in Model.Profile["Result"]["Statistics"])
+                    {
+                        if (stats["Code"].ToString() == code.ToString())
+                        {
+                            <dl style="float:left;width:22%">
+                                <dt>@stats["Name"]</dt>
+                                <dd>@stats["Value"]</dd>
+                            </dl>
+                            break;
+                        }
+                    }
+                }
+            </div>
+        </td>
+        <td valign="top" align="center" style="padding-left:10px">
+            <h3>
+                @Model.Profile["Result"]["FirstName"] @Model.Profile["Result"]["LastName"]
+            </h3>
+            <img src='http://app.at2casting.com/au/upload/photo/@Model.Profile["Result"]["CompCard"]["PhotoList"][0]j.jpg' width="380" style="display:block" />
+            <img src='@Model.Agency["Result"]["Logo"]' style="display:block;margin:10px 0" />
+            <address>
+                <strong>@Model.Agency["Result"]["AgencyName"]</strong><br>
+                @Model.Agency["Result"]["Addresses"][0]["AddressName"], @Model.Agency["Result"]["Addresses"][0]["City"]<br>
+                @Model.Agency["Result"]["Addresses"][0]["StateName"], @Model.Agency["Result"]["Addresses"][0]["CountryName"] @Model.Agency["Result"]["Addresses"][0]["PostCode"]<br>
+                <abbr title="Phone">P:</abbr> @Model.Agency["Result"]["Phone"]<br>
+                <abbr title="Mail">M:</abbr> <a href='mailto:@Model.Agency["Result"]["EmailDesc"]'>@Model.Agency["Result"]["EmailDesc"]</a>
+            </address>
+        </td>
+    </tr>
+</table>

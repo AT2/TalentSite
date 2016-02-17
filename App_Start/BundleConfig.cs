@@ -10,15 +10,18 @@ namespace Cwb.TalentSite
         {
             bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
                 "~/js/vendor/jquery/jquery-1.9.1.min.js",
-                "~/js/vendor/bootstrap/bootstrap.min.js",
-                "~/js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js",
-                "~/js/vendor/underscore/underscore.js"
+                "~/js/vendor/bootstrap/bootstrap.min.js"
+                //"~/js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js",
+                //"~/js/vendor/underscore/underscore.js"
                 ));
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                "~/js/vendor/angularJS/angular.min.js",
                "~/js/vendor/angularJS/angular-route.min.js",
                "~/js/vendor/angularJS/angular-sanitize.min.js",
                "~/js/vendor/angularJS/angular-animate.min.js",
+               "~/js/vendor/angularJS/angular-cookies.min.js",
+               "~/js/vendor/ngDialog/js/ngDialog.min.js",
+               "~/js/vendor/angularJS/messages.js",
                "~/js/vendor/ngLazyImage/lazy-image.min.js",
                "~/js/vendor/angular.UI/select.min.js",
                "~/js/vendor/angularJS/loading-bar.min.js"
@@ -28,8 +31,10 @@ namespace Cwb.TalentSite
               "~/js/app/*.js"
               ));
             bundles.Add(new StyleBundle("~/styles").Include(
-                "~/styles/all.css",
-                "~/styles/loading-bar.min.css"
+                "~/styles/all.css"
+                //"~/styles/loading-bar.min.css",
+                //"~/js/vendor/ngDialog/style/ngDialog.min.css",
+                //"~/js/vendor/ngDialog/style/ngDialog-theme-default.css"
             ));
             BundleTable.EnableOptimizations = false;
  

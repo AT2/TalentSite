@@ -35,5 +35,12 @@ namespace Cwb.TalentSite.Util
                 return GetSetting("Winnovative.LicenseKeyString");
             }
         }
+        public static string WebRootAddress
+        {
+            get
+            {
+                return GetSetting("WebApplication.RootAddress");
+            }
+        }
     }
 }

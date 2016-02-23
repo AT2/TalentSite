@@ -1,5 +1,9 @@
-﻿
-<div class="detail-view">
+﻿<div class="detail-view">
+    <div class="nvarbar">
+        <a href="javascript: window.history.go(-1);">
+            <span class="fa fa-arrow-left"></span> Back
+        </a>
+    </div>
     <div class="talent-content" ng-init="init()">
         <div class="container-fluid" ng-show="isLoaded">
             <div class="profile">
@@ -35,15 +39,15 @@
                             <span class="sr-only">Next</span>
                         </a>
                         -->
-                        <a class="carousel-large" href="javascript:void(0)" role="button" title="View Large Image">
+                        <a class="carousel-large" href="javascript:void(0)" role="button" title="View Large Image" ng-show="!profile.IsFreePackage">
                             <span class="fa fa-search-plus" aria-hidden="true"></span>
                             <span class="sr-only">Large</span>
                         </a>
                     </div>
                 </div>
                 <div class="panel-info">
-                    <h3 class="name">{{ profile.FirstName}} {{profile.LastName}}</h3>
-                    <span class="comm">{{profile.ArtistType}}</span>
+                    <h3>{{ profile.FirstName}} {{profile.LastName}}</h3>
+                    <h5>{{profile.ArtistType}}</h5>
                     <div class="statistics">
                         <dl ng-repeat="item in profile.Statistics">
                             <dt>{{item.Name}}</dt>
@@ -52,18 +56,18 @@
                     </div>
                 </div>
                 <div class="panel-buttons">
-                    <button class="btn btn-default" role="button">PRINT PROFILE</button>
-                    <button class="btn btn-default" role="button" ng-click="showCompCard()">SHOW COMPCARD</button>
+                    <a class="btn btn-default" role="button" href="/print/profile/{{profile.MemberID}}" target="_blank">PRINT PROFILE</a>
+                    <button class="btn btn-default" role="button" ng-click="showCompCard()" ng-show="profile.HaveCompCard && !profile.IsFreePackage">SHOW COMPCARD</button>
                     <button class="btn btn-default" role="button" ng-click="showVideos()" ng-show="profile.VideoList.length > 0">Videos</button>
                     <button class="btn btn-default" role="button" ng-click="showAudios()" ng-show="profile.AudioList.length > 0">Audios</button>
                 </div>
             </div>
         </div>
 
-        <div class="section-resume" ng-show="isLoaded">
+        <div class="section-resume" ng-show="isLoaded && (profile.CreditResume.length > 0 || profile.ResumeFullPath.length > 0)">
             <div class="clearfix resume-header">
                 <h2 class="pull-left">Resume</h2>
-                <a class="pull-right btn btn-info" href="{{profile.ResumeFullPath | trusted}}" download>Download Resume</a>
+                <a class="pull-right btn btn-info" href="{{profile.ResumeFullPath | trusted}}" download ng-show="profile.ResumeFullPath.length > 0">Download Resume</a>
             </div>
             <div ng-show="profile.CreditResume.length > 0">
                 <div ng-repeat="section in profile.CreditResume">

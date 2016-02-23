@@ -1,0 +1,67 @@
+﻿@model Cwb.TalentSite.ViewModel.CompCardViewModel
+@using System.Linq;
+<style>
+    body{
+        font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+        color:#7f7f7f;
+    }
+</style>
+<table border="0" cellspacing="0" cellpadding="0" style="margin:auto;width:620px" align="center">
+    <tr>
+        <td>
+            <h3 style="text-align:center;text-transform:uppercase; font-size:36px;color:#000000">
+                @Model.Profile["Result"]["FirstName"] @Model.Profile["Result"]["LastName"]
+            </h3>
+            <h4 style="text-align:center;">@Model.Profile["Result"]["ArtistType"]</h4>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src='http://app.at2casting.com/au/upload/photo/@Model.Profile["Result"]["ImageList"][0]j.jpg' width="600" style="margin:auto" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="margin:10px 0 0 0;text-align:center;">
+                        @{
+                            foreach (var stats in Model.Profile["Result"]["Statistics"])
+                            {
+
+                                string[] adultMale = new string[] { "HAIR", "SUTM", "COLL", "WAIS", "EYES", "HGHT", "CHST", "SHOM" };
+                                string[] adultFemale = new string[] { "HAIR", "DRES", "BUST", "HIPS", "EYES", "HGHT", "WAIS", "SHOW" };
+                                string[] childMale = new string[] { "DOB", "HAIR", "HGHT", "WAIS", "KIDC", "EYES", "CHST", "KIDS" };
+                                string[] childFemale = new string[] { "DOB", "HAIR", "HGHT", "WAIS", "KIDC", "EYES", "BUST", "KIDS" };
+                                if (
+                                    Model.Profile["Result"]["Gender"].ToString() == "MALE" && adultMale.Contains<string>(stats["Code"].ToString()) && int.Parse(Model.Profile["Result"]["AgeTo"].ToString()) > 16
+                                    ||
+                                    Model.Profile["Result"]["Gender"].ToString() == "FEMA" && adultFemale.Contains<string>(stats["Code"].ToString()) && int.Parse(Model.Profile["Result"]["AgeTo"].ToString()) > 16
+                                    ||
+                                    Model.Profile["Result"]["Gender"].ToString() == "MALE" && childMale.Contains<string>(stats["Code"].ToString()) && int.Parse(Model.Profile["Result"]["AgeTo"].ToString()) <= 16
+                                    ||
+                                    Model.Profile["Result"]["Gender"].ToString() == "FEMA" && childFemale.Contains<string>(stats["Code"].ToString()) && int.Parse(Model.Profile["Result"]["AgeTo"].ToString()) <= 16
+                                    )
+                                {
+                                    <dl style="display:inline-block;margin:0 5px 5px 0;font-size:16px;">
+                                        <dt style="display:inline-block;margin-right:2px">@stats["Name"]</dt>
+                                        <dd style="display:inline-block;color:#7f7f7f">@stats["Value"]</dd>
+                                    </dl>
+                                }
+                            }
+                        }
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 style="text-align:center;font-size:24px;color:#707070">@Model.Agency["Result"]["AgencyName"]</h3>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="font-size: 18px">
+            @Model.Agency["Result"]["Addresses"][0]["AddressName"], @Model.Agency["Result"]["Addresses"][0]["City"],
+            @Model.Agency["Result"]["Addresses"][0]["StateName"], @Model.Agency["Result"]["Addresses"][0]["CountryName"] @Model.Agency["Result"]["Addresses"][0]["PostCode"] |
+            @Model.Agency["Result"]["Phone"] |
+            <a href='mailto:@Model.Agency["Result"]["EmailDesc"]' style="color:#7f7f7f">@Model.Agency["Result"]["EmailDesc"]</a>
+        </td>
+    </tr>
+</table>

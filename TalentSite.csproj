@@ -127,6 +127,14 @@
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="TuesPechkin, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\TuesPechkin.2.1.1\lib\net20\TuesPechkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TuesPechkin.Wkhtmltox.Win64, Version=0.12.2.1, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>packages\TuesPechkin.Wkhtmltox.Win64.0.12.2.1\lib\net20\TuesPechkin.Wkhtmltox.Win64.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
@@ -158,6 +166,7 @@
   <ItemGroup>
     <None Include="app\services\accountService.coffee" />
     <None Include="app\directives\authorize.coffee" />
+    <None Include="app\services\dictionaryService.coffee" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -167,15 +176,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\at2.PNG" />
-    <Content Include="images\headshot1.jpg" />
-    <Content Include="images\headshot2.jpg" />
-    <Content Include="images\headshot3.jpg" />
-    <Content Include="images\headshot4.jpg" />
-    <Content Include="images\jing2.PNG" />
-    <Content Include="images\jing3.PNG" />
-    <Content Include="images\jing4.jpg" />
-    <Content Include="images\jing5.PNG" />
-    <Content Include="images\small.PNG" />
+    <Content Include="images\topmodels-logo-sm.png" />
+    <Content Include="images\topmodels-logo.png" />
     <Content Include="js\app\accountController.js" />
     <Content Include="js\app\accountController.min.js">
       <DependentUpon>accountController.js</DependentUpon>
@@ -207,6 +209,10 @@
     <Content Include="js\app\artistService.js" />
     <Content Include="js\app\artistService.min.js">
       <DependentUpon>artistService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\dictionaryService.js" />
+    <Content Include="js\app\dictionaryService.min.js">
+      <DependentUpon>dictionaryService.js</DependentUpon>
     </Content>
     <Content Include="js\app\embedSrc.js" />
     <Content Include="js\app\embedSrc.min.js">
@@ -248,6 +254,10 @@
     <Content Include="js\vendor\AngularJS\angular-route.min.js" />
     <Content Include="js\vendor\AngularJS\angular-sanitize.js" />
     <Content Include="js\vendor\AngularJS\angular-sanitize.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-ui-router.js" />
+    <Content Include="js\vendor\AngularJS\angular-ui-router.min.js">
+      <DependentUpon>angular-ui-router.js</DependentUpon>
+    </Content>
     <Content Include="js\vendor\AngularJS\angular.js" />
     <Content Include="js\vendor\AngularJS\angular.min.js" />
     <Content Include="js\vendor\AngularJS\loading-bar.min.js" />
@@ -305,12 +315,23 @@
     <Content Include="sass\plugins\compass\compass.min.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="js\vendor\AngularJS\angular-ui-router.min.js.map">
+      <DependentUpon>angular-ui-router.min.js</DependentUpon>
+    </Content>
+    <Content Include="js\vendor\underscore\underscore.string.min.js" />
+    <Content Include="js\app\dictionaryService.js.map">
+      <DependentUpon>dictionaryService.js</DependentUpon>
+    </Content>
+    <Content Include="js\app\dictionaryService.min.js.map">
+      <DependentUpon>dictionaryService.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="static\partial\_compact.html" />
     <Content Include="static\partial\_detail.html" />
+    <Content Include="static\partial\_login_redirect.html" />
     <Content Include="static\partial\_login.html" />
     <Content Include="static\partial\_compcard_5.html" />
     <Content Include="static\partial\_compcard_4.html" />
@@ -318,6 +339,8 @@
     <Content Include="static\partial\_compcard_2.html" />
     <Content Include="static\partial\_register.html" />
     <Content Include="static\partial\_standard.html" />
+    <Content Include="static\site\_foot.html" />
+    <Content Include="static\site\_head.html" />
     <Content Include="styles\all.css" />
     <Content Include="styles\all.min.css">
       <DependentUpon>all.css</DependentUpon>
@@ -378,7 +401,9 @@
     <Content Include="static\partial\_resumesection_p.html" />
     <Content Include="static\partial\_resumeSection_t.html" />
     <Content Include="static\index.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -386,13 +411,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="sass\site.scss" />
-    <Content Include="styles\site.css.map">
-      <DependentUpon>site.css</DependentUpon>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Print\Compcard.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Print\Profile.cshtml" />
+    <Content Include="styles\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

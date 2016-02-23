@@ -1,5 +1,5 @@
 <div class="artist">
-    <a href="/Artists/{{intro.MemberID}}">
+    <a href="/Artist/{{intro.MemberID}}">
         <div afkl-lazy-image="http://app.at2casting.com/au/upload/photo/{{intro.PhotoFullPath}}h.jpg"
              class="afkl-lazy-wrapper"></div>
     </a>
@@ -16,10 +16,10 @@
             <a href="javascript: void(0)">
                 <span class="fa fa-plane profile-icon" ng-show="!{{intro.IsAvailable}}" title="Avaiable"></span>
             </a>
-            <a href="/Artists/{{intro.MemberID}}#video">
+            <a href="/Artist/{{intro.MemberID}}#video">
                 <span class="fa fa-video-camera profile-icon" ng-show="{{intro.HaveVideo}}" title="Video Showreel"></span>
             </a>
-            <a href="/Artists/{{intro.MemberID}}#audio">
+            <a href="/Artist/{{intro.MemberID}}#audio">
                 <span class="fa fa-music profile-icon" ng-show="{{intro.HaveAudio}}" title="Audio Showreel"></span>
             </a>
             

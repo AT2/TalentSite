@@ -4,10 +4,10 @@
             <div class="row compcard-layout-1">
                 <div class="compcard-images">
                     <div class="row">
-                        <img src="http://app.at2casting.com/au/upload/photo/{{image}}h.jpg" ng-repeat="image in profile.CompCard.PhotoList | skip:1 | take:9" />
+                        <img src="http://app.at2casting.com/au/upload/photo/{{image}}h.jpg" ng-repeat="image in compCardImages = (profile.CompCard.PhotoList | skip:1 | take:9) track by $index " />
                     </div>
                     <div class="row">
-                        <dl ng-repeat="stats in profile.CompCard.ProfileItems">
+                        <dl ng-repeat="stats in profile.CompCard.ProfileItems" ng-show="findStats(stats)!=null" >
                             <dt>{{ findStats(stats).Name}}</dt>
                             <dd>{{ findStats(stats).Value}}</dd>
                         </dl>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div>
-            <a class="btn btn-info" href="/print/compcard/{{profile.MemberID}}" target="_blank" download>PRINT COMPCARD</a>
+            <a class="btn btn-info" href="/print/compcard/{{profile.MemberID}}" target="_blank" >PRINT COMPCARD</a>
         </div>
     </div>
 </div>

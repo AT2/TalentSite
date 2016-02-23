@@ -1,5 +1,5 @@
-app.controller "artistDetailController",["$scope", "$location", "$routeParams", "ngDialog" ,"artistService", "agencyService",
-  ($scope, $location, $routeParams, ngDialog, artistService, agencyService)->
+app.controller "artistDetailController",["$scope", "$location", "$stateParams", "ngDialog" ,"artistService", "agencyService",
+  ($scope, $location, $stateParams, ngDialog, artistService, agencyService)->
     $scope.profile = {}
     $scope.agency = {}
     $scope.isLoaded = false
@@ -15,10 +15,18 @@ app.controller "artistDetailController",["$scope", "$location", "$routeParams", 
     $scope.init = ->
       #get artist data
       artistService
-        .queryDetail($routeParams.artistId)
+        .queryDetail($stateParams.artistId)
         .then(
           (data)->
             $scope.profile = data.Result
+            #get agency data
+            agencyService
+                .get($scope.profile.AgencyID)
+                .then(
+                    (data) ->
+                        $scope.agency = data.Result
+                        return
+                )
             $scope.isLoaded = true
             $scope.initCarousel();
             if $location.url().lastIndexOf("#audio") > 0
@@ -26,14 +34,6 @@ app.controller "artistDetailController",["$scope", "$location", "$routeParams", 
             else if $location.url().lastIndexOf("#video") > 0
                 $scope.showVideos()
             return
-        )
-      #get agency data
-      agencyService
-        .get()
-        .then(
-            (data) ->
-                $scope.agency = data.Result
-                return
         )
       return
     #search statictis

@@ -12,11 +12,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="app/app.coffee">
       <publishTime>01/27/2016 01:05:28</publishTime>
     </File>
+    <File Include="app/controllers/accountController.coffee">
+      <publishTime>02/19/2016 01:51:59</publishTime>
+    </File>
     <File Include="app/controllers/artistDetailController.coffee">
-      <publishTime>01/27/2016 01:11:41</publishTime>
+      <publishTime>02/18/2016 17:56:07</publishTime>
     </File>
     <File Include="app/controllers/artistListController.coffee">
-      <publishTime>01/28/2016 01:47:21</publishTime>
+      <publishTime>02/19/2016 00:36:05</publishTime>
     </File>
     <File Include="app/directives/artist.coffee">
       <publishTime>01/26/2016 15:11:19</publishTime>
@@ -27,20 +30,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="app/filters/nameModel.coffee">
       <publishTime>01/26/2016 15:12:41</publishTime>
     </File>
+    <File Include="app/filters/skip.coffee">
+      <publishTime>02/01/2016 13:57:45</publishTime>
+    </File>
+    <File Include="app/filters/take.coffee">
+      <publishTime>02/01/2016 19:25:57</publishTime>
+    </File>
     <File Include="app/filters/trusted.coffee">
       <publishTime>01/26/2016 15:12:44</publishTime>
     </File>
+    <File Include="app/services/agencyService.coffee">
+      <publishTime>02/19/2016 01:48:55</publishTime>
+    </File>
     <File Include="app/services/artistService.coffee">
-      <publishTime>01/28/2016 00:17:52</publishTime>
+      <publishTime>02/18/2016 14:07:59</publishTime>
     </File>
     <File Include="app/services/filterService.coffee">
-      <publishTime>01/26/2016 17:22:14</publishTime>
+      <publishTime>02/19/2016 00:34:34</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>01/25/2016 17:28:45</publishTime>
     </File>
     <File Include="bin/Cwb.TalentSite.dll">
-      <publishTime>01/28/2016 02:37:24</publishTime>
+      <publishTime>02/19/2016 02:12:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>01/25/2016 17:28:46</publishTime>
@@ -87,6 +99,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/WebGrease.dll">
       <publishTime>01/25/2016 17:28:46</publishTime>
     </File>
+    <File Include="bin/wnvhtmlconvert.dll">
+      <publishTime>05/24/2015 23:56:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/16/2016 20:23:18</publishTime>
+    </File>
+    <File Include="data/profile.json">
+      <publishTime>02/01/2016 11:57:44</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>01/25/2016 17:08:19</publishTime>
     </File>
@@ -122,6 +149,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="fonts/FontAwesome.otf">
       <publishTime>01/22/2016 15:41:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/16/2016 20:23:21</publishTime>
     </File>
     <File Include="fonts/helvetica-67-medium-condensed.ttf">
       <publishTime>01/22/2016 15:41:42</publishTime>
@@ -192,6 +231,60 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/small.PNG">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
+    <File Include="images/topmodels-logo-sm.png">
+      <publishTime>02/18/2016 15:05:17</publishTime>
+    </File>
+    <File Include="images/topmodels-logo.png">
+      <publishTime>02/18/2016 12:14:35</publishTime>
+    </File>
+    <File Include="js/app.js">
+      <publishTime>02/19/2016 02:06:25</publishTime>
+    </File>
+    <File Include="js/app.js.map">
+      <publishTime>02/01/2016 17:31:32</publishTime>
+    </File>
+    <File Include="js/app.min.js">
+      <publishTime>02/19/2016 02:06:24</publishTime>
+    </File>
+    <File Include="js/app.min.js.map">
+      <publishTime>02/19/2016 02:06:25</publishTime>
+    </File>
+    <File Include="js/app/accountController.js">
+      <publishTime>02/19/2016 01:51:59</publishTime>
+    </File>
+    <File Include="js/app/accountController.js.map">
+      <publishTime>02/19/2016 01:51:59</publishTime>
+    </File>
+    <File Include="js/app/accountController.min.js">
+      <publishTime>02/19/2016 01:51:59</publishTime>
+    </File>
+    <File Include="js/app/accountController.min.js.map">
+      <publishTime>02/19/2016 01:51:59</publishTime>
+    </File>
+    <File Include="js/app/accountService.js">
+      <publishTime>02/02/2016 19:09:41</publishTime>
+    </File>
+    <File Include="js/app/accountService.js.map">
+      <publishTime>02/02/2016 19:09:41</publishTime>
+    </File>
+    <File Include="js/app/accountService.min.js">
+      <publishTime>02/02/2016 19:09:41</publishTime>
+    </File>
+    <File Include="js/app/accountService.min.js.map">
+      <publishTime>02/04/2016 02:28:50</publishTime>
+    </File>
+    <File Include="js/app/agencyService.js">
+      <publishTime>02/19/2016 01:48:55</publishTime>
+    </File>
+    <File Include="js/app/agencyService.js.map">
+      <publishTime>02/19/2016 01:48:55</publishTime>
+    </File>
+    <File Include="js/app/agencyService.min.js">
+      <publishTime>02/19/2016 01:48:55</publishTime>
+    </File>
+    <File Include="js/app/agencyService.min.js.map">
+      <publishTime>02/19/2016 01:48:55</publishTime>
+    </File>
     <File Include="js/app/app.js">
       <publishTime>01/26/2016 16:08:56</publishTime>
     </File>
@@ -217,40 +310,52 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/26/2016 15:11:20</publishTime>
     </File>
     <File Include="js/app/artistDetailController.js">
-      <publishTime>01/27/2016 01:11:41</publishTime>
+      <publishTime>02/18/2016 17:55:16</publishTime>
     </File>
     <File Include="js/app/artistDetailController.js.map">
-      <publishTime>01/27/2016 01:11:41</publishTime>
+      <publishTime>02/18/2016 17:55:16</publishTime>
     </File>
     <File Include="js/app/artistDetailController.min.js">
-      <publishTime>01/27/2016 01:11:36</publishTime>
+      <publishTime>02/18/2016 17:55:16</publishTime>
     </File>
     <File Include="js/app/artistDetailController.min.js.map">
-      <publishTime>01/27/2016 01:11:41</publishTime>
+      <publishTime>02/18/2016 17:56:07</publishTime>
     </File>
     <File Include="js/app/artistListController.js">
-      <publishTime>01/28/2016 01:47:16</publishTime>
+      <publishTime>02/19/2016 00:36:04</publishTime>
     </File>
     <File Include="js/app/artistListController.js.map">
-      <publishTime>01/28/2016 01:47:16</publishTime>
+      <publishTime>02/19/2016 00:36:04</publishTime>
     </File>
     <File Include="js/app/artistListController.min.js">
-      <publishTime>01/28/2016 01:47:16</publishTime>
+      <publishTime>02/19/2016 00:36:04</publishTime>
     </File>
     <File Include="js/app/artistListController.min.js.map">
-      <publishTime>01/28/2016 01:47:21</publishTime>
+      <publishTime>02/19/2016 00:36:05</publishTime>
     </File>
     <File Include="js/app/artistService.js">
-      <publishTime>01/28/2016 00:17:47</publishTime>
+      <publishTime>02/18/2016 14:05:09</publishTime>
     </File>
     <File Include="js/app/artistService.js.map">
-      <publishTime>01/28/2016 00:17:47</publishTime>
+      <publishTime>02/18/2016 14:05:09</publishTime>
     </File>
     <File Include="js/app/artistService.min.js">
-      <publishTime>01/28/2016 00:17:47</publishTime>
+      <publishTime>02/18/2016 14:05:09</publishTime>
     </File>
     <File Include="js/app/artistService.min.js.map">
-      <publishTime>01/28/2016 00:17:52</publishTime>
+      <publishTime>02/18/2016 14:07:59</publishTime>
+    </File>
+    <File Include="js/app/dictionaryService.js">
+      <publishTime>02/18/2016 23:19:07</publishTime>
+    </File>
+    <File Include="js/app/dictionaryService.js.map">
+      <publishTime>02/18/2016 23:22:35</publishTime>
+    </File>
+    <File Include="js/app/dictionaryService.min.js">
+      <publishTime>02/18/2016 23:19:07</publishTime>
+    </File>
+    <File Include="js/app/dictionaryService.min.js.map">
+      <publishTime>02/18/2016 23:22:40</publishTime>
     </File>
     <File Include="js/app/embedSrc.js">
       <publishTime>01/26/2016 14:27:48</publishTime>
@@ -265,16 +370,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/26/2016 14:27:48</publishTime>
     </File>
     <File Include="js/app/filterService.js">
-      <publishTime>01/26/2016 17:22:13</publishTime>
+      <publishTime>02/19/2016 00:34:34</publishTime>
     </File>
     <File Include="js/app/filterService.js.map">
-      <publishTime>01/26/2016 17:22:13</publishTime>
+      <publishTime>02/19/2016 00:34:34</publishTime>
     </File>
     <File Include="js/app/filterService.min.js">
-      <publishTime>01/26/2016 17:22:13</publishTime>
+      <publishTime>02/19/2016 00:34:34</publishTime>
     </File>
     <File Include="js/app/filterService.min.js.map">
-      <publishTime>01/26/2016 17:22:14</publishTime>
+      <publishTime>02/19/2016 00:34:34</publishTime>
     </File>
     <File Include="js/app/nameModel.js">
       <publishTime>01/26/2016 15:12:41</publishTime>
@@ -287,6 +392,42 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="js/app/nameModel.min.js.map">
       <publishTime>01/26/2016 15:12:42</publishTime>
+    </File>
+    <File Include="js/app/registerController.js">
+      <publishTime>02/02/2016 18:36:29</publishTime>
+    </File>
+    <File Include="js/app/registerController.js.map">
+      <publishTime>02/02/2016 18:36:30</publishTime>
+    </File>
+    <File Include="js/app/registerController.min.js">
+      <publishTime>02/02/2016 18:36:31</publishTime>
+    </File>
+    <File Include="js/app/registerController.min.js.map">
+      <publishTime>02/02/2016 18:36:31</publishTime>
+    </File>
+    <File Include="js/app/skip.js">
+      <publishTime>02/01/2016 13:57:44</publishTime>
+    </File>
+    <File Include="js/app/skip.js.map">
+      <publishTime>02/01/2016 13:57:44</publishTime>
+    </File>
+    <File Include="js/app/skip.min.js">
+      <publishTime>02/01/2016 13:57:44</publishTime>
+    </File>
+    <File Include="js/app/skip.min.js.map">
+      <publishTime>02/01/2016 13:57:45</publishTime>
+    </File>
+    <File Include="js/app/take.js">
+      <publishTime>02/01/2016 19:25:57</publishTime>
+    </File>
+    <File Include="js/app/take.js.map">
+      <publishTime>02/01/2016 19:25:57</publishTime>
+    </File>
+    <File Include="js/app/take.min.js">
+      <publishTime>02/01/2016 19:25:57</publishTime>
+    </File>
+    <File Include="js/app/take.min.js.map">
+      <publishTime>02/01/2016 19:25:57</publishTime>
     </File>
     <File Include="js/app/trusted.js">
       <publishTime>01/26/2016 15:12:43</publishTime>
@@ -348,6 +489,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/vendor/AngularJS/angular-sanitize.min.js.map">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
+    <File Include="js/vendor/AngularJS/angular-ui-router.js">
+      <publishTime>02/18/2016 17:34:59</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-ui-router.min.js">
+      <publishTime>02/18/2016 17:35:09</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/angular-ui-router.min.js.map">
+      <publishTime>02/18/2016 17:35:09</publishTime>
+    </File>
     <File Include="js/vendor/AngularJS/angular.js">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
@@ -359,6 +509,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="js/vendor/AngularJS/loading-bar.min.js">
       <publishTime>01/26/2016 15:53:46</publishTime>
+    </File>
+    <File Include="js/vendor/AngularJS/messages.js">
+      <publishTime>02/03/2016 11:39:35</publishTime>
     </File>
     <File Include="js/vendor/blueimp-gallery/css/blueimp-gallery.min.css">
       <publishTime>01/22/2016 15:41:42</publishTime>
@@ -495,6 +648,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/vendor/underscore/underscore.js">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
+    <File Include="js/vendor/underscore/underscore.string.min.js">
+      <publishTime>02/18/2016 19:38:58</publishTime>
+    </File>
     <File Include="js/vendor/videoJs/video-js.css">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
@@ -517,22 +673,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/25/2016 17:30:11</publishTime>
+      <publishTime>02/16/2016 20:23:28</publishTime>
     </File>
     <File Include="sass/all.scss">
-      <publishTime>01/27/2016 19:26:03</publishTime>
+      <publishTime>02/18/2016 18:07:01</publishTime>
     </File>
     <File Include="sass/bootstrap_override.scss">
-      <publishTime>01/26/2016 15:44:44</publishTime>
+      <publishTime>02/16/2016 16:07:34</publishTime>
     </File>
     <File Include="sass/compact.scss">
       <publishTime>01/28/2016 02:05:19</publishTime>
+    </File>
+    <File Include="sass/compcard.scss">
+      <publishTime>02/16/2016 18:16:06</publishTime>
     </File>
     <File Include="sass/detail.scss">
       <publishTime>01/28/2016 02:21:41</publishTime>
     </File>
     <File Include="sass/fonts.scss">
-      <publishTime>01/22/2016 15:41:42</publishTime>
+      <publishTime>02/18/2016 14:57:02</publishTime>
     </File>
     <File Include="sass/ie.scss">
       <publishTime>01/22/2016 15:41:42</publishTime>
@@ -1074,17 +1233,68 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="sass/screen.scss">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
+    <File Include="sass/site.scss">
+      <publishTime>02/18/2016 15:04:34</publishTime>
+    </File>
     <File Include="sass/standard.scss">
       <publishTime>01/28/2016 01:31:43</publishTime>
     </File>
     <File Include="sass/variables.scss">
-      <publishTime>01/22/2016 15:41:42</publishTime>
+      <publishTime>02/18/2016 16:08:37</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/16/2016 20:23:21</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/16/2016 20:23:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>02/16/2016 20:23:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>02/16/2016 20:23:22</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>02/16/2016 20:23:28</publishTime>
+    </File>
+    <File Include="static/index.html">
+      <publishTime>02/19/2016 00:20:19</publishTime>
     </File>
     <File Include="static/partial/_artist.html">
-      <publishTime>01/27/2016 16:47:36</publishTime>
+      <publishTime>02/19/2016 02:07:32</publishTime>
+    </File>
+    <File Include="static/partial/_compact.html">
+      <publishTime>02/18/2016 15:51:41</publishTime>
     </File>
     <File Include="static/partial/_compcard_1.html">
-      <publishTime>01/22/2016 15:41:41</publishTime>
+      <publishTime>02/18/2016 16:42:56</publishTime>
+    </File>
+    <File Include="static/partial/_compcard_2.html">
+      <publishTime>02/01/2016 19:40:51</publishTime>
+    </File>
+    <File Include="static/partial/_compcard_3.html">
+      <publishTime>02/01/2016 19:44:34</publishTime>
+    </File>
+    <File Include="static/partial/_compcard_4.html">
+      <publishTime>02/01/2016 19:45:50</publishTime>
+    </File>
+    <File Include="static/partial/_compcard_5.html">
+      <publishTime>02/01/2016 19:51:20</publishTime>
+    </File>
+    <File Include="static/partial/_detail.html">
+      <publishTime>02/18/2016 16:58:11</publishTime>
+    </File>
+    <File Include="static/partial/_login.html">
+      <publishTime>02/16/2016 15:50:00</publishTime>
+    </File>
+    <File Include="static/partial/_login_redirect.html">
+      <publishTime>02/19/2016 01:37:05</publishTime>
+    </File>
+    <File Include="static/partial/_register.html">
+      <publishTime>02/18/2016 18:07:28</publishTime>
     </File>
     <File Include="static/partial/_resumesection_p.html">
       <publishTime>01/22/2016 15:41:41</publishTime>
@@ -1092,41 +1302,59 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="static/partial/_resumeSection_t.html">
       <publishTime>01/22/2016 15:41:41</publishTime>
     </File>
+    <File Include="static/partial/_standard.html">
+      <publishTime>02/18/2016 15:51:29</publishTime>
+    </File>
+    <File Include="static/site/_foot.html">
+      <publishTime>02/19/2016 01:35:35</publishTime>
+    </File>
+    <File Include="static/site/_head.html">
+      <publishTime>02/19/2016 01:57:03</publishTime>
+    </File>
     <File Include="styles/all.css">
-      <publishTime>01/28/2016 02:37:19</publishTime>
+      <publishTime>02/18/2016 18:07:02</publishTime>
     </File>
     <File Include="styles/all.css.map">
-      <publishTime>01/28/2016 02:37:19</publishTime>
+      <publishTime>02/18/2016 18:07:02</publishTime>
     </File>
     <File Include="styles/all.min.css">
-      <publishTime>01/27/2016 19:26:10</publishTime>
+      <publishTime>02/18/2016 18:07:02</publishTime>
     </File>
     <File Include="styles/bootstrap.min.css">
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
     <File Include="styles/bootstrap_override.css">
-      <publishTime>01/28/2016 02:37:09</publishTime>
+      <publishTime>02/17/2016 16:50:32</publishTime>
     </File>
     <File Include="styles/bootstrap_override.css.map">
-      <publishTime>01/28/2016 02:37:09</publishTime>
+      <publishTime>02/17/2016 16:50:32</publishTime>
     </File>
     <File Include="styles/bootstrap_override.min.css">
-      <publishTime>01/26/2016 15:44:43</publishTime>
+      <publishTime>02/17/2016 16:50:32</publishTime>
     </File>
     <File Include="styles/compact.css">
-      <publishTime>01/28/2016 02:37:13</publishTime>
+      <publishTime>02/17/2016 16:50:34</publishTime>
     </File>
     <File Include="styles/compact.css.map">
-      <publishTime>01/28/2016 02:37:13</publishTime>
+      <publishTime>02/17/2016 16:50:34</publishTime>
     </File>
     <File Include="styles/compact.min.css">
-      <publishTime>01/28/2016 01:57:42</publishTime>
+      <publishTime>02/14/2016 11:24:58</publishTime>
+    </File>
+    <File Include="styles/compcard.css">
+      <publishTime>02/17/2016 16:50:30</publishTime>
+    </File>
+    <File Include="styles/compcard.css.map">
+      <publishTime>02/17/2016 16:50:30</publishTime>
+    </File>
+    <File Include="styles/compcard.min.css">
+      <publishTime>02/02/2016 02:18:14</publishTime>
     </File>
     <File Include="styles/detail.css">
-      <publishTime>01/28/2016 02:37:12</publishTime>
+      <publishTime>02/17/2016 16:50:35</publishTime>
     </File>
     <File Include="styles/detail.css.map">
-      <publishTime>01/28/2016 02:37:12</publishTime>
+      <publishTime>02/17/2016 16:50:35</publishTime>
     </File>
     <File Include="styles/detail.min.css">
       <publishTime>01/28/2016 02:21:42</publishTime>
@@ -1135,10 +1363,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/22/2016 15:41:42</publishTime>
     </File>
     <File Include="styles/fonts.css">
-      <publishTime>01/28/2016 02:37:06</publishTime>
+      <publishTime>02/18/2016 14:57:02</publishTime>
     </File>
     <File Include="styles/fonts.css.map">
-      <publishTime>01/28/2016 02:37:06</publishTime>
+      <publishTime>02/18/2016 14:57:02</publishTime>
     </File>
     <File Include="styles/fonts.min.css">
       <publishTime>01/26/2016 14:37:59</publishTime>
@@ -1155,6 +1383,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="styles/loading-bar.min.css">
       <publishTime>01/26/2016 16:02:13</publishTime>
     </File>
+    <File Include="styles/login.css">
+      <publishTime>02/14/2016 11:34:14</publishTime>
+    </File>
+    <File Include="styles/login.css.map">
+      <publishTime>02/14/2016 11:34:14</publishTime>
+    </File>
+    <File Include="styles/login.min.css">
+      <publishTime>02/14/2016 11:34:14</publishTime>
+    </File>
     <File Include="styles/print.css">
       <publishTime>01/26/2016 14:37:59</publishTime>
     </File>
@@ -1170,20 +1407,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="styles/screen.min.css">
       <publishTime>01/26/2016 14:41:19</publishTime>
     </File>
+    <File Include="styles/site.css">
+      <publishTime>02/18/2016 15:04:33</publishTime>
+    </File>
+    <File Include="styles/site.css.map">
+      <publishTime>02/18/2016 15:04:33</publishTime>
+    </File>
+    <File Include="styles/site.min.css">
+      <publishTime>02/18/2016 15:04:33</publishTime>
+    </File>
     <File Include="styles/standard.css">
-      <publishTime>01/28/2016 02:37:10</publishTime>
+      <publishTime>02/17/2016 16:50:32</publishTime>
     </File>
     <File Include="styles/standard.css.map">
-      <publishTime>01/28/2016 02:37:10</publishTime>
+      <publishTime>02/17/2016 16:50:32</publishTime>
     </File>
     <File Include="styles/standard.min.css">
       <publishTime>01/28/2016 01:31:41</publishTime>
     </File>
     <File Include="styles/variables.css">
-      <publishTime>01/26/2016 14:38:00</publishTime>
+      <publishTime>02/18/2016 16:08:35</publishTime>
     </File>
     <File Include="styles/variables.css.map">
-      <publishTime>01/26/2016 14:38:00</publishTime>
+      <publishTime>02/18/2016 16:08:35</publishTime>
     </File>
     <File Include="styles/variables.min.css">
       <publishTime>01/26/2016 14:38:00</publishTime>
@@ -1206,17 +1452,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Pages/standard.html">
       <publishTime>01/26/2016 14:17:39</publishTime>
     </File>
+    <File Include="Views/Print/Compcard.cshtml">
+      <publishTime>02/17/2016 15:05:37</publishTime>
+    </File>
+    <File Include="Views/Print/Profile.cshtml">
+      <publishTime>02/17/2016 16:33:36</publishTime>
+    </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/27/2016 00:56:52</publishTime>
+      <publishTime>02/17/2016 16:14:03</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>01/26/2016 14:55:20</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>01/26/2016 14:43:49</publishTime>
+      <publishTime>02/16/2016 20:23:18</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/28/2016 02:27:48</publishTime>
+      <publishTime>02/19/2016 02:12:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
-app.controller "artistListController",["$scope", "ngDialog" ,"artistService","filterService"
-  ($scope, ngDialog , artistService, filterService)->
+app.controller "artistListController",["$scope", "$stateParams", "ngDialog" ,"artistService","filterService", "dictionaryService", "API"
+  ($scope, $stateParams, ngDialog , artistService, filterService, dictionaryService, API)->
     $scope.showFilter = true
     $scope.artists = []
     $scope.filters = []
@@ -11,23 +11,44 @@ app.controller "artistListController",["$scope", "ngDialog" ,"artistService","fi
             value.selectedItem and value.selectedItem.Value.length > 0
     #init
     $scope.init = (mode)->
-      artistService
-      .queryList()
-      .then(
-        (data)->
-          $scope.artists = data.Result.ArtistList
-          return
-      )
-
-      filterService.queryFilters()
-      .then(
-        (data)->
-          $scope.filters = data.Result
-          filter.Value.unshift({ "Key": filter.Key, "Value":"" }) for filter in $scope.filters if mode is "Standard"
-          filter.Value.unshift({ "Key": "All", "Value":"" }) for filter in $scope.filters if mode is "Compact"
-          return
-      )
-      return
+     #query filters
+        filterService.queryFilters()
+            .then(
+                (data)->
+                    $scope.filters = _.reject(data.Result, 
+                        (filter)->
+                            _.indexOf(API.hideFilters, filter.Key) != -1
+                    )
+                    filter.Value.unshift({ "Key": filter.Key, "Value":"" }) for filter in $scope.filters if mode is "Standard"
+                    filter.Value.unshift({ "Key": "All", "Value":"" }) for filter in $scope.filters if mode is "Compact"
+                    return
+            )
+        #extract filters from url
+        if $stateParams.path
+            dictionaryService
+                .loadData()
+                .then(
+                    ()->
+                        filters = extractFilters($stateParams.path)
+                        artistService
+                            .queryList(filters)
+                            .then(
+                                (data)->
+                                    $scope.artists = data.Result.ArtistList
+                                    return
+                            )
+                        return
+                )
+        else
+            #query artists 
+            artistService
+                .queryList()
+                .then(
+                    (data)->
+                        $scope.artists = data.Result.ArtistList
+                        return
+                )
+        return
     #filter artists
     $scope.search = ()->
         queryString = "1=1"
@@ -58,5 +79,30 @@ app.controller "artistListController",["$scope", "ngDialog" ,"artistService","fi
         filter.selectedItem = item 
         $scope.search() 
         return
+    extractFilters = (url)->
+        params = url.split("/")
+        filters = "1=1"
+        #artist type
+        artistTypeFilterString = _.find(params, (filter)->s(filter).toUpperCase().include("ARTISTTYPE"))
+        if artistTypeFilterString
+            artistTypeName = artistTypeFilterString.replace(/artisttype_/i,"").replace(/_/g," ")
+            artistType = _.findWhere(JSON.parse(sessionStorage.getItem("artistTypes")),{"Name": artistTypeName})
+            filters += "&"+"ArtistType="+ artistType.Code if artistType
+        #state
+        states = JSON.parse(sessionStorage.getItem("states"))
+        state = _.find(states, 
+            (s)->
+                _.find(params,
+                    (p)->
+                        s.Code.toUpperCase() == p.toUpperCase()
+                )
+        )
+        filters += "&"+"State="+ state.ID if state
+        #age range
+        ageFilterString = _.find(params, (filter)->s(filter).toUpperCase().include("AGE"))
+        if ageFilterString
+            ageValue = ageFilterString.replace(/age/i,"").replace("-",":")
+            filters += "&"+"Age="+ ageValue if ageValue
+        return filters
     return
 ]

@@ -1,5 +1,5 @@
-app.service "filterService",["$http","$q",
-  ($http,$q)->
+app.service "filterService",["$http","$q","API",
+  ($http,$q, API)->
     this.queryFilters = ()->
       deferred = $q.defer()
       $http

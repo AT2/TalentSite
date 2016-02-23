@@ -3,7 +3,7 @@ app.service "artistService",["$http","$q","API"
     this.queryList = (filters)->
       deferred = $q.defer()
       $http
-        .get API.address+"/artists?pageNum=10000&apikey="+API.key+"&"+filters
+        .get API.address+"/artists?pageNum=10000&HasPhoto=true&apikey="+API.key+"&"+filters
         .success(
           (data,status,headers,config)->
             deferred.resolve data

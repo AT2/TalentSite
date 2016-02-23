@@ -1,6 +1,6 @@
 ﻿(function() {
   app.controller("artistDetailController", [
-    "$scope", "$location", "$routeParams", "ngDialog", "artistService", "agencyService", function($scope, $location, $routeParams, ngDialog, artistService, agencyService) {
+    "$scope", "$location", "$stateParams", "ngDialog", "artistService", "agencyService", function($scope, $location, $stateParams, ngDialog, artistService, agencyService) {
       var audioPlayer, playAudioInternal, playVideoInternal, resumeAudioPlayer, resumeVideoPlayer, videoPlayer;
       $scope.profile = {};
       $scope.agency = {};
@@ -13,8 +13,11 @@
       resumeVideoPlayer = null;
       resumeAudioPlayer = null;
       $scope.init = function() {
-        artistService.queryDetail($routeParams.artistId).then(function(data) {
+        artistService.queryDetail($stateParams.artistId).then(function(data) {
           $scope.profile = data.Result;
+          agencyService.get($scope.profile.AgencyID).then(function(data) {
+            $scope.agency = data.Result;
+          });
           $scope.isLoaded = true;
           $scope.initCarousel();
           if ($location.url().lastIndexOf("#audio") > 0) {
@@ -22,9 +25,6 @@
           } else if ($location.url().lastIndexOf("#video") > 0) {
             $scope.showVideos();
           }
-        });
-        agencyService.get().then(function(data) {
-          $scope.agency = data.Result;
         });
       };
       $scope.findStats = function(stats) {

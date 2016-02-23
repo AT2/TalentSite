@@ -42,7 +42,7 @@
     <section class="section-list">
         <div class="container-fluid">
             <div class="row">
-                <artist ng-repeat="artist in filteredArtists = (artists | filter:nameFilter | filter: selectedFilters | filter: ageRangeFilter | take:2)" intro="artist">
+                <artist ng-repeat="artist in filteredArtists = (artists | filter:nameFilter | filter: selectedFilters | filter: ageRangeFilter)" intro="artist">
                 </artist>
             </div>
         </div>

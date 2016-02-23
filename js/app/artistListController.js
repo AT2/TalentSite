@@ -1,6 +1,7 @@
 ﻿(function() {
   app.controller("artistListController", [
-    "$scope", "ngDialog", "artistService", "filterService", function($scope, ngDialog, artistService, filterService) {
+    "$scope", "$stateParams", "ngDialog", "artistService", "filterService", "dictionaryService", "API", function($scope, $stateParams, ngDialog, artistService, filterService, dictionaryService, API) {
+      var extractFilters;
       $scope.showFilter = true;
       $scope.artists = [];
       $scope.filters = [];
@@ -11,12 +12,11 @@
         return value.selectedItem && value.selectedItem.Value.length > 0;
       };
       $scope.init = function(mode) {
-        artistService.queryList().then(function(data) {
-          $scope.artists = data.Result.ArtistList;
-        });
         filterService.queryFilters().then(function(data) {
           var filter, i, j, len, len1, ref, ref1;
-          $scope.filters = data.Result;
+          $scope.filters = _.reject(data.Result, function(filter) {
+            return _.indexOf(API.hideFilters, filter.Key) !== -1;
+          });
           if (mode === "Standard") {
             ref = $scope.filters;
             for (i = 0, len = ref.length; i < len; i++) {
@@ -38,6 +38,19 @@
             }
           }
         });
+        if ($stateParams.path) {
+          dictionaryService.loadData().then(function() {
+            var filters;
+            filters = extractFilters($stateParams.path);
+            artistService.queryList(filters).then(function(data) {
+              $scope.artists = data.Result.ArtistList;
+            });
+          });
+        } else {
+          artistService.queryList().then(function(data) {
+            $scope.artists = data.Result.ArtistList;
+          });
+        }
       };
       $scope.search = function() {
         var filter, fn, i, len, queryString, ref;
@@ -94,6 +107,42 @@
       $scope.onSelectFilter = function(filter, item) {
         filter.selectedItem = item;
         $scope.search();
+      };
+      extractFilters = function(url) {
+        var ageFilterString, ageValue, artistType, artistTypeFilterString, artistTypeName, filters, params, state, states;
+        params = url.split("/");
+        filters = "1=1";
+        artistTypeFilterString = _.find(params, function(filter) {
+          return s(filter).toUpperCase().include("ARTISTTYPE");
+        });
+        if (artistTypeFilterString) {
+          artistTypeName = artistTypeFilterString.replace(/artisttype_/i, "").replace(/_/g, " ");
+          artistType = _.findWhere(JSON.parse(sessionStorage.getItem("artistTypes")), {
+            "Name": artistTypeName
+          });
+          if (artistType) {
+            filters += "&" + "ArtistType=" + artistType.Code;
+          }
+        }
+        states = JSON.parse(sessionStorage.getItem("states"));
+        state = _.find(states, function(s) {
+          return _.find(params, function(p) {
+            return s.Code.toUpperCase() === p.toUpperCase();
+          });
+        });
+        if (state) {
+          filters += "&" + "State=" + state.ID;
+        }
+        ageFilterString = _.find(params, function(filter) {
+          return s(filter).toUpperCase().include("AGE");
+        });
+        if (ageFilterString) {
+          ageValue = ageFilterString.replace(/age/i, "").replace("-", ":");
+          if (ageValue) {
+            filters += "&" + "Age=" + ageValue;
+          }
+        }
+        return filters;
       };
     }
   ]);

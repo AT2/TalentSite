@@ -1,18 +1,21 @@
 ﻿(function() {
   app.controller("accountController", [
-    "$scope", "ngDialog", "$cookies", "accountService", function($scope, ngDialog, $cookies, accountService) {
+    "$scope", "ngDialog", "$cookies", "accountService", "API", "$location", "$window", function($scope, ngDialog, $cookies, accountService, API, $location, $window) {
       $scope.client = {};
       $scope.login = {};
       $scope.invalidAccount = false;
-      $scope.onSubmit = function(isValid) {
+      $scope.onSubmit = function(isValid, isRedirect) {
         if (isValid) {
-          return accountService.login($scope.login.userName, $scope.login.password).then(function(data) {
+          accountService.login($scope.login.userName, $scope.login.password).then(function(data) {
             if (data && data.Description === "success") {
-              debugger;
-              $cookies["login"] = true;
-              $cookies["memberId"] = data.Result.MemberId;
-              $cookies["memberTypeCode"] = data.Result.MemberTypeCode;
+              $cookies.put("login", true);
+              $cookies.put("memberId", data.Result.MemberId);
+              $cookies.put("memberTypeCode", data.Result.MemberTypeCode);
               $scope.invalidAccount = false;
+              ngDialog.close();
+              if (isRedirect && data.Result.MemberTypeCode === "ARTS") {
+                $window.location.href = "http://app.at2casting.com/au/join/LoginRedirect.aspx?url=" + $window.encodeURIComponent("/au/Member/ArtistHome.aspx") + "&memberid=" + data.Result.MemberId;
+              }
             } else {
               $scope.invalidAccount = true;
             }
@@ -24,8 +27,17 @@
         ngDialog.open({
           template: '/static/partial/_register.html',
           controller: 'accountController',
-          className: 'ngdialog-theme-default dialog-compcard-width',
-          closePrevious: true
+          className: 'ngdialog-theme-default',
+          showClose: API.login !== "FIRST",
+          closeByEscape: API.login !== "FIRST",
+          closeByDocument: API.login !== "FIRST"
+        });
+      };
+      $scope.loginRedirect = function() {
+        ngDialog.open({
+          template: '/static/partial/_login_redirect.html',
+          controller: 'accountController',
+          className: 'ngdialog-theme-default'
         });
       };
     }

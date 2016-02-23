@@ -93,8 +93,8 @@
       "Key": "Region",
       "Value": [
         {
-          "Key": "AUCK",
-          "Value": "1430"
+          "Key": "NSW ",
+          "Value": "162"
         }
       ]
     },
@@ -106,20 +106,8 @@
           "Value": "ACTR"
         },
         {
-          "Key": "Child",
-          "Value": "CHLD"
-        },
-        {
-          "Key": "Child Model",
-          "Value": "CHMD"
-        },
-        {
-          "Key": "Choreographer",
-          "Value": "CHPR"
-        },
-        {
-          "Key": "Comic/Character Performer",
-          "Value": "COMC"
+          "Key": "Alternative Model",
+          "Value": "ALTE"
         },
         {
           "Key": "Comedian",
@@ -130,20 +118,8 @@
           "Value": "COMM"
         },
         {
-          "Key": "Creative Talent",
-          "Value": "CRAT"
-        },
-        {
-          "Key": "Creative Director",
-          "Value": "CRET"
-        },
-        {
           "Key": "Dancer",
           "Value": "DANC"
-        },
-        {
-          "Key": "Director",
-          "Value": "DIRT"
         },
         {
           "Key": "Entertainer",
@@ -154,20 +130,20 @@
           "Value": "EXTR"
         },
         {
-          "Key": "Family",
-          "Value": "FAML"
-        },
-        {
           "Key": "Featured Talent",
           "Value": "FLNT"
+        },
+        {
+          "Key": "Fitness Model",
+          "Value": "FMOD"
         },
         {
           "Key": "International",
           "Value": "ITNL"
         },
         {
-          "Key": "Mother & Baby",
-          "Value": "MBAB"
+          "Key": "Management",
+          "Value": "MANA"
         },
         {
           "Key": "Model",
@@ -178,16 +154,16 @@
           "Value": "MUSC"
         },
         {
-          "Key": "Other",
-          "Value": "OTHR"
-        },
-        {
           "Key": "Performer",
           "Value": "PERF"
         },
         {
           "Key": "Personality",
           "Value": "PERS"
+        },
+        {
+          "Key": "Plus Size Model",
+          "Value": "PMOD"
         },
         {
           "Key": "Presenter",
@@ -206,28 +182,12 @@
           "Value": "SPRT"
         },
         {
-          "Key": "Stunt Performer",
-          "Value": "STNT"
-        },
-        {
           "Key": "TVC 100%",
           "Value": "TVCM"
         },
         {
           "Key": "UP & COMING",
           "Value": "UCOM"
-        },
-        {
-          "Key": "Variety Performer",
-          "Value": "VARI"
-        },
-        {
-          "Key": "Voice Over",
-          "Value": "VOIC"
-        },
-        {
-          "Key": "Extra",
-          "Value": "XTRA"
         }
       ]
     },
@@ -239,64 +199,16 @@
       "Key": "Ethnicity",
       "Value": [
         {
-          "Key": "African",
-          "Value": "8"
-        },
-        {
-          "Key": "American Indian",
-          "Value": "16"
-        },
-        {
-          "Key": "Asian",
-          "Value": "5"
+          "Key": "Afro American",
+          "Value": "12"
         },
         {
           "Key": "Caucasian",
           "Value": "4"
         },
         {
-          "Key": "Chinese",
-          "Value": "30"
-        },
-        {
-          "Key": "Cook Islander",
-          "Value": "150"
-        },
-        {
-          "Key": "European",
-          "Value": "14"
-        },
-        {
-          "Key": "Fijian",
-          "Value": "147"
-        },
-        {
-          "Key": "Filipino",
-          "Value": "32"
-        },
-        {
-          "Key": "Indian",
-          "Value": "24"
-        },
-        {
-          "Key": "Latin European",
-          "Value": "157"
-        },
-        {
-          "Key": "Maori",
-          "Value": "22"
-        },
-        {
-          "Key": "Middle Eastern",
-          "Value": "6"
-        },
-        {
           "Key": "Pacific Islander",
           "Value": "23"
-        },
-        {
-          "Key": "Slavic European",
-          "Value": "15"
         }
       ]
     },
@@ -358,20 +270,20 @@
           "Value": "43"
         },
         {
-          "Key": "Greying",
-          "Value": "44"
-        },
-        {
           "Key": "Light Brown",
           "Value": "37"
+        },
+        {
+          "Key": "Multi Coloured",
+          "Value": "46"
         },
         {
           "Key": "Red/Ginger",
           "Value": "41"
         },
         {
-          "Key": "White",
-          "Value": "45"
+          "Key": "Strawberry Blonde",
+          "Value": "154"
         }
       ]
     },
@@ -397,6 +309,10 @@
         {
           "Key": "Brown",
           "Value": "49"
+        },
+        {
+          "Key": "Coloured Contact Lenses",
+          "Value": "107"
         },
         {
           "Key": "Green",

@@ -1,77 +1,78 @@
-﻿<div ng-controller="accountController">
-    <div class="login-header">
-        <h4 class="title text-center">
-            Request Access
-        </h4>
+﻿<div class="register-view">
+    <div ng-controller="accountController">
+        <div class="login-header">
+            <h4 class="title text-center">
+                Request Access
+            </h4>
+        </div>
+        <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+            <div class="form-group" ng-class="{ 'has-error': userForm.name.$touched && userForm.name.$invalid }">
+                <label class="control-label" for="username">Name</label>
+                <input type="text" class="form-control"
+                       ng-model="client.name" name="name"
+                       autocomplete="off"
+                       ng-maxlength="50"
+                       ng-minlength="2"
+                       required>
+                <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched" role="alert">
+                    <div ng-message="required">Your name is required</div>
+                    <div ng-message="minlength, maxlength">
+                        Your name must be between 2 and 50 characters long
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error': userForm.company.$touched && userForm.company.$invalid }">
+                <label class="control-label" for="passwd">Company</label>
+                <input type="text" class="form-control"
+                       ng-model="client.company" name="company"
+                       autocomplete="off"
+                       ng-minlength="2"
+                       ng-maxlength="50"
+                       required>
+                <div class="help-block" ng-messages="userForm.company.$error" ng-if="userForm.company.$touched" role="alert">
+                    <div ng-message="required">Your company is required</div>
+                    <div ng-message="minlength, maxlength">
+                        Your company must be between 2 and 50 characters long
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': userForm.email.$touched && userForm.email.$invalid }">
+                <label class="control-label" for="passwd">Email</label>
+                <input type="email" class="form-control"
+                       ng-model="client.email" name="email"
+                       autocomplete="off"
+                       ng-maxlength="50"
+                       ng-minlength="5"
+                       required>
+                <div class="help-block" ng-messages="userForm.email.$error" ng-if="userForm.email.$touched" role="alert">
+                    <div ng-message="required">Your email is required</div>
+                    <div ng-message="email">This needs to be a valid email</div>
+                    <div ng-message="minlength, maxlength">
+                        Your company must be between 5 and 50 characters long
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': userForm.phone.$touched && userForm.phone.$invalid }">
+                <label class="control-label" for="passwd">Phone</label>
+                <input type="text" class="form-control"
+                       ng-model="client.phone" name="phone"
+                       autocomplete="off" ng-maxlength="50">
+                <div class="help-block" ng-messages="userForm.phone.$error" ng-if="userForm.phone.$touched" role="alert">
+                    <div ng-message="maxlength">
+                        Your phone is too long
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="passwd">Reason for Access</label>
+                <textarea class="form-control" rows="4"
+                          ng-model="client.reason" name="reason"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary  btn-block" value="REGISTER" ng-disabled="!userForm.$valid">
+            </div>
+        </form>
     </div>
-    <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-        <div class="form-group" ng-class="{ 'has-error': userForm.name.$touched && userForm.name.$invalid }">
-            <label class="control-label" for="username">Name</label>
-            <input type="text" class="form-control"
-                   ng-model="client.name" name="name"
-                   autocomplete="off"
-                   ng-maxlength="50"
-                   ng-minlength="2"
-                   required>
-            <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched" role="alert">
-                <div ng-message="required">Your name is required</div>
-                <div ng-message="minlength, maxlength">
-                    Your name must be between 2 and 50 characters long
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group" ng-class="{ 'has-error': userForm.company.$touched && userForm.company.$invalid }">
-            <label class="control-label" for="passwd">Company</label>
-            <input type="text" class="form-control"
-                   ng-model="client.company" name="company"
-                   autocomplete="off"
-                   ng-minlength="2"
-                   ng-maxlength="50"
-                   required>
-            <div class="help-block" ng-messages="userForm.company.$error" ng-if="userForm.company.$touched" role="alert">
-                <div ng-message="required">Your company is required</div>
-                <div ng-message="minlength, maxlength">
-                    Your company must be between 2 and 50 characters long
-                </div>
-            </div>
-        </div>
-        <div class="form-group" ng-class="{ 'has-error': userForm.email.$touched && userForm.email.$invalid }">
-            <label class="control-label" for="passwd">Email</label>
-            <input type="email" class="form-control"
-                   ng-model="client.email" name="email"
-                   autocomplete="off"
-                   ng-maxlength="50"
-                   ng-minlength="5"
-                   required>
-            <div class="help-block" ng-messages="userForm.email.$error" ng-if="userForm.email.$touched" role="alert">
-                <div ng-message="required">Your email is required</div>
-                <div ng-message="email">This needs to be a valid email</div>
-                <div ng-message="minlength, maxlength">
-                    Your company must be between 5 and 50 characters long
-                </div>
-            </div>
-        </div>
-        <div class="form-group" ng-class="{ 'has-error': userForm.phone.$touched && userForm.phone.$invalid }">
-            <label class="control-label" for="passwd">Phone</label>
-            <input type="text" class="form-control"
-                   ng-model="client.phone" name="phone"
-                   autocomplete="off" ng-maxlength="50">
-            <div class="help-block" ng-messages="userForm.phone.$error" ng-if="userForm.phone.$touched" role="alert">
-                <div ng-message="maxlength">
-                    Your phone is too long
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="passwd">Reason for Access</label>
-            <textarea class="form-control" rows="4"
-                      ng-model="client.reason" name="reason"></textarea>
-        </div>
-
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary  btn-block" value="REGISTER" ng-disabled="!userForm.$valid">
-        </div>
-    </form>
 </div>
-

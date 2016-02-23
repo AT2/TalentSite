@@ -36,3 +36,5 @@ D:\Project\AT2\talent\TalentSite\develop\obj\Debug\Cwb.TalentSite.dll
 D:\Project\AT2\talent\TalentSite\develop\obj\Debug\Cwb.TalentSite.pdb
 D:\Project\AT2\talent\TalentSite\develop\bin\wnvhtmlconvert.dll
 D:\Project\AT2\talent\TalentSite\develop\bin\wnvhtmlconvert.xml
+D:\Project\AT2\talent\TalentSite\develop\bin\TuesPechkin.dll
+D:\Project\AT2\talent\TalentSite\develop\bin\TuesPechkin.Wkhtmltox.Win64.dll

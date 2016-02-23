@@ -4,7 +4,7 @@
       this.queryList = function(filters) {
         var deferred;
         deferred = $q.defer();
-        $http.get(API.address + "/artists?pageNum=10000&apikey=" + API.key + "&" + filters).success(function(data, status, headers, config) {
+        $http.get(API.address + "/artists?pageNum=10000&HasPhoto=true&apikey=" + API.key + "&" + filters).success(function(data, status, headers, config) {
           return deferred.resolve(data);
         }).error(function(data, status, headers, config) {
           return deferred.reject(data);

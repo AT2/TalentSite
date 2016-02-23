@@ -1,6 +1,6 @@
 ﻿(function() {
   app.service("filterService", [
-    "$http", "$q", function($http, $q) {
+    "$http", "$q", "API", function($http, $q, API) {
       this.queryFilters = function() {
         var deferred;
         deferred = $q.defer();
